@@ -1,0 +1,39 @@
+{
+  "labels": {
+    "Resolve": "Lösen"
+  },
+  "fields": {
+    "actionType": "Aktionstyp",
+    "resolution": "Lösung",
+    "target": "Ziel",
+    "process": "Prozesse",
+    "isResolved": "Ist gelöst",
+    "resolutionNote": "Lösungshinweis",
+    "isCanceled": "Ist storniert"
+  },
+  "links": {
+    "process": "Prozesse",
+    "target": "Ziel",
+    "flowNode": "Flussknoten"
+  },
+  "options": {
+    "actionType": {
+      "Approve": "Genehmigen",
+      "Review": "Überprüfen",
+      "Accomplish": "Erreichen"
+    },
+    "resolution": {
+      "": "Kein(e)",
+      "Approved": "Genehmigt",
+      "Rejected": "Abgelehnt",
+      "Reviewed": "Überprüft",
+      "Completed": "Abgeschlossen",
+      "Canceled": "Storniert"
+    }
+  },
+  "presetFilters": {
+    "actual": "Aktuell",
+    "resolved": "Gelöst",
+    "canceled": "Storniert"
+  }
+}

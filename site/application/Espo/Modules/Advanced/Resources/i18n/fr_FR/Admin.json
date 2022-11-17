@@ -1,0 +1,25 @@
+{
+  "labels": {
+    "Workflow Manager": "Flux de travail",
+    "Flowcharts": "Organigrammes",
+    "Processes": "Processus",
+    "Business Process Management": "Gestion de processus commerciaux",
+    "Report Filters": "Filtres de rapport",
+    "Report Panels": "Panneaux de rapport"
+  },
+  "descriptions": {
+    "workflowManager": "Configurer les règles de flux de travail.",
+    "bpmnFlowcharts": "Définitions des processus commerciaux.",
+    "bpmnProcesses": "Instances de processus commerciaux.",
+    "reportFilters": "Filtres d'affichage de liste personnalisés basés sur des rapports.",
+    "reportPanels": "Panneaux de vue détaillée affichant les résultats du rapport."
+  },
+  "messages": {
+    "newAdvancedPackVersionIsAvailable": "La nouvelle version du pack avancé {latestVersion} est disponible. Elle peut être téléchargée sur le portail client."
+  },
+  "templates": {
+    "reportSendingGrid1": "Grille de rapport-1",
+    "reportSendingGrid2": "Grille de rapport-2",
+    "reportSendingList": "Liste de rapports"
+  }
+}

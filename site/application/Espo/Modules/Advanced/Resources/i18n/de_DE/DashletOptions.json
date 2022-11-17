@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "report": "Bericht",
+    "column": "Summenspalte",
+    "displayOnlyCount": "Nur Summe anzeigen",
+    "displayTotal": "Summe anzeigen"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "Create ReportCategory": "Kategorie erstellen",
+    "Manage Categories": "Kategorien verwalten",
+    "Reports": "Berichte"
+  },
+  "fields": {
+    "order": "Reihenfolge"
+  },
+  "links": {
+    "reports": "Berichte"
+  }
+}

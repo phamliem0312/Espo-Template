@@ -1,0 +1,30 @@
+{
+    "fields": {
+        "voipUser": "Your user extension",
+        "voipPassword": "Your VoIP password",
+        "voipNotifications": "Display call notifications",
+        "voipMute": "Silent notifications",
+        "voipInternalCall": "Use internal click-to-call",
+        "voipConnector": "VoiP Server",
+        "voipAdditionalNumbers": "Additional Phone Numbers",
+        "voipDoNotDisturb": "Do Not Disturb",
+        "voipDoNotDisturbUntil": "Until",
+        "voipContext": "User Dial Context",
+        "voipTestConnection": "Test Connection"
+    },
+    "labels": {
+        "Voip Settings": "VoIP Settings",
+        "voipPassword": "Your VoIP password"
+    },
+    "tooltips" : {
+        "voipUser": "Your VoIP user extension (e.g. \"299\", \"1001\").",
+        "voipPassword": "Your VoIP password.",
+        "voipNotifications": "If you want to receive incoming/outgoing call notifications.",
+        "voipMute": "Mute notification sound.",
+        "voipInternalCall": "Internal click-to-call is a feature to originate an outgoing call. If the checkbox is unchecked, then will be used an external application to handle tel: links.",
+        "voipAdditionalNumbers": "Additional external or internal phone numbers.",
+        "voipConnector": "Your current VoIP server.",
+        "voipDoNotDisturb": "Disable incomming calls.",
+        "voipContext": "Dial Context for a User. If it is empty, a Dial Context of a connector will be used."
+    }
+}

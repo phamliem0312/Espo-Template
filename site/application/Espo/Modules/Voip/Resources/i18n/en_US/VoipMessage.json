@@ -1,0 +1,73 @@
+{
+    "labels":{
+        "Create VoipMessage":"Create Message",
+        "Calling":"Sending...",
+        "markAsRead":"Mark Read",
+        "markAsNotRead":"Mark Unread",
+        "Compose Message": "Compose Message",
+        "Save Draft": "Save Draft",
+        "Send": "Send",
+        "Reply": "Reply",
+        "Forward": "Forward",
+        "Download": "Download"
+    },
+    "fields":{
+        "externalId": "External ID",
+        "type": "Type",
+        "direction": "Direction",
+        "status": "Status",
+        "from": "From",
+        "to": "To",
+        "body": "Body",
+        "numMedia": "Media Number",
+        "numSegments": "Segments Number",
+        "assignedUser": "Assigned User",
+        "connector": "Connector",
+        "createdAt": "Created At",
+        "modifiedAt": "Modified At",
+        "attachments": "Attachments",
+        "dateSent": "Date Sent",
+        "voipRouter":"VoIP Router",
+        "replies":"Replies",
+        "replied":"Replied",
+        "sentBy":"Sent By"
+    },
+    "options" : {
+        "type":{
+            "sms": "SMS",
+            "mms": "MMS"
+        },
+        "direction":{
+            "incoming": "Incoming",
+            "outgoing": "Outgoing"
+        },
+        "status":{
+            "draft": "Draft",
+            "accepted": "Accepted",
+            "queued": "Queued",
+            "sending": "Sending",
+            "sent": "Sent",
+            "receiving": "Receiving",
+            "received": "Received",
+            "delivered": "Delivered",
+            "undelivered": "Undelivered",
+            "failed": "Failed"
+        }
+    },
+    "messages": {
+        "messageSent": "Message has been sent",
+        "savedAsDraft": "Saved as draft",
+        "noSmsPhone": "You do not have configured phone numbers for SMS/MMS"
+    },
+    "presetFilters": {
+        "sent": "Sent",
+        "inbox": "Inbox",
+        "drafts": "Drafts",
+        "trash": "Trash",
+        "important": "Important"
+    },
+    "massActions": {
+        "markAsRead":"Mark Read",
+        "markAsNotRead":"Mark Unread"
+    }
+}

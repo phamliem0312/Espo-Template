@@ -1,0 +1,9 @@
+{
+  "options": {
+    "job": {
+      "ReportTargetListSync": "Synchronizace cílových seznamů se záznamy",
+      "ScheduleReportSending": "Odesílání záznamu o plánování",
+      "RunScheduledWorkflows": "Spustit plánovaný proces"
+    }
+  }
+}

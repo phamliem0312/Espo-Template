@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "targetList": {
+            "reportDisabled": true
+        },
+        "originalLead": {
+            "reportColumnDisabled": true
+        }
+    }
+}

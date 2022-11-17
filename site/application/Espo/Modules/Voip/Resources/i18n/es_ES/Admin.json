@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "VoIP": "Ajustes de VoIP",
+    "voipRouter": "Enrutamiento VoIP"
+  },
+  "descriptions": {
+    "VoIP": "Configurar los ajustes de integración de VoIP.",
+    "voipRouter": "Configurar el enrutamiento de números de teléfono."
+  },
+  "messages": {
+    "newVoIPIntegrationVersionIsAvailable": "Hay disponible una nueva versión de la extensión de integración VoIP {latestVersion}. Puede descargarla en el portal del cliente."
+  }
+}

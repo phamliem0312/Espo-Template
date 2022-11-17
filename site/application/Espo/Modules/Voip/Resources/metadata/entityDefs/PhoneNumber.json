@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "name": {
+            "maxLength": 100
+        },
+        "numeric": {
+            "maxLength": 100
+        }
+    }
+}

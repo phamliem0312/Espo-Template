@@ -1,0 +1,69 @@
+{
+    "views":{
+        "detail":"voip:views/call/detail"
+    },
+    "menu":{
+        "detail":{
+            "buttons":[
+                {
+                    "label":"Dial",
+                    "action":"dial",
+                    "acl":"read"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "voipRecording": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "and",
+                            "value": [
+                                {
+                                    "type": "isNotEmpty",
+                                    "attribute": "id"
+                                },
+                                {
+                                    "type": "or",
+                                    "value": [
+                                        {
+                                            "type": "equals",
+                                            "attribute": "status",
+                                            "value": "Held"
+                                        },
+                                        {
+                                            "type": "isTrue",
+                                            "attribute": "isVoicemail"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "assignedUser": {
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "notEquals",
+                                    "attribute": "status",
+                                    "value": "Not Held"
+                                },
+                                {
+                                    "type": "isEmpty",
+                                    "attribute": "voipUniqueid"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "entity": true,
+    "layouts": false,
+    "tab": true,
+    "acl": true,
+    "aclPortal": "recordAllNo",
+    "aclPortalActionList": ["read"],
+    "module": "Advanced",
+    "customizable": false,
+    "importable": true,
+    "lastViewed": true,
+    "pdfTemplate": true,
+    "exportFormatList": ["csv"]
+}

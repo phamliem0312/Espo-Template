@@ -1,0 +1,30 @@
+{
+  "labels": {
+    "Create VoipEvent": "Créer un événement VoIP",
+    "Calling": "Appel…",
+    "Unknown": "Inconnu",
+    "goToCrm": "Aller au CRM",
+    "doNotCallIsOn": "Ne pas appeler est activé",
+    "optedOutIsOn": "Le numéro de téléphone est désactivé"
+  },
+  "fields": {
+    "phoneNumber": "Numéro de téléphone",
+    "userExtension": "Extension utilisateur"
+  },
+  "callNames": {
+    "incomingCallTitle": "{incomingCall} : {phoneNumber} {to} {user.userName}",
+    "incomingCallTitleWithoutRecipient": "{incomingCall} : {phoneNumber}",
+    "outgoingCallTitle": "{outgoingCall} : {user.userName} {to} {phoneNumber}",
+    "outgoingCallTitleWithoutRecipient": "{outgoingCall} : {user.userName}",
+    "incomingCall": "Appel entrant",
+    "outgoingCall": "Appel sortant",
+    "from": "de",
+    "to": "à",
+    "defaultCallTitle": "Appel"
+  },
+  "voicemailNames": {
+    "incomingCallTitle": "Message vocal de {phoneNumber}",
+    "incomingCallTitleWithoutRecipient": "Message vocal de {phoneNumber}",
+    "defaultCallTitle": "Appel manqué"
+  }
+}

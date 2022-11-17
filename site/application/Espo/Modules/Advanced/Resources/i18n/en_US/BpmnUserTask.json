@@ -1,0 +1,40 @@
+{
+    "labels": {
+        "Resolve": "Resolve"
+    },
+    "fields": {
+        "actionType": "Action Type",
+        "resolution": "Resolution",
+        "target": "Target",
+        "process": "Process",
+        "isResolved": "Is Resolved",
+        "resolutionNote": "Resolution Note",
+        "instructions": "Instructions",
+        "isCanceled": "Is Canceled"
+    },
+    "links": {
+        "process": "Process",
+        "target": "Target",
+        "flowNode": "Flow Node"
+    },
+    "options": {
+        "actionType": {
+            "Approve": "Approve",
+            "Review": "Review",
+            "Accomplish": "Accomplish"
+        },
+        "resolution": {
+            "": "None",
+            "Approved": "Approved",
+            "Rejected": "Rejected",
+            "Reviewed": "Reviewed",
+            "Completed": "Completed",
+            "Canceled": "Canceled"
+        }
+    },
+    "presetFilters": {
+        "actual": "Actual",
+        "resolved": "Resolved",
+        "canceled": "Canceled"
+    }
+}

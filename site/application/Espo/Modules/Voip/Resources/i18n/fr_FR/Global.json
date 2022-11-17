@@ -1,0 +1,19 @@
+{
+  "scopeNames": {
+    "VoipEvent": "Événement VoIP",
+    "VoipRouter": "Routeur VoIP"
+  },
+  "scopeNamesPlural": {
+    "VoipEvent": "Événements VoIP",
+    "VoipRouter": "Routeurs VoIP"
+  },
+  "streamMessages": {
+    "shortStatus": "{field} sur {entityType} {entity} ont été modifié(s)"
+  },
+  "dashlets": {
+    "VoipSettings": "Paramètres VoIP"
+  },
+  "labels": {
+    "Schedule VoipMessage": "Rédiger un message"
+  }
+}

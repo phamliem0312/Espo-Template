@@ -1,0 +1,48 @@
+{
+  "labels": {
+    "Create BpmnProcess": "Démarrer le processus",
+    "Stop Process": "Arrêter le processus",
+    "User Tasks": "Tâches utilisateur",
+    "Flowcharts": "Organigrammes",
+    "Interrupt": "Interrompre",
+    "Reject": "Rejeter",
+    "Start flow from here": "Démarrer le flux d'ici"
+  },
+  "fields": {
+    "status": "État",
+    "targetType": "Type d'entité cible",
+    "target": "Cible",
+    "createdEntitiesData": "Données d'entités créées",
+    "flowchartData": "Données de l'organigramme",
+    "flowchart": "Organigramme",
+    "flowchartVisualization": "Organigramme (visualisation)",
+    "flowchartElementsDataHash": "Éléments de l'organigramme",
+    "endedAt": "Terminé à",
+    "startElementId": "Élément de démarrage",
+    "parentProcess": "Processus parent",
+    "parentProcessFlowNode": "Nœud de flux du processus parent"
+  },
+  "links": {
+    "flowchart": "Organigramme",
+    "target": "Cible",
+    "flowNodes": "Journal de flux",
+    "userTasks": "Traiter les tâches utilisateur",
+    "childProcesses": "Processus enfants",
+    "parentProcess": "Processus parent",
+    "parentProcessFlowNode": "Nœud de flux du processus parent"
+  },
+  "options": {
+    "status": {
+      "Created": "Créé",
+      "Started": "Démarré",
+      "Ended": "Terminé",
+      "Paused": "En pause",
+      "Stopped": "Arrêté",
+      "Interrupted": "Interrompu"
+    }
+  },
+  "presetFilters": {
+    "actual": "Réel",
+    "ended": "Terminé"
+  }
+}

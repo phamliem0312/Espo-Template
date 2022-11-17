@@ -1,0 +1,34 @@
+{
+  "labels": {
+    "Create ReportPanel": "Créer un panneau",
+    "Rebuild Panels": "Reconstruire les panneaux"
+  },
+  "fields": {
+    "report": "Rapport",
+    "entityType": "Type d'entité",
+    "isActive": "Est autorisé",
+    "reportType": "Type de rapport",
+    "displayTotal": "Afficher le total",
+    "displayOnlyTotal": "Afficher uniquement le total",
+    "column": "Colonne",
+    "reportEntityType": "Type d'entité de rapport",
+    "columnList": "Liste des colonnes",
+    "dynamicLogicVisible": "Conditions rendant le panneau visible",
+    "order": "Ordre",
+    "useSiMultiplier": "Multiplicateur SI"
+  },
+  "links": {
+    "report": "Rapport"
+  },
+  "tooltips": {
+    "teams": "Équipes pour lesquelles le panneau sera affiché. Si aucune équipe n'est spécifiée, aucune restriction par équipe ne sera appliquée.",
+    "report": "Rapport qui sera utilisé pour le panneau.",
+    "order": "[0..1] - avant le panneau de transmission ;\n[3..4] - avant les panneaux de relations ;\n[6..] - après les panneaux de relation."
+  },
+  "options": {
+    "type": {
+      "side": "Côté",
+      "bottom": "Bas"
+    }
+  }
+}

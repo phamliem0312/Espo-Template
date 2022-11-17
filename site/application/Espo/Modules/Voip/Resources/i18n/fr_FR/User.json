@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "voipUser": "Votre extension utilisateur",
+    "voipPassword": "Votre mot de passe VoIP",
+    "voipNotifications": "Afficher les notifications d'appel",
+    "voipMute": "Notifications silencieuses",
+    "voipInternalCall": "Utiliser l'appel direct en interne",
+    "voipConnector": "Serveur VoiP",
+    "voipAdditionalNumbers": "Numéros de téléphone supplémentaires",
+    "voipDoNotDisturb": "Ne pas déranger",
+    "voipDoNotDisturbUntil": "Jusqu'à",
+    "voipContext": "Contexte de numérotation utilisateur"
+  },
+  "labels": {
+    "Voip Settings": "Paramètres VoIP",
+    "voipPassword": "Votre mot de passe VoIP"
+  },
+  "tooltips": {
+    "voipUser": "Votre extension utilisateur VoIP (par exemple « 299 », « 1001 »).",
+    "voipPassword": "Votre mot de passe VoIP.",
+    "voipNotifications": "Si vous souhaitez recevoir des notifications d'appels entrants / sortants.",
+    "voipMute": "Désactivez le son de notification.",
+    "voipInternalCall": "Appel direct interne est une fonctionnalité permettant de lancer un appel sortant. Si la case n'est pas cochée, une application externe sera alors utilisée pour gérer les liens tel:.",
+    "voipAdditionalNumbers": "Numéros de téléphone externes ou internes supplémentaires.",
+    "voipConnector": "Votre serveur VoIP actuel.",
+    "voipDoNotDisturb": "Désactiver les appels entrants.",
+    "voipContext": "Contexte de numérotation pour un utilisateur. S'il est vide, un contexte de numérotation d'un connecteur sera utilisé."
+  }
+}

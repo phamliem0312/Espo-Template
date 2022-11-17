@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "Calling": "Вызов ...",
+    "Unknown": "Неизвестный",
+    "goToCrm": "Перейти в CRM",
+    "doNotCallIsOn": "Не звонить включено"
+  },
+  "callNames": {
+    "incomingCallTitle": "{incomingCall} {from} {phoneNumber} {to} {user.userName}",
+    "outgoingCallTitle": "{outgoingCall} {from} {user.userName} {to} {phoneNumber}",
+    "incomingCall": "Входящий звонок",
+    "outgoingCall": "Исходящий звонок",
+    "from": "от",
+    "to": "на"
+  },
+  "voicemailNames": {
+    "incomingCallTitle": "Голосовое сообщение от {phoneNumber}",
+    "incomingCallTitleWithoutRecipient": "Голосовое сообщение от {phoneNumber}"
+  }
+}

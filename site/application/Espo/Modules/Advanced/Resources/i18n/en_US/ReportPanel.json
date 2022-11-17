@@ -1,0 +1,36 @@
+{
+    "labels": {
+        "Create ReportPanel": "Create Panel",
+        "Rebuild Panels": "Rebuild Panels"
+    },
+    "fields": {
+        "report": "Report",
+        "entityType": "Entity Type",
+        "isActive": "Is Enabled",
+        "type": "Type",
+        "reportType": "Report Type",
+        "displayTotal": "Display Total",
+        "displayOnlyTotal": "Display Only Total",
+        "column": "Column",
+        "reportEntityType": "Report Entity Type",
+        "columnList": "Column List",
+        "dynamicLogicVisible": "Conditions making panel visible",
+        "order": "Order",
+        "displayType": "What to display",
+        "useSiMultiplier": "SI Multiplier"
+    },
+    "links": {
+        "report": "Report"
+    },
+    "tooltips": {
+        "teams": "Teams the panel will be displayed for. If no teams specified then no restriction by team will be applied.",
+        "report": "Report that will be used for the panel.",
+        "order": "[0..1] - before Stream panel;\n[3..4] - before relationship panels;\n[6..] - after relationship panels."
+    },
+    "options": {
+        "type": {
+            "side": "Side",
+            "bottom": "Bottom"
+        }
+    }
+}

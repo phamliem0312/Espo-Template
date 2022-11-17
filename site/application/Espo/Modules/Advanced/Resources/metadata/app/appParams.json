@@ -1,0 +1,5 @@
+{
+    "flowchartEntityTypeList": {
+        "className": "\\Espo\\Modules\\Advanced\\Core\\AppParams\\FlowchartEntityTypeList"
+    }
+}

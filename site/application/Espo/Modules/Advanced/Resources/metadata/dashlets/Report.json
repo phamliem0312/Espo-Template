@@ -1,0 +1,82 @@
+{
+    "view":"advanced:views/dashlets/report",
+    "aclScope": "Report",
+    "options": {
+        "view": "advanced:views/dashlets/options/report",
+        "fields": {
+            "title": {
+                "type": "varchar"
+            },
+            "report": {
+                "type": "link",
+                "entity": "Report",
+                "required": true,
+                "view": "advanced:views/report/fields/dashlet-select"
+            },
+            "column": {
+                "type": "enum",
+                "options": []
+            },
+            "displayType": {
+                "type": "enum",
+                "default": "",
+                "options": [
+                    "",
+                    "Chart",
+                    "List",
+                    "Chart-Total",
+                    "Total",
+                    "Table"
+                ],
+                "translation": "Report.options.dashletDisplayType",
+                "view": "advanced:views/dashlets/fields/display-type"
+            },
+            "useSiMultiplier": {
+                "type": "bool"
+            },
+            "autorefreshInterval": {
+                "type": "enumFloat",
+                "options": [
+                    0,
+                    0.5,
+                    1,
+                    2,
+                    5,
+                    10
+                ]
+            }
+        },
+        "defaults": {
+            "autorefreshInterval": 0,
+            "useSiMultiplier": true,
+            "displayType": ""
+        },
+        "layout": [
+            {
+                "rows": [
+                    [
+                        {"name": "title"}
+                    ],
+                    [
+                        {"name": "report"},
+                        {"name": "column"}
+                    ],
+                    [
+                        {"name": "autorefreshInterval"},
+                        false
+                    ],
+                    [
+                        {
+                            "name": "displayType"
+                        },
+                        false
+                    ],
+                    [
+                        {"name": "useSiMultiplier"},
+                        false
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Sincronizar con informes"
+  },
+  "fields": {
+    "syncWithReports": "Informes",
+    "syncWithReportsEnabled": "Habilitado",
+    "syncWithReportsUnlink": "Desvincular"
+  },
+  "links": {
+    "syncWithReports": "Sincronizar con informes"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Las entradas que no están contenidas en los resultados del informe se desvincularán de la Lista de objetivos.",
+    "syncWithReports": "La lista de objetivos se sincronizará con los resultados de los informes seleccionados."
+  }
+}

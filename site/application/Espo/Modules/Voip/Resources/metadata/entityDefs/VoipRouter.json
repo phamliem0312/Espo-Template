@@ -1,0 +1,180 @@
+{
+    "fields": {
+        "name": {
+            "type":"varchar",
+            "required": true,
+            "maxLength": 100,
+            "readOnly": true
+        },
+        "externalId": {
+            "type":"varchar",
+            "maxLength": 100,
+            "readOnly": true,
+            "disabled": true
+        },
+        "status": {
+            "type":"enum",
+            "options": [
+                "Active",
+                "Inactive"
+            ],
+            "default":"Active",
+            "view": "views/fields/enum-styled",
+            "style": {
+                "Active": "success",
+                "Inactive": "danger"
+            }
+        },
+        "rules": {
+            "type": "jsonObject"
+        },
+        "userOrder": {
+            "type": "jsonArray",
+            "notStorable": true
+        },
+        "greetingAtCallStart": {
+            "type":"bool"
+        },
+        "greetingText": {
+            "type": "text",
+            "tooltip": true
+        },
+        "greetingFile": {
+            "type": "file",
+            "tooltip": true
+        },
+        "farewell": {
+            "type":"bool"
+        },
+        "farewellText": {
+            "type": "text",
+            "tooltip": true
+        },
+        "farewellFile": {
+            "type": "file",
+            "tooltip": true
+        },
+        "voicemail": {
+            "type":"bool",
+            "default": true
+        },
+        "voicemailGreetingText": {
+            "type": "text",
+            "tooltip": true
+        },
+        "voicemailGreetingFile": {
+            "type": "file",
+            "tooltip": true
+        },
+        "voicemailNotifications": {
+            "type": "multiEnum",
+            "options": [
+                "Popup",
+                "Email"
+            ],
+            "default": [
+                "Popup",
+                "Email"
+            ],
+            "tooltip": true
+        },
+        "outgoingRoutes": {
+            "type": "jsonObject",
+            "notStorable": true
+        },
+        "connector": {
+            "type": "varchar",
+            "length":50,
+            "view": "voip:views/voip-router/fields/connector",
+            "readOnly": true
+        },
+        "data": {
+            "type": "jsonObject"
+        },
+        "team": {
+            "type":"link",
+            "required": true
+        },
+        "sms": {
+            "type":"bool"
+        },
+        "mms": {
+            "type":"bool"
+        },
+        "smsAssignTo": {
+            "type":"link",
+            "view":"voip:views/voip-router/fields/team-user"
+        },
+        "mmsAssignTo": {
+            "type":"link",
+            "view":"voip:views/voip-router/fields/team-user"
+        },
+        "callAssignTo": {
+            "type":"link",
+            "view":"voip:views/voip-router/fields/team-user"
+        },
+        "voice": {
+            "type":"bool",
+            "default": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "smsAssignTo": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "mmsAssignTo": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "callAssignTo": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "team": {
+            "type":"belongsTo",
+            "entity":"Team"
+        },
+        "calls": {
+            "type": "hasMany",
+            "foreign": "voipRouter",
+            "entity": "Call"
+        },
+        "voipMessages": {
+            "type": "hasMany",
+            "foreign": "voipRouter",
+            "entity": "VoipMessage"
+        }
+    },
+    "indexes": {
+        "externalId": {
+            "columns": ["externalId", "deleted"]
+        }
+    }
+}

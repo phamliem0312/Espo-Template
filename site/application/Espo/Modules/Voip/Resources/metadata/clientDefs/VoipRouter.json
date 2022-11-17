@@ -1,0 +1,79 @@
+{
+    "controller": "controllers/record",
+    "recordViews":{
+        "detail":"voip:views/voip-router/record/detail",
+        "edit":"voip:views/voip-router/record/edit",
+        "list":"voip:views/voip-router/record/list"
+    },
+    "views":{
+        "list":"voip:views/voip-router/list"
+    },
+    "formDependency": {
+        "greetingAtCallStart": {
+           "map": {
+              "true": [
+                 {
+                    "action": "show",
+                    "fields": ["greetingFile", "greetingText"]
+                 }
+              ],
+              "false": [
+                 {
+                    "action": "hide",
+                    "fields": ["greetingFile", "greetingText"]
+                 }
+              ]
+           },
+           "default": [
+              {
+                 "action": "hide",
+                 "fields": ["greetingFile", "greetingText"]
+              }
+           ]
+       },
+       "farewell": {
+          "map": {
+             "true": [
+                {
+                   "action": "show",
+                   "fields": ["farewellText", "farewellFile"]
+                }
+             ],
+             "false": [
+                {
+                   "action": "hide",
+                   "fields": ["farewellText", "farewellFile"]
+                }
+             ]
+          },
+          "default": [
+             {
+                "action": "hide",
+                "fields": ["farewellText", "farewellFile"]
+             }
+          ]
+      },
+      "voicemail": {
+         "map": {
+            "true": [
+               {
+                  "action": "show",
+                  "fields": ["voicemailGreetingText", "voicemailGreetingFile", "voicemailNotifications"]
+               }
+            ],
+            "false": [
+               {
+                  "action": "hide",
+                  "fields": ["voicemailGreetingText", "voicemailGreetingFile", "voicemailNotifications"]
+               }
+            ]
+         },
+         "default": [
+            {
+               "action": "hide",
+               "fields": ["voicemailGreetingText", "voicemailGreetingFile", "voicemailNotifications"]
+            }
+         ]
+      }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "fields": {
+    "name": "Nome",
+    "description": "Descrição",
+    "type": "Tipo",
+    "startDate": "Data de início",
+    "endDate": "Data de fim",
+    "targetLists": "Lista de alvos",
+    "sentCount": "Enviar",
+    "openedCount": "Abertos",
+    "clickedCount": "Clicados",
+    "optedOutCount": "Cancelamentos",
+    "bouncedCount": "Bounces",
+    "hardBouncedCount": "Hard Bounce",
+    "softBouncedCount": "Soft Bounce",
+    "leadCreatedCount": "Leads Criados",
+    "revenue": "Receita",
+    "budget": "Orçamento"
+  },
+  "links": {
+    "targetLists": "Lista de alvos",
+    "accounts": "Contas",
+    "contacts": "Contatos",
+    "opportunities": "Oportunidades"
+  },
+  "options": {
+    "type": {
+      "Email": "E-mail",
+      "Television": "Televisão",
+      "Radio": "Rádio",
+      "Mail": "Correio"
+    },
+    "status": {
+      "Planning": "Planejamento",
+      "Active": "Ativa",
+      "Inactive": "Inativa",
+      "Complete": "Completa"
+    }
+  },
+  "labels": {
+    "Create Campaign": "Criar Campanha",
+    "Target Lists": "Lista de alvos",
+    "Statistics": "Estatísticas",
+    "Email Templates": "Templates de email"
+  },
+  "presetFilters": {
+    "active": "Ativa"
+  }
+}

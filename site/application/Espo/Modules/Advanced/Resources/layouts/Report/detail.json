@@ -1,0 +1,10 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [{"name": "name"},{"name":"type", "readOnly": true}],
+            [{"name": "category"}, {"name": "entityType", "readOnly": true}],
+            [{"name": "description", "fullWidth": true}]
+        ]
+    }
+]

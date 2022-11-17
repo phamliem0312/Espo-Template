@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Synchroniser avec les rapports"
+  },
+  "fields": {
+    "syncWithReports": "Rapports",
+    "syncWithReportsEnabled": "Activé",
+    "syncWithReportsUnlink": "Dissocier"
+  },
+  "links": {
+    "syncWithReports": "Synchroniser avec les rapports"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Les entrées qui ne figurent pas dans les résultats du rapport seront dissociées de la liste cible.",
+    "syncWithReports": "La liste cible sera synchronisée avec les résultats des rapports sélectionnés."
+  }
+}

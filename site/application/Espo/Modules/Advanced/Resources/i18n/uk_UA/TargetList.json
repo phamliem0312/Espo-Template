@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Синхронізувати зі звітами"
+  },
+  "fields": {
+    "syncWithReports": "Звіти",
+    "syncWithReportsEnabled": "Ввімкнено",
+    "syncWithReportsUnlink": "Відв’язати"
+  },
+  "links": {
+    "syncWithReports": "Синхронізувати зі звітами"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Записи, які не зустрічаються в звіті, будуть вилучені з цільового списку.",
+    "syncWithReports": "Цільовий список буде синхронізований з результатами вибраних звітів."
+  }
+}

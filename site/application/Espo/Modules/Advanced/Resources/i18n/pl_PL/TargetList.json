@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Sync with Reports"
+  },
+  "fields": {
+    "syncWithReports": "Raporty",
+    "syncWithReportsEnabled": "Aktywne",
+    "syncWithReportsUnlink": "Odłącz"
+  },
+  "links": {
+    "syncWithReports": "Synchronizuj z raportami"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Wpisy które nie są zawarte w raporcie zostaną odłączone z listy docelowej.",
+    "syncWithReports": "Lista docelowa zostanie zsynchronizowana z wynikami wybranych raportów."
+  }
+}

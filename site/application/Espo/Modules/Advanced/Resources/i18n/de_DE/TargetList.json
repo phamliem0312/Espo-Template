@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Synchronisation mit Berichten"
+  },
+  "fields": {
+    "syncWithReports": "Berichte",
+    "syncWithReportsEnabled": "Aktiv",
+    "syncWithReportsUnlink": "Link entfernen"
+  },
+  "links": {
+    "syncWithReports": "Synchronisation mit Berichten"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Datensätze die nicht im Bericht enthalten sind werden aus der Kontaktliste entfernt",
+    "syncWithReports": "Kontaktliste wird mit den Resultaten des gewählten Berichts synchronisiert"
+  }
+}

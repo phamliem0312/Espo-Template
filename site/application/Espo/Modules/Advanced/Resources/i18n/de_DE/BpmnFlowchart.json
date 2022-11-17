@@ -1,0 +1,46 @@
+{
+  "labels": {
+    "Create BpmnFlowchart": "Flussdiagramme erstellen",
+    "Hand tool": "Handwerkzeug",
+    "Create Event tool": "Ereignis Tool erstellen ",
+    "Create Gateway tool": "Ereignis Tool erstellen ",
+    "Create Activity tool": "Aktivität Tool erstellen",
+    "Connect tool": "Werkzeug Verbinden",
+    "Erase tool": "Werkzeug Löschen",
+    "Full Screen": "Vollbild",
+    "Processes": "Prozesse",
+    "data": "Daten "
+  },
+  "fields": {
+    "isActive": "Ist Aktiv",
+    "targetType": "Zielentitätstyp",
+    "hasNoneStartEvent": "Hat Start-Ereignis of None-Typ"
+  },
+  "links": {
+    "processes": "Prozesse"
+  },
+  "elements": {
+    "eventStartConditional": "Bedingtes Start-Ereignis",
+    "eventStartTimer": "Timer Start Ereignis",
+    "eventStart": "Start Ereignis",
+    "eventIntermediateTimerCatch": "Timer Zwischenereignis (fangend)",
+    "eventIntermediateConditionalCatch": "Bedingtes Zwischenereignis (fangend)",
+    "eventEnd": "Endereignis",
+    "eventEndTerminate": "Endereignis beenden",
+    "gatewayExclusive": "Exklusives Gateway",
+    "gatewayInclusive": "Inklusives Gateway",
+    "gatewayParallel": "Paralleles Gateway",
+    "gatewayEventBased": "Ereignisbasiertes Gateway",
+    "taskSendMessage": "Nachrichtaufgabe senden",
+    "taskScript": "Skriptaufgabe",
+    "taskBusinessRule": "Geschäftsregelaufgabe",
+    "taskUser": "Benutzeraufgabe",
+    "task": "Aufgabe",
+    "flow": "Sequenzfluss"
+  },
+  "presetFilters": {
+    "isManuallyStartable": "Manuell startbar",
+    "activeHasNoneStartEvent": "Aktiv mit keinem Start-Ereignis",
+    "active": "Aktiv"
+  }
+}

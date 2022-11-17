@@ -1,0 +1,66 @@
+{
+    "labels":{
+        "Create VoipRouter":"Create VoIP Router",
+        "TeamUsers": "Team Users",
+        "User": "User",
+        "Current Number": "The current # is",
+        "phoneIsNotConfigured": "This phone number is not configured yet. Please try again later.",
+        "DefaultAssignment": "Default Assignment",
+        "AdditionalSettings": "Additional Settings",
+        "VoicemailSettings": "Voicemail",
+        "noAvailableAgent": "There is no agent available. Please leave a message after the beep.",
+        "applicationError": "An application error has occured. Please call back later.",
+        "forbiddenExternalCalls": "External calls for your user are not permitted. Contact your administrator to enable this possibility.",
+        "calls": "Calls",
+        "voipMessages": "Messages"
+    },
+    "fields":{
+        "type":"Type",
+        "externalId": "External ID",
+        "status":"Status",
+        "team":"Assigned Team",
+        "connector":"Connector",
+        "smsAssignTo": "For SMS",
+        "mmsAssignTo": "For MMS",
+        "callAssignTo": "For Missed Call",
+        "voice":"Voice",
+        "sms":"SMS",
+        "mms":"MMS",
+        "voicemailGreetingText": "Voicemail Greeting Text",
+        "voicemailGreetingFile": "Voicemail Greeting Audio",
+        "greetingAtCallStart": "Greeting at the beginning of the call",
+        "greetingFile": "Greeting Audio",
+        "greetingText": "Greeting Text",
+        "voicemailNotifications": "Voicemail Notifications",
+        "voicemail": "Voicemail",
+        "farewell": "Farewell at the end of the call",
+        "farewellFile": "Farewell Audio",
+        "farewellText": "Farewell Text"
+    },
+    "tooltips": {
+        "voicemailGreetingText": "When no agent is available the call will be forwarded to the voicemail. This text will be played for the caller before he leaves a message. The field is ignored when Voicemail Greeting Audio file is uploaded.",
+        "voicemailGreetingFile": "When no agent is available the call will be forwarded to the voicemail. This audio will be played for the caller before he leaves a message.",
+        "greetingFile": "This audio will be played for the caller at the beginning of the call.",
+        "greetingText": "This text will be played for the caller at the beginning of the call. The field is ignored when Greeting Audio file is uploaded.",
+        "voicemailNotifications": "Types of notification for a new voicemail message.",
+        "farewellFile": "This audio will be played for the caller at the ending of the call.",
+        "farewellText": "This text will be played for the caller at the ending of the call. The field is ignored when Farewell Audio file is uploaded."
+    },
+    "options": {
+        "status": {
+          "Active": "Active",
+          "Inactive":"Inactive"
+        }
+    },
+    "actions": {
+        "inQueue": "Queue",
+        "incoming": "Incoming",
+        "outgoing":"Outgoing",
+        "sms": "SMS",
+        "mms": "MMS"
+    },
+    "links":{
+        "calls": "Calls",
+        "voipMessages": "Messages"
+    }
+}

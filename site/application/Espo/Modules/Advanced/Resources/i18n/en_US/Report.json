@@ -1,0 +1,206 @@
+{
+    "labels": {
+        "Create Report": "Create Report",
+        "Run": "Run",
+        "Total": "Total",
+        "Group Total": "Group Total",
+        "-Empty-": "-Empty-",
+        "Parameters": "Parameters",
+        "Filters": "Filters",
+        "Chart": "Chart",
+        "List Report": "List Report",
+        "Grid Report": "Grid Report",
+        "days": "days",
+        "never": "never",
+        "Get Csv": "Get Csv",
+        "EmailSending": "Email Sending",
+        "View Report": "View Report",
+        "Report": "Report",
+        "AND": "AND",
+        "OR": "OR",
+        "NOT": "NOT IN",
+        "IN": "IN",
+        "Complex expression": "Complex expression",
+        "Having": "Having",
+        "Add AND group": "Add AND group",
+        "Add OR group": "Add OR group",
+        "Add NOT group": "Add NOT group",
+        "Add IN group": "Add IN group",
+        "Add Having group": "Add Having group",
+        "Add Complex expression": "Add Complex expression",
+        "Columns": "Columns",
+        "Send Email": "Send Email",
+        "Results View": "Results View",
+        "Create Joint Grid Report": "Create Joint Grid Report"
+    },
+    "fields": {
+        "type": "Type",
+        "entityType": "Entity Type",
+        "description": "Description",
+        "groupBy": "Group by",
+        "columns": "Columns",
+        "orderBy": "Order by",
+        "filters": "Filters",
+        "runtimeFilters": "Runtime Filters",
+        "chartType": "Chart Type",
+        "emailSendingInterval": "Interval",
+        "emailSendingTime": "Time",
+        "emailSendingUsers": "Users",
+        "emailSendingSettingDay": "Day",
+        "emailSendingSettingMonth": "Month",
+        "emailSendingSettingWeekdays": "Days",
+        "emailSendingDoNotSendEmptyReport": "Don't send if report is empty",
+        "chartColorList": "Colors",
+        "chartColor": "Color",
+        "chartOneColumns": "Chart Columns",
+        "chartOneY2Columns": "Chart Secondary Axis Columns",
+        "orderByList": "List Order",
+        "column": "Column",
+        "exportFormat": "Format",
+        "category": "Category",
+        "applyAcl": "Apply ACL",
+        "portals": "Portals",
+        "joinedReports": "Sub-Reports",
+        "joinedReportLabel": "Sub-Report Label"
+    },
+    "tooltips": {
+        "emailSendingUsers": "Users report result will be sent to",
+        "chartColorList": "Custom colors for specific groups.",
+        "applyAcl": "Report results will depend on the user's access.",
+        "groupBy": "Data will be aggregated by one or two groups. If empty, then data will not be aggregated, only totals will be displayed.\n\n[Complex expressions](https://www.espocrm.com/documentation/user-guide/complex-expressions/) can be used.",
+        "columns": "What data to display.",
+        "runtimeFilters": "Additional filters that will be available on the report view.",
+        "portals": "Report will be available only in specified portals."
+    },
+    "functions": {
+        "COUNT": "Count",
+        "SUM": "Sum",
+        "AVG": "Avg",
+        "MIN": "Min",
+        "MAX": "Max",
+        "YEAR": "Year",
+        "QUARTER": "Quarter",
+        "MONTH": "Month",
+        "DAY": "Day",
+        "WEEK": "Week",
+        "YEAR_FISCAL": "Fiscal Year",
+        "QUARTER_FISCAL": "Fiscal Quarter"
+    },
+    "orders": {
+        "ASC": "ASC",
+        "DESC": "DESC",
+        "LIST": "LIST"
+    },
+    "options": {
+        "dashletDisplayType": {
+            "": "",
+            "Chart": "Chart",
+            "List": "List",
+            "Chart-Total": "Chart & Total",
+            "Total": "Total",
+            "Table": "Table"
+        },
+        "chartType": {
+            "BarHorizontal": "Bar (horizontal)",
+            "BarVertical": "Bar (vertical)",
+            "BarGroupedHorizontal": "Bar Grouped (horizontal)",
+            "BarGroupedVertical": "Bar Grouped (vertical)",
+            "Pie": "Pie",
+            "Line": "Line"
+        },
+        "emailSendingInterval": {
+            "": "None",
+            "Daily": "Daily",
+            "Weekly": "Weekly",
+            "Monthly": "Monthly",
+            "Yearly": "Yearly"
+        },
+        "emailSendingSettingDay": {
+            "32": "Last day of month"
+        },
+        "type": {
+            "Grid": "Grid",
+            "List": "List",
+            "JointGrid": "Joint Grid"
+        },
+        "function": {
+            "": "No Function",
+            "custom": "Expression",
+            "customWithOperator": "Expression w/ Operator",
+            "DATE_NUMBER": "DATE",
+            "MONTH_NUMBER": "MONTH",
+            "YEAR_NUMBER": "YEAR",
+            "QUARTER_NUMBER": "QUARTER",
+            "DAYOFWEEK_NUMBER": "DAYOFWEEK",
+            "HOUR_NUMBER": "HOUR",
+            "MINUTE_NUMBER": "MINUTE",
+            "LOWER": "LOWER",
+            "UPPER": "UPPER",
+            "TRIM": "TRIM",
+            "LENGTH": "LENGTH",
+            "WEEK_NUMBER_0": "WEEK (Sunday)",
+            "WEEK_NUMBER_1": "WEEK (Monday)",
+            "COUNT": "COUNT",
+            "SUM": "SUM",
+            "AVG": "AVG",
+            "MAX": "MAX",
+            "MIN": "MIN"
+        },
+        "operator": {
+            "equals": "Equals",
+            "notEquals": "Not Equals",
+            "greaterThan": "Greater Than",
+            "lessThan": "Less Than",
+            "greaterThanOrEquals": "Greater Than or Equals",
+            "lessThanOrEquals": "Less Than or Equals",
+            "in": "In",
+            "notIn": "Not In",
+            "isTrue": "Is True",
+            "isFalse": "Is False",
+            "isNull": "Is Null",
+            "isNotNull": "Is Not Null",
+            "like": "Like"
+        },
+        "exportFormat": {
+            "csv": "CSV",
+            "xlsx": "XLSX (Excel)"
+        },
+        "layoutAlign": {
+            "left": "Left",
+            "right": "Right"
+        }
+    },
+    "messages": {
+        "validateMaxCount": "Count should not be greater than {maxCount}",
+        "gridReportDescription": "Group by one or two columns and see summations. Can be displayed as a chart.",
+        "listReportDescription": "Simple list of records which meet filters criteria."
+    },
+    "presetFilters": {
+        "list": "List",
+        "grid": "Grid",
+        "listTargets": "List (Targets)",
+        "listAccounts": "List (Accounts)",
+        "listContacts": "List (Contacts)",
+        "listLeads": "List (Leads)",
+        "listUsers": "List (Users)"
+    },
+    "errorMessages": {
+        "error": "Error",
+        "noChart": "No chart selected for the report.",
+        "selectReport": "Select a report in the dashlet options."
+    },
+    "filtersGroupTypes": {
+        "or": "OR",
+        "and": "AND",
+        "not": "NOT IN",
+        "subQueryIn": "IN",
+        "having": "Having"
+    },
+    "layoutFields": {
+        "link": "Link",
+        "width": "Width",
+        "notSortable": "Not Sortable",
+        "exportOnly": "Export Only",
+        "align": "Align"
+    }
+}

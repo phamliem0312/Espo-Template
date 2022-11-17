@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "VoIP": "VoIP Settings",
+        "voipRouter": "VoIP Routing"
+    },
+    "descriptions": {
+        "VoIP": "Configure VoIP integration settings.",
+        "voipRouter": "Configure routing of phone numbers."
+    },
+    "messages": {
+         "newVoIPIntegrationVersionIsAvailable": "New version of VoIP Integration extension {latestVersion} is available. It can be downloaded on the customer portal."
+    }
+}

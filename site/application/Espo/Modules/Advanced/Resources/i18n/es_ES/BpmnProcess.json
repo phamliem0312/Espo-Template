@@ -1,0 +1,48 @@
+{
+  "labels": {
+    "Create BpmnProcess": "Iniciar proceso",
+    "Stop Process": "Detener el proceso",
+    "User Tasks": "Tareas de usuario",
+    "Flowcharts": "Diagramas de flujo",
+    "Interrupt": "Interrumpir",
+    "Reject": "Rechazar",
+    "Start flow from here": "Comenzar flujo desde aquí"
+  },
+  "fields": {
+    "status": "Estado",
+    "targetType": "Tipo de entidad objetivo",
+    "target": "Objetivo",
+    "createdEntitiesData": "Datos de entidades creadas",
+    "flowchartData": "Datos del diagrama de flujo",
+    "flowchart": "Diagrama de flujo",
+    "flowchartVisualization": "Diagrama de flujo (visualización)",
+    "flowchartElementsDataHash": "Elementos de diagrama de flujo",
+    "endedAt": "Finalizado en",
+    "startElementId": "Iniciar elemento",
+    "parentProcess": "Proceso principal",
+    "parentProcessFlowNode": "Nodo de flujo del proceso principal"
+  },
+  "links": {
+    "flowchart": "Diagrama de flujo",
+    "target": "Objetivo",
+    "flowNodes": "Registro de flujo",
+    "userTasks": "Procesar tareas de usuario",
+    "childProcesses": "Procesos secundarios",
+    "parentProcess": "Proceso principal",
+    "parentProcessFlowNode": "Nodo de flujo del proceso principal"
+  },
+  "options": {
+    "status": {
+      "Created": "Creado",
+      "Started": "Empezado",
+      "Ended": "Finalizado",
+      "Paused": "Pausado",
+      "Stopped": "Detenido",
+      "Interrupted": "Interrumpido"
+    }
+  },
+  "presetFilters": {
+    "actual": "Real",
+    "ended": "Finalizado"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "VoIP": "VoIP Ayarları",
+    "voipRouter": "VoIP Yönlendirme"
+  },
+  "descriptions": {
+    "VoIP": "VoIP entegrasyon ayarlarını yapılandırın.",
+    "voipRouter": "Telefon numaralarının yönlendirmesini yapılandırın."
+  },
+  "messages": {
+    "newVoIPIntegrationVersionIsAvailable": "VoIP Entegrasyon uzantısının yeni sürümü {latestVersion} mevcut. Müşteri portalından indirilebilir."
+  }
+}

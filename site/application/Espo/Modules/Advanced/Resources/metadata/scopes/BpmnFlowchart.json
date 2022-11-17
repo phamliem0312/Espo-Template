@@ -1,0 +1,12 @@
+{
+    "entity": true,
+    "layouts": false,
+    "tab": true,
+    "acl": true,
+    "aclActionList": ["read"],
+    "aclPortal": false,
+    "module": "Advanced",
+    "customizable": false,
+    "importable": true,
+    "notifications": false
+}

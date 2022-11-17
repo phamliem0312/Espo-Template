@@ -1,0 +1,6 @@
+[
+    {"name":"name", "link":true, "notSortable": true},
+    {"name":"parent", "notSortable": true},
+    {"name":"status", "notSortable": true},
+    {"name":"dateSent", "notSortable": true}
+]

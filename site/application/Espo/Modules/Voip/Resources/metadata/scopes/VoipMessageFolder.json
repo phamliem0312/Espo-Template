@@ -1,0 +1,11 @@
+{
+    "entity": false,
+    "layouts": false,
+    "tab": false,
+    "acl": false,
+    "module": "Voip",
+    "stream": false,
+    "customizable": false,
+    "notifications": false,
+    "importable": false
+}

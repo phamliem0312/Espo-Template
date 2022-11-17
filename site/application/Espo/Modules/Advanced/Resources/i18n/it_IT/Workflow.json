@@ -1,0 +1,162 @@
+{
+  "fields": {
+    "Name": "Nome",
+    "entityType": "Entità di destinazione",
+    "type": "Tipo di trigger",
+    "isActive": "Attivo",
+    "description": "Descrizione",
+    "usersToMakeToFollow": "Gli utenti a fare seguire il record",
+    "whatToFollow": "Cosa seguire",
+    "portalOnly": "Solo portale",
+    "portal": "Portale",
+    "targetReport": "Report di destinazione",
+    "scheduling": "Programmazione",
+    "methodName": "Metodo di servizio",
+    "assignmentRule": "Regola di assegnazione",
+    "targetTeam": "Team di destinazione",
+    "targetUserPosition": "Posizione utente di destinazione",
+    "listReport": "Report elenco",
+    "linkList": "Collegamento con l'entità di destinazione tramite relazioni",
+    "linkListShort": "Link",
+    "target": "Obiettivo",
+    "whoFollow": "Che fanno seguire"
+  },
+  "links": {
+    "portal": "Portale",
+    "targetReport": "Report di destinazione"
+  },
+  "tooltips": {
+    "portalOnly": "Se selezionato, il flusso di lavoro verrà attivato solo nel portale.",
+    "portal": "Portale specifico in cui verrà attivato il flusso di lavoro. Lasciare vuoto se avete bisogno di lavorare in qualsiasi portale.",
+    "scheduling": "Notazione crontab. Definisce la frequenza di esecuzione delle regole del flusso di lavoro. UTC TimeZone.\n\n`*/5 * * * *`-ogni 5 minuti `0 */2 * * *`-ogni 2 ore `30 1 * * *`-a 01:30 una volta al giorno `0 0 1 * *`-il primo giorno del mese"
+  },
+  "labels": {
+    "Create Workflow": "Crea regola",
+    "General": "Generale",
+    "Conditions": "Condizioni",
+    "Actions": "Azioni",
+    "All": "Tutti",
+    "Any": "Qualsiasi",
+    "Email Address": "Indirizzo Email",
+    "Email Template": "Modello di e-mail",
+    "From": "Da",
+    "To": "A",
+    "immediately": "Immediatamente",
+    "Reply-To": "Rispondi a",
+    "later": "Dopo",
+    "today": "adesso",
+    "plus": "più",
+    "minus": "Meno",
+    "days": "giorni",
+    "hours": "ore",
+    "months": "mesi",
+    "minutes": "minuti",
+    "Entity": "Entità",
+    "Add Field": "Aggiungi campo",
+    "equals": "uguale a",
+    "wasEqual": "era uguale",
+    "notEquals": "diverso da",
+    "wasNotEqual": "non era uguale",
+    "changed": "Cambiato",
+    "notChanged": "non modificato",
+    "notEmpty": "non vuoto",
+    "isEmpty": "vuoto",
+    "value": "valore",
+    "field": "campo",
+    "true": "vero",
+    "false": "falso",
+    "greaterThan": "maggiore di",
+    "lessThan": "minore di",
+    "greaterThanOrEquals": "maggiore o uguale a",
+    "lessThanOrEquals": "minore o uguale a",
+    "between": "tra",
+    "on": "attivo",
+    "before": "Prima Paginazione",
+    "after": "Dopo ",
+    "beforeToday": "prima di oggi",
+    "afterToday": "Dopo oggi",
+    "recipient": "Destinatario",
+    "has": "ha",
+    "notHas": "non ha",
+    "messageTemplate": "Modello di messaggio",
+    "users": "Utenti",
+    "Target Entity": "Entità di destinazione",
+    "Workflow": "Flusso di lavoro",
+    "Workflows Log": "Log flussi di lavoro",
+    "methodName": "Metodo di servizio",
+    "additionalParameters": "Parametri aggiuntivi (formato JSON)",
+    "doNotStore": "Non conservare e-mail inviate",
+    "Related": "Correlati",
+    "Entity Type": "Tipo di entità",
+    "Workflow Rule": "Regola del flusso di lavoro",
+    "Add Condition": "Aggiungi condizione",
+    "Add Action": "Aggiungi Azione",
+    "Created": "Creato",
+    "Field": "Campo",
+    "Process": "Processo"
+  },
+  "emailAddressOptions": {
+    "": "Nessuno",
+    "currentUser": "Utente Attuale",
+    "specifiedEmailAddress": "Indirizzo email specificato",
+    "assignedUser": "utente assegnato.",
+    "targetEntity": "Record di destinazione",
+    "specifiedUsers": "Utenti specificati",
+    "specifiedContacts": "Contatti specificati",
+    "teamUsers": "Utenti di team correlati al record di destinazione",
+    "followers": "Seguaci del record di destinazione",
+    "followersExcludingAssignedUser": "Followers escluso utente assegnato",
+    "specifiedTeams": "Utenti di team specificati",
+    "system": "Sistema",
+    "fromOrReplyTo": "Da/Rispondi A-indirizzo"
+  },
+  "options": {
+    "type": {
+      "afterRecordSaved": "Dopo aver salvato il record",
+      "afterRecordCreated": "Dopo aver creato il record",
+      "scheduled": "Programmato",
+      "sequential": "Sequenziale"
+    },
+    "subjectType": {
+      "value": "valore",
+      "field": "campo",
+      "today": "oggi/ora"
+    },
+    "assignmentRule": {
+      "Round-Robin": "Round Robin",
+      "Least-Busy": "Meno occupato"
+    }
+  },
+  "actionTypes": {
+    "sendEmail": "Invia Email",
+    "createEntity": "Crea record",
+    "createRelatedEntity": "Crea record correlati",
+    "updateEntity": "Aggiorna record di destinazione",
+    "updateRelatedEntity": "Aggiorna record correlati",
+    "relateWithEntity": "Collegamento con un altro record",
+    "unrelateFromEntity": "Scollega da un altro record",
+    "makeFollowed": "Fare seguito",
+    "createNotification": "Crea notifica",
+    "triggerWorkflow": "Attivare un'altra regola del flusso di lavoro",
+    "runService": "Esegui azione di servizio",
+    "applyAssignmentRule": "Applica regola di assegnazione",
+    "updateCreatedEntity": "Aggiornamento record creato",
+    "updateProcessEntity": "Aggiorna processo record"
+  },
+  "texts": {
+    "allMustBeMet": "Tutti devono essere soddisfatte",
+    "atLeastOneMustBeMet": "Almeno uno deve essere soddisfatta",
+    "formulaInfo": "Condizioni di qualsiasi complessità in linguaggio espo-formula"
+  },
+  "messages": {
+    "loopNotice": "Prestare attenzione a un possibile ciclo attraverso due o più regole del flusso di lavoro contemporaneamente.",
+    "messageTemplateHelpText": "Variabili disponibili: {entità}-record di destinazione, {utente}-utente corrente."
+  },
+  "serviceActions": {
+    "sendEventInvitations": "Invia inviti",
+    "addQuoteItemList": "Aggiungere elementi di citazione"
+  },
+    "serviceActionsHelp": {
+        "addQuoteItemList": "Example: \n\n```{\n\n  \"itemList\": [\n     {\n      \"quantity\": 1, \"procuctId\": \"productId\", \"name\": \"Product Name\", \"listPrice\": 100, \"unitPrice\": 100\n     }\n  ]\n}```"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true
+        },
+        "lower": {
+            "type": "varchar",
+            "required": true,
+            "index": true
+        },
+        "invalid": {
+            "type": "bool"
+        },
+        "optOut": {
+            "type": "bool"
+        },
+        "primary": {
+            "type": "bool",
+            "notStorable": true
+        }
+    },
+    "links": {
+    },
+    "collection": {
+        "orderBy": "name",
+        "order": "asc"
+    }
+}

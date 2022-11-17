@@ -1,0 +1,9 @@
+{
+  "fields": {
+    "report": "Отчёт",
+    "column": "Суммирующая колонка",
+    "displayOnlyCount": "Отображать только итоги",
+    "displayTotal": "Отображать итоги",
+    "useSiMultiplier": "Множитель системы СИ"
+  }
+}

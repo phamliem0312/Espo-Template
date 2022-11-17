@@ -1,0 +1,108 @@
+[
+    {
+        "name": "marcelog/pami",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/marcelog/PAMI.git",
+            "reference": "41bcb7d9a2a168543de17b60c0795f8b8fe3c805"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/marcelog/PAMI/zipball/41bcb7d9a2a168543de17b60c0795f8b8fe3c805",
+            "reference": "41bcb7d9a2a168543de17b60c0795f8b8fe3c805",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "psr/log": ">= 1.0.0"
+        },
+        "require-dev": {
+            "codeclimate/php-test-reporter": "dev-master",
+            "evert/phpdoc-md": "~0.1.1",
+            "marcelog/pagi": "2.*",
+            "monolog/monolog": "1.*",
+            "phing/phing": "2.*",
+            "phpdocumentor/phpdocumentor": "2.*",
+            "phpmd/phpmd": "2.*",
+            "phpunit/phpunit": "4.*",
+            "satooshi/php-coveralls": "0.*",
+            "sebastian/phpcpd": "*",
+            "squizlabs/php_codesniffer": "2.*"
+        },
+        "time": "2016-01-09T17:13:33+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PAMI\\": "src/PAMI"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Apache2"
+        ],
+        "authors": [
+            {
+                "name": "Marcelo Gornstein",
+                "email": "marcelog@gmail.com",
+                "homepage": "http://marcelog.github.com/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Asterisk Manager Interface (AMI) client for PHP, event driven, object oriented",
+        "homepage": "http://marcelog.github.com/PAMI",
+        "keywords": [
+            "action",
+            "ami",
+            "asterisk",
+            "client",
+            "event",
+            "manager",
+            "monitor",
+            "telephony",
+            "voip"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+            "shasum": ""
+        },
+        "time": "2012-12-21T11:40:51+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Psr\\Log\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    }
+]

@@ -1,0 +1,8 @@
+{
+    "VoipEventHelper": "\\Espo\\Modules\\Voip\\Loaders\\VoipEventHelper",
+    "VoipHelper": "\\Espo\\Modules\\Voip\\Loaders\\VoipHelper",
+    "VoipConnectionManager": "\\Espo\\Modules\\Voip\\Loaders\\VoipConnectionManager",
+    "VoipRecordingManager": "\\Espo\\Modules\\Voip\\Loaders\\VoipRecordingManager",
+    "VoipManager": "\\Espo\\Modules\\Voip\\Loaders\\VoipManager",
+    "VoipPhoneNumberUtil": "\\Espo\\Modules\\Voip\\Loaders\\VoipPhoneNumberUtil"
+}

@@ -1,0 +1,65 @@
+{
+  "labels": {
+    "Create VoipMessage": "Créer un message",
+    "Calling": "Envoi en cours...",
+    "markAsRead": "Marquer comme lu",
+    "markAsNotRead": "Marquer comme non lu",
+    "Compose Message": "Rédiger un message",
+    "Save Draft": "Enregistrer le brouillon",
+    "Send": "Envoyer",
+    "Reply": "Répondre",
+    "Forward": "Faire suivre",
+    "Download": "Télécharger"
+  },
+  "fields": {
+    "externalId": "ID externe",
+    "status": "État",
+    "from": "De",
+    "to": "À",
+    "body": "Corps",
+    "numMedia": "Numéro de média",
+    "numSegments": "Nombre de segments",
+    "assignedUser": "Utilisateur affecté",
+    "connector": "Connecteur",
+    "createdAt": "Créé le",
+    "modifiedAt": "Modifié le",
+    "attachments": "Pièces jointes",
+    "dateSent": "Date d'envoi",
+    "voipRouter": "Routeur VoIP",
+    "replies": "Réponses",
+    "replied": "Répondu",
+    "sentBy": "Envoyé par"
+  },
+  "options": {
+    "direction": {
+      "incoming": "Entrant",
+      "outgoing": "Sortant"
+    },
+    "status": {
+      "draft": "Brouillon",
+      "accepted": "Accepté",
+      "queued": "En file d'attente",
+      "sending": "Envoi en cours",
+      "sent": "Envoyé",
+      "receiving": "Réception",
+      "received": "Reçu",
+      "delivered": "Remis",
+      "undelivered": "Non remis",
+      "failed": "Échoué"
+    }
+  },
+  "messages": {
+    "messageSent": "Le message a été envoyé",
+    "savedAsDraft": "Enregistré comme brouillon"
+  },
+  "presetFilters": {
+    "sent": "Envoyé",
+    "inbox": "Boîte de réception",
+    "drafts": "Brouillons",
+    "trash": "Corbeille"
+  },
+  "massActions": {
+    "markAsRead": "Marquer comme lu",
+    "markAsNotRead": "Marquer comme non lu"
+  }
+}

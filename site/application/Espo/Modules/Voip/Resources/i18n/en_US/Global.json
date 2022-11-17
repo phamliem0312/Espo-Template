@@ -1,0 +1,21 @@
+{
+    "scopeNames":{
+        "VoipEvent":"VoIP Event",
+        "VoipMessage":"Message",
+        "VoipRouter":"VoIP Router"
+    },
+    "scopeNamesPlural":{
+        "VoipEvent":"VoIP Events",
+        "VoipMessage":"Messages",
+        "VoipRouter":"VoIP Routers"
+    },
+    "streamMessages":{
+        "shortStatus": "{field} of {entityType} {entity} has been changed"
+    },
+    "dashlets":{
+        "VoipSettings": "VoIP Settings"
+    },
+    "labels": {
+        "Schedule VoipMessage": "Compose Message"
+    }
+}

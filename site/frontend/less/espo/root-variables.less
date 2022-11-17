@@ -1,0 +1,272 @@
+:root {
+    --body-bg: @body-bg-value;
+    --panel-bg: @panel-bg-value;
+    --main-gray: @main-gray-value;
+
+    --white-color: @white-color-value;
+
+    --white-color-3: darken(@white-color-value, 3%);
+    --white-color-5: darken(@white-color-value, 5%);
+
+    --gray-base: @gray-base-value;
+    --gray-soft: @gray-soft-value;
+    --gray-dark: @gray-dark-value;
+    --gray-light: @gray-light-value;
+    --gray-lighter: @gray-lighter-value;
+    --gray: @gray-value;
+
+    --gray-light-5: darken(@gray-light-value, 5%);
+    --gray-light-7: darken(@gray-light-value, 7%);
+    --gray-light-10: darken(@gray-light-value, 10%);
+    --gray-light-12: darken(@gray-light-value, 12%);
+    --gray-light-17: darken(@gray-light-value, 17%);
+    --gray-light-25: darken(@gray-light-value, 25%);
+    --gray-light-40: darken(@gray-light-value, 40%);
+
+    --gray-dark-5: darken(@gray-dark-value, 5%);
+    --gray-dark-7: darken(@gray-dark-value, 7%);
+    --gray-dark-10: darken(@gray-dark-value, 10%);
+    --gray-dark-12: darken(@gray-dark-value, 12%);
+    --gray-dark-17: darken(@gray-dark-value, 17%);
+    --gray-dark-25: darken(@gray-dark-value, 25%);
+    --gray-dark-40: darken(@gray-dark-value, 40%);
+
+    --gray-dark-25l: lighten(@gray-dark-value, 25%);
+
+    --gray-lighter-5: darken(@gray-lighter-value, 5%);
+    --gray-lighter-7: darken(@gray-lighter-value, 7%);
+    --gray-lighter-10: darken(@gray-lighter-value, 10%);
+    --gray-lighter-12: darken(@gray-lighter-value, 12%);
+    --gray-lighter-17: darken(@gray-lighter-value, 17%);
+    --gray-lighter-25: darken(@gray-lighter-value, 25%);
+    --gray-lighter-40: darken(@gray-lighter-value, 40%);
+
+    --gray-lighter-orange-mix: @gray-lighter-orange-mix-value;
+
+    --gray-lighter-orange-mix-5: darken(@gray-lighter-orange-mix-value, 5%);
+    --gray-lighter-orange-mix-7: darken(@gray-lighter-orange-mix-value, 7%);
+    --gray-lighter-orange-mix-10: darken(@gray-lighter-orange-mix-value, 10%);
+    --gray-lighter-orange-mix-12: darken(@gray-lighter-orange-mix-value, 12%);
+    --gray-lighter-orange-mix-17: darken(@gray-lighter-orange-mix-value, 17%);
+    --gray-lighter-orange-mix-25: darken(@gray-lighter-orange-mix-value, 25%);
+    --gray-lighter-orange-mix-40: darken(@gray-lighter-orange-mix-value, 40%);
+
+    --brand-primary: @brand-primary-value;
+    --brand-danger: @brand-danger-value;
+    --brand-info: @brand-info-value;
+    --brand-success: @brand-success-value;
+    --brand-warning: @brand-warning-value;
+
+    --main-gray-5: darken(@main-gray-value, 5%);
+    --main-gray-7: darken(@main-gray-value, 7%);
+    --main-gray-10: darken(@main-gray-value, 10%);
+    --main-gray-12: darken(@main-gray-value, 12%);
+    --main-gray-17: darken(@main-gray-value, 17%);
+    --main-gray-25: darken(@main-gray-value, 25%);
+    --main-gray-40: darken(@main-gray-value, 40%);
+    --main-gray-lighten-40: lighten(@main-gray-value, 40%);
+
+    --brand-primary-text: @brand-primary-text-value;
+
+    --brand-primary-5: darken(@brand-primary-value, 5%);
+    --brand-primary-10: darken(@brand-primary-value, 10%);
+    --brand-primary-12: darken(@brand-primary-value, 12%);
+    --brand-primary-15: darken(@brand-primary-value, 15%);
+    --brand-primary-17: darken(@brand-primary-value, 17%);
+    --brand-primary-25: darken(@brand-primary-value, 25%);
+
+    --brand-primary-lighten-10: lighten(@brand-primary-value, 10%);
+    --brand-primary-lighten-30: lighten(@brand-primary-value, 30%);
+    --brand-primary-lighten-50: lighten(@brand-primary-value, 50%);
+
+    --state-primary-text: @state-primary-text-value;
+
+    --brand-danger-5: darken(@brand-danger-value, 5%);
+    --brand-danger-10: darken(@brand-danger-value, 10%);
+    --brand-danger-12: darken(@brand-danger-value, 12%);
+    --brand-danger-15: darken(@brand-danger-value, 15%);
+    --brand-danger-17: darken(@brand-danger-value, 17%);
+    --brand-danger-25: darken(@brand-danger-value, 25%);
+    --brand-danger-lighten-20: lighten(@brand-danger-value, 20%);
+
+    --state-danger-bg: @state-danger-bg-value;
+    --state-danger-text: @state-danger-text-value;
+
+    --state-danger-text-10: darken(@state-danger-text-value, 10%);
+
+    --state-danger-bg-5: darken(@state-danger-bg-value, 5%);
+    --state-danger-bg-10: darken(@state-danger-bg-value, 10%);
+    --state-danger-text-10: darken(@state-danger-text-value, 10%);
+    --state-danger-text-10l: lighten(darken(@state-danger-text-value, 10%), 20);
+
+    --brand-info-5: darken(@brand-info-value, 5%);
+    --brand-info-10: darken(@brand-info-value, 10%);
+    --brand-info-12: darken(@brand-info-value, 12%);
+    --brand-info-15: darken(@brand-info-value, 15%);
+    --brand-info-17: darken(@brand-info-value, 17%);
+    --brand-info-25: darken(@brand-info-value, 25%);
+
+    --state-info-bg: @state-info-bg-value;
+    --state-info-bg-5: darken(@state-info-bg-value, 5%);
+    --state-info-bg-10: darken(@state-info-bg-value, 10%);
+    --state-info-bg-12: darken(@state-info-bg-value, 12%);
+    --state-info-bg-17: darken(@state-info-bg-value, 17%);
+    --state-info-bg-25: darken(@state-info-bg-value, 25%);
+
+    --state-info-bg-mix: @state-info-bg-mix-value;
+    --state-info-bg-mix-5: darken(@state-info-bg-mix-value, 5%);
+    --state-info-bg-mix-10: darken(@state-info-bg-mix-value, 10%);
+    --state-info-bg-mix-12: darken(@state-info-bg-mix-value, 12%);
+    --state-info-bg-mix-17: darken(@state-info-bg-mix-value, 17%);
+    --state-info-bg-mix-25: darken(@state-info-bg-mix-value, 25%);
+
+    --brand-success-5: darken(@brand-success-value, 5%);
+    --brand-success-10: darken(@brand-success-value, 10%);
+    --brand-success-12: darken(@brand-success-value, 12%);
+    --brand-success-15: darken(@brand-success-value, 15%);
+    --brand-success-17: darken(@brand-success-value, 17%);
+    --brand-success-25: darken(@brand-success-value, 25%);
+
+    --state-success-text: @state-success-text-value;
+    --state-success-bg: @state-success-bg-value;
+
+    --state-success-bg-5: darken(@state-success-bg-value, 5%);
+    --state-success-bg-10: darken(@state-success-bg-value, 10%);
+    --state-success-text-10: darken(@state-success-text-value, 10%);
+    --state-success-text-10l: lighten(darken(@state-success-text-value, 10%), 20);
+
+    --brand-warning-5: darken(@brand-warning-value, 5%);
+    --brand-warning-10: darken(@brand-warning-value, 10%);
+    --brand-warning-12: darken(@brand-warning-value, 12%);
+    --brand-warning-15: darken(@brand-warning-value, 15%);
+    --brand-warning-17: darken(@brand-warning-value, 17%);
+    --brand-warning-25: darken(@brand-warning-value, 25%);
+
+    --state-warning-bg: @state-warning-bg-value;
+    --state-warning-text: @state-warning-text-value;
+
+    --state-warning-text-10: darken(@state-warning-text-value, 10%);
+    --state-warning-text-10l: lighten(darken(@state-warning-text-value, 10%), 20);
+
+    --state-warning-bg-5: darken(@state-warning-bg-value, 5%);
+    --state-warning-bg-10: darken(@state-warning-bg-value, 10%);
+
+    --btn-default-bg: @btn-default-bg-value;
+    --btn-default-border: @btn-default-border-value;
+    --btn-default-color: @btn-default-color-value;
+
+    --btn-default-bg-5: darken(@btn-default-bg-value, 5%);
+    --btn-default-bg-12: darken(@btn-default-bg-value, 12%);
+    --btn-default-bg-17: darken(@btn-default-bg-value, 17%);
+    --btn-default-bg-25: darken(@btn-default-bg-value, 25%);
+
+    --btn-text-color: @btn-text-color-value;
+
+    --navbar-bg: @navbar-bg-value;
+    --navbar-link-color: @navbar-link-color-value;
+    --navbar-link-hover-color: @navbar-link-hover-color-value;
+    --navbar-link-hover-bg: @navbar-link-hover-bg-value;
+    --navbar-link-active-bg: darken(@navbar-bg-value, 10%);
+
+    --navbar-inverse-color: @navbar-inverse-color-value;
+    --navbar-inverse-bg: @navbar-inverse-bg-value;
+    --navbar-inverse-link-color: @navbar-inverse-link-color-value;
+    --navbar-inverse-link-active-bg: @navbar-inverse-link-active-bg-value;
+    --navbar-inverse-border: @navbar-inverse-border-value;
+    --navbar-inverse-toggle-hover-bg: darken(@navbar-inverse-bg-value, 10%);
+    --navbar-inverse-bg-7: darken(@navbar-inverse-bg-value, 7%);
+    --navbar-inverse-link-hover-color: @navbar-inverse-link-hover-color-value;
+    --navbar-inverse-link-hover-bg: @navbar-inverse-link-hover-bg-value;
+    --navbar-inverse-link-disabled-color: @navbar-inverse-link-disabled-color-value;
+    --navbar-inverse-link-disabled-bg: @navbar-inverse-link-disabled-bg-value;
+
+    --input-color: @input-color-value;
+    --input-bg: @input-bg-value;
+    --input-border: @input-border-value;
+    --input-border-focus: @input-border-focus-value;
+    --input-border-focus-rgba: rgba(
+        red(@input-border-focus-value),
+        green(@input-border-focus-value),
+        blue(@input-border-focus-value),
+        .6
+    );
+    --input-bg-disabled: @input-bg-disabled-value;
+
+    --modal-backdrop-bg: @modal-backdrop-bg-value;
+    --modal-header-border-color: @modal-header-border-color-value;
+    --modal-header-bg: @modal-header-bg-value;
+    --modal-footer-bg: @modal-footer-bg-value;
+    --modal-content-bg: @modal-content-bg-value;
+
+    --text-color: @text-color-value;
+    --text-white-color: @text-white-color-value;
+    --text-muted-color: @text-muted-color-value;
+    --text-gray-color: @text-gray-color-value;
+
+    --link-color: @link-color-value;
+    --link-hover-color: @link-hover-color-value;
+
+    --table-bg: @table-bg-value;
+    --table-bg-accent: @table-bg-accent-value;
+
+    --code-bg: @code-bg-value;
+    --code-border-color: @code-border-color-value;
+    --code-color: @code-color-value;
+
+    --blockquote-border-color: @blockquote-border-color-value;
+
+    --default-heading-bg-color: @default-heading-bg-color-value;
+    --default-border-color: @default-border-color-value;
+
+    --panel-default-border: @panel-default-border-value;
+
+    --panel-default-bg: @panel-default-bg-value;
+    --panel-primary-bg: @panel-primary-bg-value;
+    --panel-success-bg: @panel-success-bg-value;
+    --panel-danger-bg: @panel-danger-bg-value;
+    --panel-warning-bg: @panel-warning-bg-value;
+    --panel-info-bg: @panel-info-bg-value;
+
+    --panel-default-text: @panel-default-text-value;
+    --panel-primary-text: @panel-primary-text-value;
+    --panel-success-text: @panel-success-text-value;
+    --panel-danger-text: @panel-danger-text-value;
+    --panel-warning-text: @panel-warning-text-value;
+    --panel-info-text: @panel-info-text-value;
+
+    --login-panel-heading-bg: @login-panel-heading-bg-value;
+
+    --site-footer-bg: @site-footer-bg-value;
+    --site-footer-color: @site-footer-color-value;
+
+    --popover-bg: @popover-bg-value;
+
+    --dropdown-bg: @dropdown-bg-value;
+    --dropdown-link-color: @dropdown-link-color-value;
+    --dropdown-link-hover-color: @dropdown-link-hover-color-value;
+    --dropdown-link-hover-bg: @dropdown-link-hover-bg-value;
+    --dropdown-border: @dropdown-border-value;
+    --dropdown-divider-bg: @dropdown-divider-bg-value;
+
+    --calendar-today-bg: @calendar-today-bg-value;
+    --calendar-border: @calendar-border-value;
+    --calendar-busy-bg: @calendar-busy-bg-value;
+
+    --select-item-text-color: @select-item-text-color-value;
+    --select-item-bg: @select-item-bg-value;
+    --select-item-active-text-color: @select-item-active-text-color-value;
+    --select-item-active-bg: @select-item-active-bg-value;
+    --select-item-border: @select-item-border-value;
+
+    --label-color: @label-color-value;
+    --label-default-bg: @label-default-bg-value;
+
+    --well-bg: @well-bg-value;
+    --well-border: @well-border-value;
+
+    --scroll-bg: @scroll-bg-value;
+    --scroll-thumb-bg: @scroll-thumb-bg-value;
+
+    --collapsed-modal-bg: @collapsed-modal-bg-value;
+    --collapsed-modal-text-color: @collapsed-modal-text-color-value;
+}

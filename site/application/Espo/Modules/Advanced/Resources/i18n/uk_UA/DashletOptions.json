@@ -1,0 +1,9 @@
+{
+  "fields": {
+    "report": "Звіт",
+    "column": "Колонка суми",
+    "displayOnlyCount": "Показувати лише підсумки",
+    "displayTotal": "Показувати підсумки",
+    "useSiMultiplier": "Префікси системи СІ"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "labels": {
+    "Workflow Manager": "Робочий потік",
+    "Flowcharts": "Блок-схеми",
+    "Processes": "Процеси",
+    "Business Process Management": "Управління бізнес процесами",
+    "Report Filters": "Фільтри звітів",
+    "Report Panels": "Панелі звітів"
+  },
+  "descriptions": {
+    "workflowManager": "Правила робочого потоку.",
+    "bpmnFlowcharts": "Визначення бізнес-процесів.",
+    "bpmnProcesses": "Зразки бізнес-процесів",
+    "reportFilters": "Користувацькі фільтри для виду списку на основі звітів.",
+    "reportPanels": "Панелі детального виду, які показують результати звіту."
+  },
+  "messages": {
+    "newAdvancedPackVersionIsAvailable": "Доступна нова версія Advanced Pack {latestVersion}. Їі можна завантажити на порталі для клієнтів."
+  },
+  "templates": {
+    "reportSendingGrid1": "Звіт-сітка-1",
+    "reportSendingGrid2": "Звіт-сітка-2",
+    "reportSendingList": "Звіт-список"
+  }
+}

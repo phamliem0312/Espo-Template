@@ -1,0 +1,44 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "actionType"
+                }
+            ],
+            [
+                {
+                    "name": "instructions"
+                }
+            ],
+            [
+                {
+                    "name": "target"
+                },
+                {
+                    "name": "process"
+                }
+            ],
+            [
+                {
+                    "name": "resolution"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "resolutionNote"
+                }
+            ]
+        ]
+    }
+]

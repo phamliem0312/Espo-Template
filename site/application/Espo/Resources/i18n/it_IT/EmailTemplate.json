@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "name": "Nome",
+    "status": "Stato",
+    "body": "Corpo",
+    "subject": "Oggetto",
+    "attachments": "Allegato",
+    "category": "Categoria"
+  },
+  "labels": {
+    "Create EmailTemplate": "Crea Modello email",
+    "Available placeholders": "Segnaposto disponibili"
+  },
+  "tooltips": {
+    "oneOff": "Controllare se avete intenzione di utilizzare questo modello una sola volta. Per esempio. per Email Massive."
+  },
+  "presetFilters": {
+    "actual": "Attuale"
+  },
+  "placeholderTexts": {
+    "optOutLink": "Un link di cancellazione dell'iscrizione",
+    "today": "Data odierna",
+    "now": "Data e ora attuali\n\n",
+    "currentYear": "Anno corrente"
+  }
+}

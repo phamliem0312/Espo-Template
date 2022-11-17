@@ -1,0 +1,54 @@
+{
+    "controller": "controllers/record",
+    "dynamicHandler": "advanced:dynamic-handlers/report-filter",
+    "views": {
+        "list": "advanced:views/report-filter/list"
+    },
+    "recordViews": {
+        "list": "advanced:views/report-filter/record/list",
+        "edit": "advanced:views/report-filter/record/edit",
+        "editSmall": "advanced:views/report-filter/record/edit-small"
+    },
+    "menu": {
+        "list": {
+            "buttons": [
+                {
+                    "label": "Rebuild Filters",
+                    "name": "rebuildFilters",
+                    "action": "rebuildFilters"
+                }
+            ]
+        }
+    },
+    "defaultSidePanelFieldLists": {
+        "detail": [],
+        "edit": [],
+        "detailSmall": [],
+        "editSmall": []
+    },
+    "dynamicLogic": {
+        "fields": {
+            "report": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "entityType"
+                        }
+                    ]
+                }
+            },
+            "entityType": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "id"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "searchPanelDisabled": true
+}

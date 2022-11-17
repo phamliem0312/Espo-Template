@@ -1,0 +1,18 @@
+{
+    "labels": {
+       "Sync with Reports": "Sync with Reports"
+    },
+    "fields": {
+    	"syncWithReports": "Reports",
+    	"syncWithReportsEnabled": "Enabled",
+        "syncWithReportsUnlink": "Unlink"
+    },
+    "links": {
+    	"syncWithReports": "Sync with Reports"
+    },
+    "tooltips": {
+        "syncWithReportsEnabled": "Enable auto-sync with a list report.",
+        "syncWithReportsUnlink": "Entries which are not contained in report results will be unlinked from Target List.",
+        "syncWithReports": "Target List will be synced with results of selected reports."
+    }
+}

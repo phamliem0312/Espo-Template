@@ -1,0 +1,25 @@
+{
+  "labels": {
+    "Workflow Manager": "Рабочий поток",
+    "Flowcharts": "Блок-схемы",
+    "Processes": "Процессы",
+    "Business Process Management": "Управление бизнес-процессами",
+    "Report Filters": "Фильтры отчетов",
+    "Report Panels": "Панели отчетов"
+  },
+  "descriptions": {
+    "workflowManager": "Правила рабочего потоков",
+    "bpmnFlowcharts": "Определения бизнес-процессов.",
+    "bpmnProcesses": "Экземпляры бизнес-процессов.",
+    "reportFilters": "Пользовательские фильтры представления списка на основе отчетов.",
+    "reportPanels": "Панели детализации показывающие результаты отчета"
+  },
+  "messages": {
+    "newAdvancedPackVersionIsAvailable": "Доступна новая версия Advanced Pack {latestVersion}. Её можно скачать на портале для клиентов."
+  },
+  "templates": {
+    "reportSendingGrid1": "Отчёт-сетка-1",
+    "reportSendingGrid2": "Отчёт-сетка-2",
+    "reportSendingList": "Отчёт-список"
+  }
+}

@@ -1,0 +1,19 @@
+{
+   "integrations":{
+      "label":"Integrations",
+      "itemList": [
+         {
+            "url": "#Admin/integrations/name=Asterisk",
+            "label": "VoIP",
+            "iconClass": "fas fa-phone",
+            "description": "VoIP"
+         },
+         {
+            "url": "#VoipRouter",
+            "label": "voipRouter",
+            "iconClass": "fas fa-magic",
+            "description": "voipRouter"
+         }
+      ]
+   }
+}

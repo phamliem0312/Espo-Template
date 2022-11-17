@@ -1,0 +1,9 @@
+{
+  "fields": {
+    "report": "Informe",
+    "column": "Columna de resumen",
+    "displayOnlyCount": "Mostrar solo el total",
+    "displayTotal": "Mostrar total",
+    "useSiMultiplier": "Multiplicador SI"
+  }
+}

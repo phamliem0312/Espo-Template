@@ -1,0 +1,15 @@
+{
+  "labels": {
+    "Create ReportFilter": "Crea filtro",
+    "Rebuild Filters": "Ricostruisci filtri"
+  },
+  "fields": {
+    "order": "Ordine",
+    "entityType": "Tipo di entità",
+    "isActive": "È abilitato"
+  },
+  "tooltips": {
+    "teams": "Il filtro Team sarà disponibile. Se nessun team sarà specificato, nessuna restrizione per team verrà applicata.",
+    "report": "Report elenco che verrà utilizzato per il filtro."
+  }
+}

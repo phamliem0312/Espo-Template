@@ -1,0 +1,8 @@
+{
+    "Report/show/:id": {
+        "params": {
+            "controller": "Report",
+            "action": "show"
+        }
+    }
+}

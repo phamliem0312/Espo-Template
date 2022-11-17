@@ -1,0 +1,1 @@
+<div class="actions-container">{{{actions}}}</div>

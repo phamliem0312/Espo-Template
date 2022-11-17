@@ -1,0 +1,19 @@
+{
+  "labels": {
+    "Flowcharts": "Flussdiagramme",
+    "Processes": "Prozesse",
+    "Business Process Management": "Geschäftsprozessmanagement",
+    "Report Filters": "Berichtsfilter",
+    "Report Panels": "Berichtspanel"
+  },
+  "descriptions": {
+    "workflowManager": "Workflow Regeln konfigurieren",
+    "bpmnFlowcharts": "Definitionen von Geschäftsprozessen.",
+    "bpmnProcesses": "Instanzen von Geschäftsprozessen.",
+    "reportFilters": "Benutzerdefinierter Listenansichtsfilter basierend auf Berichten",
+    "reportPanels": "Detailansicht-Panels mit Berichtsergebnissen."
+  },
+  "messages": {
+    "newAdvancedPackVersionIsAvailable": "Die neue Advanced Pack-Version {latestVersion} ist verfügbar. Es kann im Kundenportal heruntergeladen werden."
+  }
+}

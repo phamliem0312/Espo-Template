@@ -1,0 +1,18 @@
+{
+  "fields": {
+    "voipUniqueid": "ID d'événement VoIP",
+    "voipPhoneNumber": "Numéro de téléphone",
+    "voipLine": "Ligne VoIP",
+    "voipRecording": "Enregistrement",
+    "voipRouter": "Routeur VoIP",
+    "isVoicemail": "Est la messagerie vocale"
+  },
+  "labels": {
+    "noRecording": "Pas de données",
+    "Dial": "Appeler"
+  },
+  "tooltips": {
+    "voipPhoneNumber": "Numéro de téléphone utilisé pour les appels entrants / sortants.",
+    "voipUser": "Ligne téléphonique utilisée pour les appels entrants / sortants."
+  }
+}

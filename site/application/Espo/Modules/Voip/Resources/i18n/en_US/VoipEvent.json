@@ -1,0 +1,33 @@
+{
+   "labels":{
+      "Create VoipEvent":"Create VoIP Event",
+      "Calling":"Calling...",
+      "Unknown":"Unknown",
+      "goToCrm":"Go to CRM",
+      "doNotCallIsOn":"Do Not Call is enabled",
+      "optedOutIsOn":"The phone number is Opted Out"
+   },
+   "fields":{
+      "type":"Type",
+      "phoneNumber":"Phone Number",
+      "userExtension":"User Extension"
+   },
+   "callNames":{
+      "incomingCallTitle":"{incomingCall}: {phoneNumber} {to} {user.userName}",
+      "incomingCallTitleWithoutRecipient":"{incomingCall}: {phoneNumber}",
+      "outgoingCallTitle":"{outgoingCall}: {user.userName} {to} {phoneNumber}",
+      "outgoingCallTitleWithoutRecipient":"{outgoingCall}: {user.userName}",
+      "incomingCall":"Incoming Call",
+      "outgoingCall":"Outgoing Call",
+      "from":"from",
+      "to":"to",
+      "cidNameWithAccount": "{person.name}, {account.name}",
+      "cidName": "{person.name}",
+      "defaultCallTitle":"Call"
+   },
+   "voicemailNames":{
+      "incomingCallTitle":"Voicemail message from {phoneNumber}",
+      "incomingCallTitleWithoutRecipient":"Voicemail message from {phoneNumber}",
+      "defaultCallTitle":"Missed Сall"
+   }
+}

@@ -1,0 +1,111 @@
+{
+  "fields": {
+    "text": "Texte",
+    "triggerType": "Type de déclencheur",
+    "timer": "Paramètres du timer",
+    "defaultFlowId": "Flux par défaut",
+    "from": "De",
+    "to": "À",
+    "replyTo": "Répondre à",
+    "fromEmailAddress": "Adresse e-mail d'envoi",
+    "toEmailAddress": "Adresse e-mail du destinataire",
+    "replyToEmailAddress": "Adresse e-mail de réponse",
+    "toSpecifiedTeams": "Aux équipes",
+    "toSpecifiedUsers": "Aux utilisateurs",
+    "toSpecifiedContacts": "Aux contacts",
+    "emailTemplate": "Modèle d'e-mail",
+    "doNotStore": "Ne pas stocker les e-mails envoyés",
+    "formula": "Formule (script)",
+    "actionType": "Type d'action",
+    "targetUser": "Utilisateur cible",
+    "assignmentType": "Affectation",
+    "targetTeam": "Équipe cible",
+    "targetUserPosition": "Position de l'utilisateur cible",
+    "startDirection": "Direction de départ",
+    "targetReport": "Rapport cible",
+    "scheduling": "Planification",
+    "messageType": "Type de message",
+    "canBeFailed": "Peut échouer",
+    "target": "Cible",
+    "callableType": "Type appelable",
+    "errorCode": "Code d'erreur",
+    "escalationCode": "Code d'escalade",
+    "cancelActivity": "Est en train d'interrompre",
+    "isInterrupting": "Est en train d'interrompre",
+    "targetType": "Type d'entité cible",
+    "flowchartVisualization": "Organigramme",
+    "flowchart": "Organigramme",
+    "returnVariableList": "Variables de retour",
+    "repliedTo": "Répondre à",
+    "relatedTo": "Relatif à",
+    "conditionsFormula": "Formule de conditions",
+    "optOutLink": "Lien de désinscription"
+  },
+  "labels": {
+    "Field": "Champ",
+    "Flows Conditions": "Conditions de flux"
+  },
+  "tooltips": {
+    "taskSendMessageEmailAddress": "Caractères génériques disponibles :\n\n* `{$$variable}`",
+    "targetReport": "Les enregistrements du rapport de liste seront transmis au nouveau processus.",
+    "target": "Sélectionnez quel enregistrement sera utilisé comme cible.",
+    "userTaskName": "Un nom de l'enregistrement de tâche utilisateur qui sera créé.\n\nCaractères génériques disponibles :\n* `{$attribute}`\n* `{$$variable}`",
+    "userTaskInstructions": "Instructions pour un utilisateur. Markdown est pris en charge.\n\nCaractères génériques disponibles :\n* `{$attribute}`\n* `{$$variable}`",
+    "returnVariableList": "Précisez les variables de formule qui seront copiées du sous-processus vers le processus parent une fois le sous-processus terminé.",
+    "scheduling": "Notation Crontab. Définit la fréquence. Fuseau horaire UTC.\n\n`* / 5 * * * *` - toutes les 5 minutes\n\n`0 * / 2 * * *` - toutes les 2 heures\n\n`30 1 * * *` - à 01h30 une fois par jour\n\n`0 0 1 * * `- le premier jour du mois"
+  },
+  "options": {
+    "emailAddress": {
+      "system": "Système",
+      "currentUser": "Utilisateur actuel",
+      "specifiedEmailAddress": "Adresse e-mail spécifiée",
+      "assignedUser": "Utilisateur affecté",
+      "followers": "Suiveurs",
+      "specifiedContacts": "Contacts précisés",
+      "specifiedUsers": "Utilisateurs précisés",
+      "specifiedTeams": "Équipes précisées",
+      "followersExcludingAssignedUser": "Suiveurs, sauf l'utilisateur affecté",
+      "processAssignedUser": "Utilisateur affecté au processus",
+      "targetEntity": "Enregistrement cible",
+      "": "Aucun"
+    },
+    "triggerType": {
+      "afterRecordCreated": "Après la création de l'enregistrement",
+      "afterRecordSaved": "Après la sauvegarde de l'enregistrement",
+      "afterRecordUpdated": "Après la mise à jour de l'enregistrement",
+      "sequential": "Séquentiel"
+    },
+    "timerShiftOperator": {
+      "minus": "moins"
+    },
+    "timerShiftUnits": {
+      "hours": "heures",
+      "days": "jours",
+      "months": "mois",
+      "seconds": "secondes"
+    },
+    "timerBase": {
+      "moment": "Moment où l'événement s'est déclenché",
+      "formula": "Calculé par formule"
+    },
+    "actionType": {
+      "Approve": "Approuver",
+      "Review": "Réviser"
+    },
+    "assignmentType": {
+      "": "Aucun",
+      "processAssignedUser": "Utilisateur affecté au processus",
+      "specifiedUser": "Utilisateur précisé",
+      "rule:Least-Busy": "Moins occupé"
+    },
+    "startDirection": {
+      "r": "Droite",
+      "d": "Bas",
+      "u": "Haut",
+      "l": "Gauche"
+    },
+    "messageType": {
+      "Email": "E-mail"
+    }
+  }
+}

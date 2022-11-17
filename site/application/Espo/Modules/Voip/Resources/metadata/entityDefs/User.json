@@ -1,0 +1,73 @@
+{
+    "fields": {
+        "voipUser": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": false,
+            "tooltip": true
+        },
+        "voipPassword": {
+            "type": "password",
+            "maxLength": 100,
+            "required": false,
+            "labelCategory": "labels",
+            "tooltip": true
+        },
+        "voipNotifications": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "voipMute": {
+            "type": "bool",
+            "default": false,
+            "tooltip": true
+        },
+        "voipDoNotDisturb": {
+            "type": "bool",
+            "default": false,
+            "tooltip": true
+        },
+        "voipDoNotDisturbUntil": {
+            "type": "datetime"
+        },
+        "voipInternalCall": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "voipConnector": {
+            "type": "enum",
+            "maxLength": 50,
+            "default": "Asterisk",
+            "view": "voip:views/user/fields/connector",
+            "tooltip": true
+        },
+        "voipAdditionalNumbers": {
+            "type": "jsonObject"
+        },
+        "phoneNumber": {
+            "view": "voip:views/fields/phone",
+            "typeList": ["__APPEND__", "SIP"]
+        },
+        "voipTestConnection": {
+            "type": "varchar",
+            "notStorable": true,
+            "noLabel": true,
+            "view": "voip:views/user/fields/test-connection"
+        },
+        "voipContext": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": false,
+            "tooltip": true
+        }
+    },
+    "links" : {
+        "voipMessages": {
+            "type": "hasMany",
+            "entity": "VoipMessage",
+            "foreign": "users"
+        }
+    }
+}

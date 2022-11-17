@@ -1,0 +1,38 @@
+{
+    "fields": {
+        "workflow": {
+            "type": "link"
+        },
+        "target": {
+            "type": "linkParent",
+            "view": "advanced:views/workflow-log-record/fields/target"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "workflow": {
+            "type": "belongsTo",
+            "entity": "Workflow",
+            "foreign": "workflowLogRecords"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "target": {
+            "type": "belongsToParent"
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false,
+        "textFilterFields": ["workflowName"]
+    }
+}

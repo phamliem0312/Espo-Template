@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Synchronizace se záznamy"
+  },
+  "fields": {
+    "syncWithReports": "Záznamy",
+    "syncWithReportsEnabled": "Povolený",
+    "syncWithReportsUnlink": "Rozpojený"
+  },
+  "links": {
+    "syncWithReports": "Synchronizace se záznamy"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Údaje neobsažené ve výsledných zápisech nebudou připojeny k sílovému seznamu.",
+    "syncWithReports": "Cílový seznam bude synchronizován s vybranými výslednými zápisy."
+  }
+}

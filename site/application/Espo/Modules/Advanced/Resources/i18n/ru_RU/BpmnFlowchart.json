@@ -1,0 +1,71 @@
+{
+  "labels": {
+    "Create BpmnFlowchart": "Создать блок-схему",
+    "Hand tool": "Инструмент рука",
+    "Create Event tool": "Инструмент создать событие",
+    "Create Gateway tool": "Инструмент создать событие",
+    "Create Activity tool": "Инструмент создать действие",
+    "Connect tool": "Инструмент соединения",
+    "Erase tool": "Инструмент стирания",
+    "Full Screen": "Полный экран",
+    "Processes": "Процессы",
+    "data": "Данные",
+    "Zoom In": "Увеличить",
+    "Zoom Out": "Уменьшить",
+    "Error": "Ошибка"
+  },
+  "fields": {
+    "isActive": "Активен",
+    "targetType": "Тип целевого объекта",
+    "hasNoneStartEvent": "Имеет стартовое событие без типа"
+  },
+  "links": {
+    "processes": "Процессы"
+  },
+  "elements": {
+    "eventStartConditional": "Условное стартовое событие",
+    "eventStartTimer": "Стартовое событие-таймер",
+    "eventStartError": "Стартовое событие-ошибка",
+    "eventStartEscalation": "Стартовое событие-эскалация",
+    "eventStartSignal": "Стартовое событие-сигнал",
+    "eventStart": "Стартовое событие",
+    "eventStartConditionalEventSubProcess": "Условное стартовое событие подпроцесса",
+    "eventStartTimerEventSubProcess": "Стартовое событие-таймер подпроцесса",
+    "eventStartSignalEventSubProcess": "Стартовое событие-сигнал подпроцесса",
+    "eventIntermediateTimerCatch": "Промежуточное событие-таймер (Catching)",
+    "eventIntermediateConditionalCatch": "Промежуточное условное событие (Catching)",
+    "eventIntermediateEscalationThrow": "Промежуточное событие-эскалация (Throwing)",
+    "eventIntermediateSignalThrow": "Промежуточное событие-сигнал (Throwing)",
+    "eventIntermediateSignalCatch": "Промежуточное событие-сигнал (Catching)",
+    "eventIntermediateMessageCatch": "Промежуточное событие-сообщение (Catching)",
+    "eventEnd": "Конечное событие",
+    "eventEndTerminate": "Завершающие конечное событие",
+    "eventEndError": "Конечное событие-ошибка",
+    "eventEndEscalation": "Конечное событие-эскалация",
+    "eventEndSignal": "Конечное событие-сигнал",
+    "eventIntermediateErrorBoundary": "Промежуточное событие-ошибка (Boundary)",
+    "eventIntermediateTimerBoundary": "Промежуточное событие-таймер (Boundary)",
+    "eventIntermediateConditionalBoundary": "Промежуточное условное событие (Boundary)",
+    "eventIntermediateEscalationBoundary": "Промежуточное событие-эскалация (Boundary)",
+    "eventIntermediateSignalBoundary": "Промежуточное событие-сигнал (Boundary)",
+    "eventIntermediateMessageBoundary": "Промежуточное событие-сообщение (Boundary)",
+    "gatewayExclusive": "Эксклюзивный шлюз",
+    "gatewayInclusive": "Включающий шлюз",
+    "gatewayParallel": "Параллельный шлюз",
+    "gatewayEventBased": "Шлюз на основе события",
+    "taskSendMessage": "Задача «Отправить сообщение»",
+    "taskScript": "Задача-скрипт",
+    "taskBusinessRule": "Задача бизнес-правила",
+    "taskUser": "Пользовательская задача",
+    "task": "Задача",
+    "callActivity": "Вызвать действие",
+    "subProcess": "Подпроцесс",
+    "eventSubProcess": "Событийный подпроцесс",
+    "flow": "Поток операций"
+  },
+  "presetFilters": {
+    "isManuallyStartable": "Запускаемый вручную",
+    "activeHasNoneStartEvent": "Активен без стартового события",
+    "active": "Активен"
+  }
+}

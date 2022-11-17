@@ -1,0 +1,186 @@
+{
+  "labels": {
+    "Create Report": "Создать отчёт",
+    "Run": "Сгенерировать",
+    "Total": "Итого",
+    "-Empty-": "-Пусто-",
+    "Parameters": "Параметры",
+    "Filters": "Фильтры",
+    "Chart": "График",
+    "List Report": "Отчёт-список",
+    "Grid Report": "Отчёт-сетка",
+    "days": "дней",
+    "never": "никогда",
+    "Get Csv": "Получить CSV",
+    "EmailSending": "Отправка сообщений",
+    "View Report": "Посмотреть отчёт",
+    "Report": "Отчёт",
+    "AND": "И",
+    "OR": "ИЛИ",
+    "NOT": "НЕ В",
+    "IN": "В",
+    "Complex expression": "Сложное выражение",
+    "Having": "Имеет",
+    "Add AND group": "Добавить группу И",
+    "Add OR group": "Добавить группу ИЛИ",
+    "Add NOT group": "Добавить группу НЕ",
+    "Add IN group": "Добавить группу В",
+    "Add Having group": "Добавить группу Имеет",
+    "Add Complex expression": "Добавить сложное выражение",
+    "Columns": "Колонки",
+    "Send Email": "Отправить письмо",
+    "Results View": "Просмотреть результаты",
+    "Create Joint Grid Report": "Создать объединённый отчёт-сетку"
+  },
+  "fields": {
+    "type": "Тип",
+    "entityType": "Тип сущности",
+    "description": "Описание",
+    "groupBy": "Группировать по",
+    "columns": "Колонки",
+    "orderBy": "Сортировать по",
+    "filters": "Фильтры",
+    "runtimeFilters": "Фильтры при воспроизведении",
+    "chartType": "Тип графика",
+    "emailSendingInterval": "Интервал",
+    "emailSendingTime": "Время",
+    "emailSendingUsers": "Пользователи",
+    "emailSendingSettingDay": "День",
+    "emailSendingSettingMonth": "Месяц",
+    "emailSendingSettingWeekdays": "Дни",
+    "emailSendingDoNotSendEmptyReport": "Не отправлять отчёт, если он пустой",
+    "chartColorList": "Цвета графика",
+    "chartColor": "Цвет графика",
+    "orderByList": "Сортировать по",
+    "column": "Колонка",
+    "exportFormat": "Формат",
+    "category": "Категория",
+    "applyAcl": "Применить ACL",
+    "portals": "Порталы",
+    "joinedReports": "Подотчёты",
+    "joinedReportLabel": "Метка подотчёта"
+  },
+  "tooltips": {
+    "emailSendingUsers": "Пользователи, которым будет отсылаться результат отчёта",
+    "chartColorList": "Пользовательские цвета для определенных групп.",
+    "applyAcl": "Результаты отчета будут зависеть от доступа пользователя.",
+    "groupBy": "Данные будут агрегированы в одну или две группы. Если пусто, то данные не будут агрегированы, будут отображаться только итоги.\n\n[Сложные выражения] \n(https://www.espocrm.com/documentation/user-guide/complex-expressions/) могут использоваться.",
+    "columns": "Какие дание отображать.",
+    "runtimeFilters": "Дополнительные фильтры, которые будут доступны при просмотре отчёта.",
+    "portals": "Отчет будет доступен только на указанных порталах."
+  },
+  "functions": {
+    "COUNT": "Количество",
+    "SUM": "Сумма",
+    "AVG": "Среднее",
+    "MIN": "Минимальное",
+    "MAX": "Максимальное",
+    "YEAR": "Год",
+    "QUARTER": "Квартал",
+    "MONTH": "Месяц",
+    "DAY": "День",
+    "WEEK": "Неделя",
+    "YEAR_FISCAL": "Фискальный год",
+    "QUARTER_FISCAL": "Фискальный квартал"
+  },
+  "orders": {
+    "ASC": "по возрастанию",
+    "DESC": "по убыванию",
+    "LIST": "Список"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Ленточный",
+      "BarVertical": "Столбиковый",
+      "BarGroupedHorizontal": "Сгруппированный ленточный",
+      "BarGroupedVertical": "Сгруппированный столбиковый",
+      "Pie": "Секторный",
+      "Line": "Линейный"
+    },
+    "emailSendingInterval": {
+      "": "Нет",
+      "Daily": "Ежедневно",
+      "Weekly": "Еженедельно",
+      "Monthly": "Ежемесячно",
+      "Yearly": "Ежегодно"
+    },
+    "emailSendingSettingDay": {
+      "32": "В последний день месяца"
+    },
+    "type": {
+      "Grid": "Сетка",
+      "List": "Список",
+      "JointGrid": "Обледенённая сетка"
+    },
+    "function": {
+      "": "Без функции",
+      "custom": "Выражение",
+      "customWithOperator": "Выражение без оператора",
+      "DATE_NUMBER": "ДАТА",
+      "MONTH_NUMBER": "МЕСЯЦ",
+      "YEAR_NUMBER": "ГОД",
+      "QUARTER_NUMBER": "КВАРТАЛ",
+      "DAYOFWEEK_NUMBER": "ДЕНЬ НЕДЕЛИ",
+      "HOUR_NUMBER": "ЧАС",
+      "MINUTE_NUMBER": "МИНУТА",
+      "WEEK_NUMBER_0": "НЕДЕЛЯ (Воскресенье)",
+      "WEEK_NUMBER_1": "НЕДЕЛЯ (Понедельник)",
+      "COUNT": "КОЛИЧЕТСВО",
+      "SUM": "СУММА",
+      "AVG": "СРЕДНЕЕ",
+      "MAX": "МАКСИМАЛЬНОЕ",
+      "MIN": "МИНИМАЛЬНОЕ"
+    },
+    "operator": {
+      "equals": "равно",
+      "notEquals": "не равно",
+      "greaterThan": "больше чем",
+      "lessThan": "меньше чем",
+      "greaterThanOrEquals": "больше чем или равно",
+      "lessThanOrEquals": "меньше чем или равно",
+      "in": "В",
+      "notIn": "Не в",
+      "isTrue": "Истина",
+      "isFalse": "Ложь",
+      "isNull": "Пусто",
+      "isNotNull": "Не пусто",
+      "like": "Как"
+    },
+    "layoutAlign": {
+      "left": "По правому краю",
+      "right": "По левому краю"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "Количество не может превышать число {maxCount}",
+    "gridReportDescription": "Группируйте за одной или двумя колонками и смотрите суммирование. Может отображаться как график",
+    "listReportDescription": "Простой список записей, которые соответствуют критерию"
+  },
+  "presetFilters": {
+    "list": "Список",
+    "grid": "Сетка",
+    "listTargets": "Список (Цели)",
+    "listAccounts": "Список (Контрагенты)",
+    "listContacts": "Список (Контакты)",
+    "listLeads": "Список (Лиды)",
+    "listUsers": "Список (Пользователи)"
+  },
+  "errorMessages": {
+    "error": "Ошибка",
+    "noChart": "Не выбран график для отчёта",
+    "selectReport": "Выберете отчёт в настройках дашлетов"
+  },
+  "filtersGroupTypes": {
+    "or": "ИЛИ",
+    "and": "И",
+    "not": "НЕ",
+    "subQueryIn": "В",
+    "having": "Имеет"
+  },
+  "layoutFields": {
+    "link": "Ссылка",
+    "width": "Ширина",
+    "notSortable": "Не сортируемый",
+    "align": "Выровнять"
+  }
+}

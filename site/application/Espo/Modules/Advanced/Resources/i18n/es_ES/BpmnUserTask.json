@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "Resolve": "Resolver"
+  },
+  "fields": {
+    "actionType": "Tipo de acción",
+    "resolution": "Resolución",
+    "target": "Objetivo",
+    "process": "Proceso",
+    "isResolved": "Está resuelto",
+    "resolutionNote": "Nota de resolución",
+    "instructions": "Instrucciones",
+    "isCanceled": "Está cancelado"
+  },
+  "links": {
+    "process": "Proceso",
+    "target": "Objetivo",
+    "flowNode": "Nodo de flujo"
+  },
+  "options": {
+    "actionType": {
+      "Approve": "Aprobar",
+      "Review": "Revisar",
+      "Accomplish": "Conseguir"
+    },
+    "resolution": {
+      "": "Ninguna",
+      "Approved": "Aprobado",
+      "Rejected": "Rechazado",
+      "Reviewed": "Revisado",
+      "Completed": "Completado",
+      "Canceled": "Cancelado"
+    }
+  },
+  "presetFilters": {
+    "actual": "Real",
+    "resolved": "Resuelto",
+    "canceled": "Cancelado"
+  }
+}

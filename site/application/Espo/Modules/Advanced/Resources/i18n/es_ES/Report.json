@@ -1,0 +1,184 @@
+{
+  "labels": {
+    "Create Report": "Crear informe",
+    "Run": "Ejecutar",
+    "-Empty-": "-Vacío-",
+    "Parameters": "Parámetros",
+    "Filters": "Filtros",
+    "Chart": "Gráfico",
+    "List Report": "Informe de lista",
+    "Grid Report": "Informe de cuadrícula",
+    "days": "días",
+    "never": "nunca",
+    "Get Csv": "Obtener CSV",
+    "EmailSending": "Correo electrónico enviándose",
+    "View Report": "Ver informe",
+    "Report": "Informe",
+    "OR": "O",
+    "NOT": "NO EN",
+    "IN": "EN",
+    "Complex expression": "Expresión compleja",
+    "Having": "Teniendo",
+    "Add AND group": "Añadir grupo AND",
+    "Add OR group": "Añadir grupo OR",
+    "Add NOT group": "Añadir grupo NOT",
+    "Add IN group": "Añadir grupo DENTRO",
+    "Add Having group": "Añadir grupo Teniendo",
+    "Add Complex expression": "Agregar expresión compleja",
+    "Columns": "Columnas",
+    "Send Email": "Enviar correo electrónico",
+    "Results View": "Vista de resultados",
+    "Create Joint Grid Report": "Crear informe de cuadrícula conjunta"
+  },
+  "fields": {
+    "type": "Tipo",
+    "entityType": "Tipo de entidad",
+    "description": "Descripción",
+    "groupBy": "Agrupar por",
+    "columns": "Columnas",
+    "orderBy": "Ordenar por",
+    "filters": "Filtros",
+    "runtimeFilters": "Filtros de tiempo de ejecución",
+    "chartType": "Tipo de gráfico",
+    "emailSendingInterval": "Intervalo",
+    "emailSendingTime": "Hora",
+    "emailSendingUsers": "Usuarios",
+    "emailSendingSettingDay": "Día",
+    "emailSendingSettingMonth": "Mes",
+    "emailSendingSettingWeekdays": "Días",
+    "emailSendingDoNotSendEmptyReport": "No enviar si el informe está vacío",
+    "chartColorList": "Colores",
+    "orderByList": "Orden de la lista",
+    "column": "Columna",
+    "exportFormat": "Formato",
+    "category": "Categoría",
+    "applyAcl": "Aplicar ACL",
+    "portals": "Portales",
+    "joinedReports": "Subinformes",
+    "joinedReportLabel": "Etiqueta de subinforme"
+  },
+  "tooltips": {
+    "emailSendingUsers": "El resultado del informe de usuarios se enviará a",
+    "chartColorList": "Colores personalizados para grupos específicos.",
+    "applyAcl": "Los resultados del informe dependerán del acceso del usuario.",
+    "groupBy": "Los datos se agregarán por uno o dos grupos. Si está vacío, los datos no se agregarán, solo se mostrarán los totales.\n\nSe pueden usar [expresiones complejas](https://www.espocrm.com/documentation/user-guide/complex-expressions/).",
+    "columns": "Qué datos mostrar.",
+    "runtimeFilters": "Filtros adicionales que estarán disponibles en la vista de informe.",
+    "portals": "El informe estará disponible solo en los portales especificados."
+  },
+  "functions": {
+    "COUNT": "Contar",
+    "SUM": "Suma",
+    "AVG": "Promedio",
+    "MIN": "Mín",
+    "MAX": "Máx",
+    "YEAR": "Año",
+    "QUARTER": "Trimestre",
+    "MONTH": "Mes",
+    "DAY": "Día",
+    "WEEK": "Semana",
+    "YEAR_FISCAL": "Año fiscal",
+    "QUARTER_FISCAL": "Trimestre Fiscal"
+  },
+  "orders": {
+    "LIST": "LISTA"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Barra (horizontal)",
+      "BarVertical": "Barra (vertical)",
+      "BarGroupedHorizontal": "Barra agrupada (horizontal)",
+      "BarGroupedVertical": "Barra agrupada (vertical)",
+      "Pie": "Tarta",
+      "Line": "Línea"
+    },
+    "emailSendingInterval": {
+      "": "Ninguna",
+      "Daily": "Diario",
+      "Weekly": "Semanal",
+      "Monthly": "Mensual",
+      "Yearly": "Anual"
+    },
+    "emailSendingSettingDay": {
+      "32": "Ultimo día del mes"
+    },
+    "type": {
+      "Grid": "Cuadrícula",
+      "List": "Lista",
+      "JointGrid": "Cuadrícula conjunta"
+    },
+    "function": {
+      "": "Sin función",
+      "custom": "Expresión",
+      "customWithOperator": "Expresión con operador",
+      "DATE_NUMBER": "FECHA",
+      "MONTH_NUMBER": "MES",
+      "YEAR_NUMBER": "AÑO",
+      "QUARTER_NUMBER": "TRIMESTRE",
+      "DAYOFWEEK_NUMBER": "DÍA DE LA SEMANA",
+      "HOUR_NUMBER": "HORA",
+      "MINUTE_NUMBER": "MINUTO",
+      "LOWER": "INFERIOR",
+      "UPPER": "SUPERIOR",
+      "TRIM": "RECORTAR",
+      "LENGTH": "LONGITUD",
+      "WEEK_NUMBER_0": "SEMANA (domingo)",
+      "WEEK_NUMBER_1": "SEMANA (lunes)",
+      "COUNT": "CONTAR",
+      "SUM": "SUMA",
+      "AVG": "PROMEDIO",
+      "MAX": "MÁX",
+      "MIN": "MÍN"
+    },
+    "operator": {
+      "equals": "Igual a",
+      "notEquals": "No es igual",
+      "greaterThan": "Mayor que",
+      "lessThan": "Menos que",
+      "greaterThanOrEquals": "Mayor o igual que",
+      "lessThanOrEquals": "Menor o igual que",
+      "in": "En",
+      "notIn": "No en",
+      "isTrue": "Es verdadero",
+      "isFalse": "Es falso",
+      "isNull": "Es nulo",
+      "isNotNull": "No es nulo",
+      "like": "Como"
+    },
+    "layoutAlign": {
+      "left": "Izquierda",
+      "right": "Derecha"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "El recuento no debe ser mayor que {maxCount}",
+    "gridReportDescription": "Agrupar por una o dos columnas y ver las sumas. Se puede mostrar como un gráfico.",
+    "listReportDescription": "Lista simple de registros que cumplen con los criterios de los filtros."
+  },
+  "presetFilters": {
+    "list": "Lista",
+    "grid": "Cuadrícula",
+    "listTargets": "Lista (objetivos)",
+    "listAccounts": "Lista (cuentas)",
+    "listContacts": "Lista (contactos)",
+    "listLeads": "Lista (clientes potenciales)",
+    "listUsers": "Lista (usuarios)"
+  },
+  "errorMessages": {
+    "noChart": "No se ha seleccionado ningún gráfico para el informe.",
+    "selectReport": "Seleccione un informe en las opciones del dashlet."
+  },
+  "filtersGroupTypes": {
+    "or": "O",
+    "not": "NO EN",
+    "subQueryIn": "EN",
+    "having": "Teniendo"
+  },
+  "layoutFields": {
+    "link": "Enlace",
+    "width": "Anchura",
+    "notSortable": "No clasificable",
+    "exportOnly": "Exportar solo",
+    "align": "Alinear"
+  }
+}

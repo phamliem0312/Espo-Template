@@ -1,0 +1,17 @@
+{
+    "soundManager": {
+        "path": "client/modules/voip/lib/soundmanager/script/soundmanager2-nodebug-jsmin.js",
+        "exportsTo": "window",
+        "exportsAs": "soundManager"
+    },
+    "Player": {
+        "path": "client/modules/voip/lib/soundmanager/script/bar-ui.js",
+        "exportsTo": "window",
+        "exportsAs": "Player"
+    },
+    "bootstrap-switch": {
+        "path": "client/modules/voip/lib/bootstrap-switch/dist/js/bootstrap-switch.js",
+        "exportsTo": "$",
+        "exportsAs": "bootstrapSwitch"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "jobs": {
+        "VoipIntegration": {
+            "isSystem": true,
+            "scheduling": "3 3 * * 0"
+        }
+    }
+}

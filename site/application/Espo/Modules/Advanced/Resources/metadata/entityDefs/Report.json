@@ -1,0 +1,313 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true
+        },
+        "entityType": {
+            "type": "enum",
+            "view": "advanced:views/report/fields/entity-type"
+        },
+        "type": {
+            "type": "enum",
+            "default": "Grid",
+            "options": ["Grid", "List", "JointGrid"]
+        },
+        "data": {
+            "type": "jsonObject"
+        },
+        "columns": {
+            "type": "jsonArray",
+            "tooltip": true
+        },
+        "groupBy": {
+            "type": "jsonArray",
+            "tooltip": true
+        },
+        "orderBy": {
+            "type": "jsonArray"
+        },
+        "orderByList": {
+            "type": "varchar"
+        },
+        "filters": {
+            "type": "jsonArray"
+        },
+        "filtersDataList": {
+            "type": "jsonArray"
+        },
+        "runtimeFilters": {
+            "type": "jsonArray",
+            "tooltip": true
+        },
+        "filtersData": {
+            "type": "jsonObject"
+        },
+        "columnsData": {
+            "type": "jsonObject"
+        },
+        "chartColorList": {
+            "type": "array",
+            "tooltip": true,
+            "view": "advanced:views/report/fields/chart-color-list"
+        },
+        "chartColors": {
+            "type": "jsonObject"
+        },
+        "chartColor": {
+            "type": "colorpicker",
+            "maxLength": 7,
+            "default": "#6FA8D6"
+        },
+        "chartDataList": {
+            "type": "jsonArray"
+        },
+        "chartOneColumns": {
+            "type": "multiEnum",
+            "notStorable": true,
+            "view": "advanced:views/report/fields/chart-columns"
+        },
+        "chartOneY2Columns": {
+            "type": "multiEnum",
+            "notStorable": true,
+            "view": "advanced:views/report/fields/chart-columns"
+        },
+        "description": {
+            "type": "text"
+        },
+        "chartType": {
+            "type": "enum",
+            "options": ["", "BarVertical", "BarHorizontal", "BarGroupedVertical", "BarGroupedHorizontal", "Pie", "Line"],
+            "optionListMap": {
+                "0": ["", "BarVertical", "BarHorizontal"],
+                "1": ["", "BarVertical", "BarHorizontal", "Pie", "Line"],
+                "2": ["", "BarVertical", "BarHorizontal", "BarGroupedVertical", "BarGroupedHorizontal", "Line"]
+            }
+        },
+        "depth": {
+            "type": "int"
+        },
+        "isInternal": {
+            "type": "bool"
+        },
+        "internalClassName": {
+            "type": "varchar"
+        },
+        "category": {
+            "type": "link",
+            "view": "views/fields/link-category-tree"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple"
+        },
+        "portals": {
+            "type": "linkMultiple",
+            "tooltip": true
+        },
+        "emailSendingInterval": {
+            "type": "enum",
+            "options": ["", "Daily","Weekly","Monthly","Yearly"],
+            "default":""
+        },
+        "emailSendingSettingMonth": {
+            "type": "enum",
+            "dbType": "int",
+            "options": ["1","2","3","4","5","6","7","8","9","10","11","12"],
+            "view": "advanced:views/report/fields/email-sending-month"
+        },
+        "emailSendingSettingDay": {
+            "type": "enum",
+            "dbType": "int",
+            "options": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32"]
+        },
+        "emailSendingSettingWeekdays": {
+            "type": "varchar",
+            "view": "advanced:views/report/fields/email-sending-weekdays"
+        },
+        "emailSendingTime": {
+            "type": "base",
+            "required": true,
+            "dbType": "time",
+            "view": "advanced:views/report/fields/email-sending-time"
+        },
+        "emailSendingUsers": {
+            "type": "linkMultiple",
+            "tooltip": true
+        },
+        "emailSendingLastDateSent": {
+            "type": "datetime",
+            "disabled": true,
+            "readOnly": true
+        },
+        "emailSendingDoNotSendEmptyReport": {
+            "type": "bool",
+            "default": false
+        },
+        "applyAcl": {
+            "type": "bool",
+            "tooltip": true
+        },
+        "joinedReports": {
+            "type": "linkMultiple",
+            "entity": "Report",
+            "notStorable": true,
+            "columns": {
+                "label": "joinedReportLabel"
+            },
+            "view": "advanced:views/report/fields/joined-reports"
+        },
+        "joinedReportLabel": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "joinedReportDataList": {
+            "type": "jsonArray",
+            "disabled": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam"
+        },
+        "portals": {
+            "type": "hasMany",
+            "entity": "Portal",
+            "foreign": "reports"
+        },
+        "syncTargetLists": {
+            "type": "hasMany",
+            "entity": "TargetList",
+            "foreign": "syncWithReports"
+        },
+        "emailSendingUsers": {
+            "type": "hasMany",
+            "entity": "User",
+            "foreign": "reportEmailSending"
+        },
+        "category": {
+            "type": "belongsTo",
+            "foreign": "reports",
+            "entity": "ReportCategory"
+        }
+    },
+    "collection": {
+        "sortBy": "name",
+        "asc": true
+    },
+    "entityListToIgnore": [
+        "Job",
+        "UniqueId",
+        "Role",
+        "ScheduledJob",
+        "ScheduledJobLogRecord",
+        "PhoneNumber",
+        "Notification",
+        "EmailAddress",
+        "EmailAccount",
+        "EmailTemplate",
+        "Attachment",
+        "Extension",
+        "InboundEmail",
+        "AuthToken",
+        "Integration",
+        "ExternalAccount",
+        "Currency",
+        "Note",
+        "Workflow",
+        "Report",
+        "Reminder",
+        "PasswordChangeRequest",
+        "Team",
+        "GoogleCalendar",
+        "GoogleCalendarUser",
+        "GoogleCalendarRecurrentEvent",
+        "MailChimpLogMarker",
+        "MailChimp",
+        "MailChimpCamapaign",
+        "MailChimpList",
+        "MailChimpManualSync",
+        "Import",
+        "BpmnFlowchart"
+    ],
+    "entityListAllowed": [
+        "CampaignLogRecord"
+    ],
+    "complexExpressionFunctionList": [
+        "DATE_NUMBER",
+        "MONTH_NUMBER",
+        "YEAR_NUMBER",
+        "DAYOFWEEK_NUMBER",
+        "HOUR_NUMBER",
+        "MINUTE_NUMBER",
+        "WEEK_NUMBER_0",
+        "WEEK_NUMBER_1",
+        "TRIM",
+        "LENGTH"
+    ],
+    "complexExpressionHavingFunctionList": [
+        "COUNT",
+        "SUM",
+        "MAX",
+        "MIN",
+        "AVG"
+    ],
+    "complexExpressionOperatorList": [
+        "equals",
+        "notEquals",
+        "greaterThan",
+        "lessThan",
+        "greaterThanOrEquals",
+        "lessThanOrEquals",
+        "in",
+        "notIn",
+        "isTrue",
+        "isFalse",
+        "isNull",
+        "isNotNull",
+        "like"
+    ],
+    "complexExpressionHavingOperatorList": [
+        "equals",
+        "notEquals",
+        "greaterThan",
+        "lessThan",
+        "greaterThanOrEquals",
+        "lessThanOrEquals"
+    ]
+}

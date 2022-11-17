@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "entityType",
+        "width": 15
+    },
+    {
+        "name": "report",
+        "width": 27
+    },
+    {
+        "name": "reportType",
+        "width": 14
+    },
+    {
+        "name": "isActive",
+        "width": 12
+    }
+]

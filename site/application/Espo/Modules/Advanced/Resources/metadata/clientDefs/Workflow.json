@@ -1,0 +1,74 @@
+{
+    "controller": "controllers/record",
+    "recordViews": {
+        "detail":"advanced:views/workflow/record/detail",
+        "edit":"advanced:views/workflow/record/edit",
+        "list":"advanced:views/workflow/record/list"
+    },
+    "menu": {
+        "list": {
+            "dropdown": [
+                {
+                    "label": "Workflows Log",
+                    "link": "#WorkflowLogRecord"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "entityType": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                   "type": "isNotEmpty",
+                                   "attribute": "id"
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            },
+            "type": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                   "type": "isNotEmpty",
+                                   "attribute": "id"
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            },
+            "signalName": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                           "type": "in",
+                           "attribute": "type",
+                           "value": "signal"
+                        }
+                    ]
+                },
+                "required": {
+                    "conditionGroup": [
+                        {
+                           "type": "in",
+                           "attribute": "type",
+                           "value": "signal"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

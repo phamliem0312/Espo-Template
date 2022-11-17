@@ -1,0 +1,58 @@
+{
+  "labels": {
+    "Create VoipRouter": "Créer un routeur VoIP",
+    "TeamUsers": "Utilisateurs de l'équipe",
+    "User": "Utilisateur",
+    "Current Number": "Le # actuel est",
+    "phoneIsNotConfigured": "Ce numéro de téléphone n'est pas encore configuré. Veuillez réessayer plus tard.",
+    "DefaultAssignment": "Affectation par défaut",
+    "AdditionalSettings": "Paramètres supplémentaires",
+    "VoicemailSettings": "Messagerie vocale",
+    "noAvailableAgent": "Il n'y a pas d'agent disponible. Veuillez laisser un message après le bip.",
+    "applicationError": "Une erreur d'application s'est produite. Veuillez rappeler plus tard.",
+    "forbiddenExternalCalls": "Les appels externes pour votre utilisateur ne sont pas autorisés. Contactez votre administrateur pour activer cette possibilité.",
+    "calls": "Appels"
+  },
+  "fields": {
+    "externalId": "ID externe",
+    "status": "État",
+    "team": "Équipe affectée",
+    "connector": "Connecteur",
+    "smsAssignTo": "Pour les SMS",
+    "mmsAssignTo": "Pour les MMS",
+    "callAssignTo": "Pour les appels manqués",
+    "voice": "Voix",
+    "voicemailGreetingText": "Texte de bienvenue de la messagerie vocale",
+    "voicemailGreetingFile": "Son d'accueil de la messagerie vocale",
+    "greetingAtCallStart": "Accueil au début de l'appel",
+    "greetingFile": "Son d'accueil",
+    "greetingText": "Texte d'accueil",
+    "voicemailNotifications": "Notifications de messagerie vocale",
+    "voicemail": "Messagerie vocale",
+    "farewell": "Au revoir à la fin de l'appel",
+    "farewellFile": "Son d'au revoir",
+    "farewellText": "Texte d'au revoir"
+  },
+  "tooltips": {
+    "voicemailGreetingText": "Lorsqu'aucun agent n'est disponible, l'appel sera transféré vers la messagerie vocale. Ce texte sera lu pour l'appelant avant qu'il ne laisse un message. Le champ est ignoré lorsque le fichier audio du message d'accueil de la messagerie vocale est téléversé.",
+    "voicemailGreetingFile": "Lorsqu'aucun agent n'est disponible, l'appel sera transféré vers la messagerie vocale. Ce son sera lu pour l'appelant avant qu'il ne laisse un message.",
+    "greetingFile": "Ce son sera diffusé pour l'appelant au début de l'appel.",
+    "greetingText": "Ce texte sera lu pour l'appelant au début de l'appel. Le champ est ignoré si un fichier audio d'au revoir a été téléversé.",
+    "voicemailNotifications": "Types de notification pour un nouveau message vocal.",
+    "farewellFile": "Ce son sera diffusé pour l'appelant à la fin de l'appel.",
+    "farewellText": "Ce texte sera lu pour l'appelant à la fin de l'appel. Le champ est ignoré si un fichier audio d'au revoir a été téléversé."
+  },
+  "options": {
+    "status": {
+      "Active": "Actif",
+      "Inactive": "Inactif"
+    }
+  },
+  "actions": {
+    "incoming": "Entrant",
+    "outgoing": "Sortant"
+  },
+  "links": {
+    "calls": "Appels"
+  }
+}

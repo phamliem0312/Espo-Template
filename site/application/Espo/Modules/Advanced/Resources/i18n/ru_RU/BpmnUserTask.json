@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "Resolve": "Решить"
+  },
+  "fields": {
+    "actionType": "Тип действия",
+    "resolution": "Решение",
+    "target": "Цель",
+    "process": "Процесс",
+    "isResolved": "Решено",
+    "resolutionNote": "Примечание решения",
+    "instructions": "Инструкции",
+    "isCanceled": "Аннулировано"
+  },
+  "links": {
+    "process": "Процесс",
+    "target": "Цель",
+    "flowNode": "Узел потока"
+  },
+  "options": {
+    "actionType": {
+      "Approve": "Утвердить",
+      "Review": "Рассмотреть",
+      "Accomplish": "Выполнить"
+    },
+    "resolution": {
+      "": "Нет",
+      "Approved": "Утверждено",
+      "Rejected": "Отклонено",
+      "Reviewed": "Рассмотрено",
+      "Completed": "Завершено",
+      "Canceled": "Аннулировано"
+    }
+  },
+  "presetFilters": {
+    "actual": "Актуальный",
+    "resolved": "Решено",
+    "canceled": "Аннулировано"
+  }
+}

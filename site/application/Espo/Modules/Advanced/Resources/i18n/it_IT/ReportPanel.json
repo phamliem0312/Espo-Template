@@ -1,0 +1,30 @@
+{
+  "labels": {
+    "Create ReportPanel": "Crea pannello",
+    "Rebuild Panels": "Ricostruisci pannelli"
+  },
+  "fields": {
+    "entityType": "Tipo di entità",
+    "isActive": "È abilitato",
+    "type": "Tipo",
+    "reportType": "Tipo di Rapporto",
+    "displayTotal": "Visualizzazione il totale",
+    "displayOnlyTotal": "Visualizza solo il totale",
+    "column": "Colonna",
+    "reportEntityType": "Tipo di entità report",
+    "columnList": "Elenco colonne",
+    "dynamicLogicVisible": "Condizioni che rendono visibile il pannello",
+    "order": "Ordine"
+  },
+  "tooltips": {
+    "teams": "I Team per cui verrà visualizzato il pannello. Se nessun team sarà specificato, nessuna restrizione per team verrà applicata.",
+    "report": "Report che verrà utilizzato per il pannello.",
+    "order": "[0.. 1]-prima del pannello di flusso;\n[3.. 4]-prima di pannelli di relazione;\n[6..]-dopo i pannelli di rapporto."
+  },
+  "options": {
+    "type": {
+      "side": "Lato",
+      "bottom": "Sotto"
+    }
+  }
+}

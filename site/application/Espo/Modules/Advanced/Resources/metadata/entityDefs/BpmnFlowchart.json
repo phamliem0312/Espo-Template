@@ -1,0 +1,121 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "targetType": {
+            "type": "enum",
+            "required": true,
+            "view": "advanced:views/bpmn-flowchart/fields/entity-type"
+        },
+        "data": {
+            "type": "jsonObject"
+        },
+        "flowchart": {
+            "type": "base",
+            "view": "advanced:views/bpmn-flowchart/fields/flowchart",
+            "notStorabe": true,
+            "exportDisabled": true,
+            "importDisabled": true
+        },
+        "elementsDataHash": {
+            "type": "jsonObject",
+            "disabled": true,
+            "readOnly": true,
+            "exportDisabled": true,
+            "importDisabled": true
+        },
+        "isActive": {
+            "type": "bool",
+            "default": true
+        },
+        "hasNoneStartEvent": {
+            "type": "bool",
+            "disabled": true,
+            "readOnly": true,
+            "exportDisabled": true,
+            "importDisabled": true
+        },
+        "eventStartIdList": {
+            "type": "jsonArray",
+            "disabled": true,
+            "readOnly": true
+        },
+        "eventStartAllIdList": {
+            "type": "jsonArray",
+            "disabled": true,
+            "readOnly": true
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "processes": {
+            "type": "hasMany",
+            "entity": "BpmnProcess",
+            "foreign": "flowchart"
+        },
+        "startWorkflows": {
+            "type": "hasMany",
+            "entity": "Workflow",
+            "disabled": true,
+            "layoutRelationshipsDisabled": true
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "targetTypeListToIgnore": [
+        "ProductBrand",
+        "QuoteItem",
+        "OpportunityItem",
+        "SalesOrderItem",
+        "InvoiceItem"
+    ]
+}

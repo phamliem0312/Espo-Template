@@ -1,0 +1,155 @@
+{
+    "controller": "controllers/record",
+    "views":{
+        "detail":"voip:views/voip-message/detail",
+        "edit":"voip:views/voip-message/edit",
+        "list":"voip:views/voip-message/list"
+    },
+    "recordViews":{
+        "detail":"voip:views/voip-message/record/detail",
+        "edit":"voip:views/voip-message/record/edit",
+        "list":"voip:views/voip-message/record/list",
+        "editQuick":"voip:views/voip-message/record/edit-quick",
+        "detailQuick":"voip:views/voip-message/record/detail-quick"
+    },
+    "modalViews":{
+        "edit":"voip:views/voip-message/modals/edit",
+        "detail":"voip:views/voip-message/modals/detail"
+    },
+    "menu":{
+        "list":{
+            "buttons":[
+                {
+                    "label":"Compose",
+                    "action":"composeMessage",
+                    "style":"danger",
+                    "acl":"create"
+                }
+            ]
+        },
+        "detail":{
+            "buttons":[
+                {
+                    "label":"Reply",
+                    "action":"reply",
+                    "style":"danger",
+                    "acl":"create"
+                }
+            ],
+            "dropdown":[
+                {
+                    "label":"Forward",
+                    "action":"forward",
+                    "acl":"create"
+                }
+            ]
+        }
+    },
+    "defaultSidePanelFieldList": [
+        "teams",
+        "voipRouter",
+        "dateSent",
+        "status",
+        "direction",
+        "replied",
+        "replies"
+    ],
+    "formDependency": {
+      "status": {
+         "map": {
+            "draft": [
+               {
+                  "action": "setNotReadOnly",
+                  "fields": ["parent", "from", "to", "body", "type", "attachments"]
+              },
+              {
+                 "action": "hide",
+                 "fields": ["dateSent", "voipRouter"]
+              }
+            ],
+            "queued": [
+               {
+                  "action": "setNotReadOnly",
+                  "fields": ["parent", "from", "to", "body", "type", "attachments"]
+              },
+              {
+                 "action": "show",
+                 "fields": ["dateSent", "voipRouter"]
+              }
+            ]
+         },
+         "default": [
+            {
+               "action": "setReadOnly",
+               "fields": ["parent", "from", "to", "body", "type", "attachments"]
+           },
+           {
+              "action": "show",
+              "fields": ["dateSent", "voipRouter"]
+           }
+         ]
+      },
+      "type": {
+         "map": {
+            "mms": [
+               {
+                  "action": "show",
+                  "fields": ["attachments"]
+               },
+               {
+                  "action": "setNotRequired",
+                  "fields": ["body"]
+               }
+            ]
+         },
+         "default": [
+            {
+               "action": "hide",
+               "fields": ["attachments"]
+            },
+            {
+               "action": "setRequired",
+               "fields": ["body"]
+            }
+         ]
+      }
+   },
+   "dynamicLogic":{
+       "fields": {
+           "replied": {
+               "visible": {
+                   "conditionGroup": [
+                       {
+                           "type": "isNotEmpty",
+                           "attribute": "repliedId",
+                           "data": {
+                               "field": "replied"
+                           }
+                       }
+                   ]
+               }
+           },
+           "replies": {
+               "visible": {
+                   "conditionGroup": [
+                       {
+                           "type": "isNotEmpty",
+                           "attribute": "repliesIds",
+                           "data": {
+                               "field": "replies"
+                           }
+                       }
+                   ]
+               }
+           }
+       }
+   },
+   "filterList": [
+   ],
+   "iconClass": "fas fa-sms",
+   "activityDefs": {
+        "link": "voipMessages",
+        "activitiesCreate": true,
+        "historyCreate": false
+    }
+}

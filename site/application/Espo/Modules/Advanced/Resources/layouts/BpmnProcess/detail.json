@@ -1,0 +1,63 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                false,
+                {
+                    "name": "parentProcess"
+                }
+
+            ],
+            [
+                {
+                    "name": "flowchart"
+                },
+                {
+                    "name": "endedAt"
+                }
+            ],
+            [
+                {
+                    "name": "target"
+                },
+                {
+                    "name": "targetType"
+                }
+            ],
+            [
+                {
+                    "name": "startElementId"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "flowchartVisualization",
+                    "fullWidth": true,
+                    "customLabel": "",
+                    "noLabel": true
+                }
+            ]
+        ]
+    }
+]

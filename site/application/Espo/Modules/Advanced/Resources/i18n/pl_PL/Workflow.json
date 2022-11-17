@@ -1,0 +1,95 @@
+{
+  "fields": {
+    "Name": "Nazwa",
+    "entityType": "Jednostka docelowa",
+    "type": "Typ wyzwalacza",
+    "isActive": "Aktywne",
+    "description": "Opis",
+    "usersToMakeToFollow": "Users to make to follow the record",
+    "whatToFollow": "What to Follow"
+  },
+  "labels": {
+    "Create Workflow": "Utwórz regułę",
+    "General": "Ogólne",
+    "Conditions": "Warunki",
+    "Actions": "Akcje",
+    "All": "Wszystko",
+    "Any": "Dowolny",
+    "Email Address": "Adres email",
+    "Email Template": "Szablon email",
+    "From": "Od",
+    "To": "Do",
+    "immediately": "Niezwłocznie",
+    "later": "Później",
+    "today": "dzisiaj",
+    "plus": "plus",
+    "minus": "minus",
+    "days": "dni",
+    "Link": "Link",
+    "Entity": "jednostka",
+    "Add Field": "Dodaj pole",
+    "equals": "równe",
+    "wasEqual": "jest równe",
+    "notEquals": "różne od",
+    "wasNotEqual": "jest różne od",
+    "changed": "zmienione",
+    "notEmpty": "niepuste",
+    "isEmpty": "puste",
+    "value": "wartość",
+    "field": "pole",
+    "true": "prawda",
+    "false": "fałsz",
+    "greaterThan": "większe od",
+    "lessThan": "mniejsze od",
+    "greaterThanOrEquals": "większe bądź równe",
+    "lessThanOrEquals": "mniejsze bądź równe",
+    "between": "pomiędzy",
+    "on": "w",
+    "before": "przed",
+    "after": "po",
+    "beforeToday": "przed dzisiaj",
+    "afterToday": "później niż dzisiaj",
+    "recipient": "Odbiorcy",
+    "has": "ma",
+    "messageTemplate": "Szablon wiadomości",
+    "users": "Użytkownicy",
+    "Target Entity": "Jednostka docelowa"
+  },
+  "emailAddressOptions": {
+    "currentUser": "Obecny użytkownik",
+    "specifiedEmailAddress": "Określony adres email",
+    "assignedUser": "Przypisany użytkownik",
+    "targetEntity": "Jednostka docelowa",
+    "specifiedUsers": "Określony użytkownik",
+    "teamUsers": "Zespół",
+    "followers": "Śledzący",
+    "specifiedTeams": "Użytkownicy wybranego zespołu"
+  },
+  "options": {
+    "type": {
+      "afterRecordSaved": "Po zapisaniu rekordu",
+      "afterRecordCreated": "Po utworzeniu rekordu"
+    },
+    "subjectType": {
+      "value": "wartość",
+      "field": "pole"
+    }
+  },
+  "actionTypes": {
+    "sendEmail": "Wyślij email",
+    "createEntity": "Utwórz jednostkę",
+    "createRelatedEntity": "Utwórz powiązaną jednostkę",
+    "updateEntity": "Aktualizuj jednostkę",
+    "updateRelatedEntity": "Aktualizuj powiązaną jednostkę",
+    "makeFollowed": "Make Followed",
+    "createNotification": "Utwórz powiadomienie"
+  },
+  "texts": {
+    "allMustBeMet": "Wszystkie muszą być spełnione",
+    "atLeastOneMustBeMet": "Przynajmniej jeden musi być spełniony"
+  },
+  "messages": {
+    "loopNotice": "Uważaj na możliwą pętlę między jednocześnie dwiema lub więcej reguł.",
+    "messageTemplateHelpText": "Dostępne zmienne: {entity} - rekord docelowy, {user} - obecny użytkownik"
+  }
+}

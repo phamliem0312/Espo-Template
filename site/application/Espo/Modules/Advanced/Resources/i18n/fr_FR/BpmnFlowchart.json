@@ -1,0 +1,72 @@
+{
+  "labels": {
+    "Create BpmnFlowchart": "Créer un organigramme",
+    "Hand tool": "Outil main",
+    "Create Event tool": "Outil de création d'événement",
+    "Create Gateway tool": "Outil de création d'événement",
+    "Create Activity tool": "Outil de création d'activité",
+    "Connect tool": "Outil de connexion",
+    "Erase tool": "Outil d'effacement",
+    "Full Screen": "Plein écran",
+    "Processes": "Processus",
+    "data": "Données",
+    "Zoom In": "Zoomer",
+    "Zoom Out": "Dézoomer",
+    "Error": "Erreur"
+  },
+  "fields": {
+    "isActive": "Est actif",
+    "targetType": "Type d'entité cible",
+    "data": "Données",
+    "hasNoneStartEvent": "A un événement de démarrage de type Aucun"
+  },
+  "links": {
+    "processes": "Processus"
+  },
+  "elements": {
+    "eventStartConditional": "Événement de démarrage conditionnel",
+    "eventStartTimer": "Événement de démarrage du timer",
+    "eventStartError": "Événement de démarrage d'erreur",
+    "eventStartEscalation": "Événement de démarrage d'escalade",
+    "eventStartSignal": "Événement de démarrage de signal",
+    "eventStart": "Événement de démarrage",
+    "eventStartConditionalEventSubProcess": "Événement de démarrage conditionnel du sous-processus",
+    "eventStartTimerEventSubProcess": "Événement de démarrage conditionnel du timer de sous-processus",
+    "eventStartSignalEventSubProcess": "Événement de démarrage de signal de sous-processus",
+    "eventIntermediateTimerCatch": "Événement intermédiaire de timer (capture)",
+    "eventIntermediateConditionalCatch": "Événement intermédiaire conditionnel (capture)",
+    "eventIntermediateEscalationThrow": "Événement intermédiaire d'escalade (lancement)",
+    "eventIntermediateSignalThrow": "Événement intermédiaire de signal (lancement)",
+    "eventIntermediateSignalCatch": "Événement intermédiaire de signal (capture)",
+    "eventIntermediateMessageCatch": "Événement intermédiaire de message (capture)",
+    "eventEnd": "Événement de fin",
+    "eventEndTerminate": "Événement de fin de finalisation",
+    "eventEndError": "Événement de fin d'erreur",
+    "eventEndEscalation": "Événement de fin d'escalade",
+    "eventEndSignal": "Événement de fin de signal",
+    "eventIntermediateErrorBoundary": "Événement intermédiaire d'erreur (limite)",
+    "eventIntermediateTimerBoundary": "Événement intermédiaire de timer (limite)",
+    "eventIntermediateConditionalBoundary": "Événement intermédiaire conditionnel (limite)",
+    "eventIntermediateEscalationBoundary": "Événement intermédiaire d'escalade (limite)",
+    "eventIntermediateSignalBoundary": "Événement intermédiaire de signal (limite)",
+    "eventIntermediateMessageBoundary": "Événement intermédiaire de message (limite)",
+    "gatewayExclusive": "Passerelle exclusive",
+    "gatewayInclusive": "Passerelle inclusive",
+    "gatewayParallel": "Passerelle parallèle",
+    "gatewayEventBased": "Passerelle basée sur les événements",
+    "taskSendMessage": "Tâche d'envoi de message",
+    "taskScript": "Tâche de script",
+    "taskBusinessRule": "Tâche de règle commerciale",
+    "taskUser": "Tâche utilisateur",
+    "task": "Tâche",
+    "callActivity": "Activité d'appel",
+    "subProcess": "Sous-processus",
+    "eventSubProcess": "Sous-processus d'événement",
+    "flow": "Flux de séquence"
+  },
+  "presetFilters": {
+    "isManuallyStartable": "Démarrable manuellement",
+    "activeHasNoneStartEvent": "Actif sans événement de démarrage",
+    "active": "Actif"
+  }
+}

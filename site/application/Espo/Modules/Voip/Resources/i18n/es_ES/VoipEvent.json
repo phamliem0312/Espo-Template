@@ -1,0 +1,27 @@
+{
+  "labels": {
+    "Create VoipEvent": "Crear evento de VoIP",
+    "Calling": "Llamando...",
+    "Unknown": "Desconocido",
+    "goToCrm": "Ir a CRM",
+    "doNotCallIsOn": "No llamar está habilitado",
+    "optedOutIsOn": "El número de teléfono está excluido"
+  },
+  "fields": {
+    "type": "Tipo",
+    "phoneNumber": "Número de teléfono",
+    "userExtension": "Extensión de usuario"
+  },
+  "callNames": {
+    "incomingCall": "Llamada entrante",
+    "outgoingCall": "Llamada saliente",
+    "from": "de",
+    "to": "para",
+    "defaultCallTitle": "Llamada"
+  },
+  "voicemailNames": {
+    "incomingCallTitle": "Mensaje de buzón de voz de {phoneNumber}",
+    "incomingCallTitleWithoutRecipient": "Mensaje de buzón de voz de {phoneNumber}",
+    "defaultCallTitle": "Llamada perdida"
+  }
+}

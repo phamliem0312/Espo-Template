@@ -1,0 +1,31 @@
+{
+  "scopeNames": {
+    "Workflow": "Flux de travail",
+    "Report": "Rapport",
+    "ReportCategory": "Catégorie de rapport",
+    "WorkflowLogRecord": "Enregistrement du journal de flux de travail",
+    "BpmnFlowchart": "Organigramme de processus",
+    "BpmnProcess": "Processus",
+    "BpmnUserTask": "Traiter la tâche utilisateur",
+    "ReportFilter": "Filtre de rapport",
+    "ReportPanel": "Panneau de rapport"
+  },
+  "scopeNamesPlural": {
+    "Workflow": "Flux de travail",
+    "Report": "Rapports",
+    "ReportCategory": "Catégories de rapport",
+    "WorkflowLogRecord": "Journal des flux de travail",
+    "BpmnFlowchart": "Organigrammes de processus",
+    "BpmnProcess": "Processus",
+    "BpmnUserTask": "Traiter les tâches utilisateur",
+    "ReportFilter": "Filtres de rapport",
+    "ReportPanel": "Panneaux de rapport"
+  },
+  "dashlets": {
+    "Report": "Rapport",
+    "BpmnUserTasks": "Traiter les tâches utilisateur"
+  },
+  "labels": {
+    "Start Process": "Démarrer le processus"
+  }
+}

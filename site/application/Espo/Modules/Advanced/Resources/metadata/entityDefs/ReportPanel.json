@@ -1,0 +1,134 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true,
+            "maxLength": 50
+        },
+        "entityType": {
+            "type": "enum",
+            "required": true,
+            "view": "advanced:views/report-panel/fields/entity-type"
+        },
+        "reportEntityType": {
+            "type": "foreign",
+            "readOnly": true,
+            "link": "report",
+            "field": "entityType",
+            "view": "views/fields/entity-type"
+        },
+        "isActive": {
+            "type": "bool",
+            "default": true
+        },
+        "type": {
+            "type": "enum",
+            "default": "side",
+            "options": ["side", "bottom"]
+        },
+        "column": {
+            "type": "enum",
+            "view": "advanced:views/report-panel/fields/column"
+        },
+        "columnList": {
+            "type": "jsonArray",
+            "notStorable": true
+        },
+        "order": {
+            "type": "int",
+            "minValue": 1,
+            "required": true,
+            "default": 7,
+            "tooltip": true
+        },
+        "displayType": {
+            "type": "enum",
+            "default": "",
+            "options": [
+                "",
+                "Chart",
+                "List",
+                "Chart-Total",
+                "Total",
+                "Table"
+            ],
+            "translation": "Report.options.dashletDisplayType",
+            "view": "advanced:views/dashlets/fields/display-type"
+        },
+        "displayTotal": {
+            "type": "bool"
+        },
+        "displayOnlyTotal": {
+            "type": "bool"
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "tooltip": true
+        },
+        "reportType": {
+            "type": "foreign",
+            "readOnly": true,
+            "link": "report",
+            "field": "type",
+            "view": "views/fields/foreign-enum"
+        },
+        "report": {
+            "type": "link",
+            "tooltip": true,
+            "required": true,
+            "view": "advanced:views/report-panel/fields/report"
+        },
+        "dynamicLogicVisible": {
+            "type": "jsonObject",
+            "view": "advanced:views/report-panel/fields/dynamic-logic-visible"
+        },
+        "useSiMultiplier": {
+            "type": "bool",
+            "default": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "report": {
+            "type": "belongsTo",
+            "entity": "Report"
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false
+    }
+}

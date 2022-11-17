@@ -1,0 +1,68 @@
+{
+  "labels": {
+    "Create VoipMessage": "Mesaj Oluştur",
+    "Calling": "Gönderiliyor...",
+    "markAsRead": "Okundu İşaretle",
+    "markAsNotRead": "Okunmadı İşaretle",
+    "Compose Message": "Mesaj Oluştur",
+    "Save Draft": "Taslağı kaydet",
+    "Send": "Gönder",
+    "Reply": "Cevapla",
+    "Forward": "İlet",
+    "Download": "İndir"
+  },
+  "fields": {
+    "externalId": "Harici ID",
+    "type": "Tür",
+    "direction": "Yön",
+    "status": "Durum",
+    "from": "Kimden",
+    "to": "Kime",
+    "body": "Gövde",
+    "numMedia": "Medya numarası",
+    "numSegments": "Segment Numarası",
+    "assignedUser": "Atanmış Kullanıcı",
+    "connector": "Bağlayıcı",
+    "createdAt": "Oluşturuldu:",
+    "modifiedAt": "Değiştirildi:",
+    "attachments": "Ekler",
+    "dateSent": "Gönderilme Tarihi",
+    "voipRouter": "VoIP Yönlendirici",
+    "replies": "Cevaplar",
+    "replied": "Cevaplandı",
+    "sentBy": "Tarafından gönderildi"
+  },
+  "options": {
+    "direction": {
+      "incoming": "Gelen",
+      "outgoing": "Giden"
+    },
+    "status": {
+      "draft": "Taslak",
+      "accepted": "Kabul edildi",
+      "queued": "Kuyrukta",
+      "sending": "Gönderiliyor",
+      "sent": "Gönderildi",
+      "receiving": "Alınıyor",
+      "received": "Alındı",
+      "delivered": "Teslim edildi",
+      "undelivered": "Teslim edilemedi",
+      "failed": "Başarısız"
+    }
+  },
+  "messages": {
+    "messageSent": "Mesaj gönderildi",
+    "savedAsDraft": "Taslak olarak kaydedildi"
+  },
+  "presetFilters": {
+    "sent": "Gönderildi",
+    "inbox": "Gelen Kutusu",
+    "drafts": "Taslaklar",
+    "trash": "Çöp",
+    "important": "Önemli"
+  },
+  "massActions": {
+    "markAsRead": "Okundu olarak işaretle",
+    "markAsNotRead": "Okunmadı olarak işaretle"
+  }
+}

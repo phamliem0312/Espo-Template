@@ -1,0 +1,18 @@
+{
+  "fields": {
+    "status": "Stato",
+    "processedAt": "Elaborato presso",
+    "elementType": "Tipo di elemento",
+    "element": "Elemento"
+  },
+  "options": {
+    "status": {
+      "Created": "Creato",
+      "Pending": "In attesa",
+      "In Process": "In corso",
+      "Processed": "Processato",
+      "Rejected": "Rifiutato",
+      "Failed": "Fallito"
+    }
+  }
+}

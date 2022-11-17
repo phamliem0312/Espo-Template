@@ -1,0 +1,119 @@
+{
+  "fields": {
+    "text": "Текст",
+    "triggerType": "Тип триггера",
+    "timer": "Параметры таймера",
+    "defaultFlowId": "Поток по умолчанию",
+    "from": "От",
+    "to": "Кому",
+    "replyTo": "Куда отвечать",
+    "fromEmailAddress": "Адрес эл. почты отправителя",
+    "toEmailAddress": "Адрес эл. почты получателя",
+    "replyToEmailAddress": "Адрес эл. почты для ответа",
+    "toSpecifiedTeams": "Группам",
+    "toSpecifiedUsers": "Пользователям",
+    "toSpecifiedContacts": "Контактам",
+    "emailTemplate": "Шаблон эл. письма",
+    "doNotStore": "Не хранить отправленные письма",
+    "actions": "Действия",
+    "formula": "Формула (скрипт)",
+    "actionType": "Тип действия",
+    "targetUser": "Целевой пользователь",
+    "assignmentType": "Назначение",
+    "targetTeam": "Целевая группа",
+    "targetUserPosition": "Должность целевого пользователя",
+    "startDirection": "Направление начала",
+    "targetReport": "Целевой отчёт",
+    "scheduling": "Планирование",
+    "messageType": "Тип сообщения",
+    "canBeFailed": "Может быть сбой",
+    "target": "Цель",
+    "callableType": "Тип действия",
+    "errorCode": "Код ошибки",
+    "escalationCode": "Код эскалации",
+    "cancelActivity": "Прерывает",
+    "isInterrupting": "Прерывает",
+    "targetType": "Тип целевого объекта",
+    "flowchartVisualization": "Блок-схема",
+    "flowchart": "Блок-схема",
+    "signal": "Сигнал",
+    "returnVariableList": "Возвращаемые переменные",
+    "repliedTo": "Куда отвечать",
+    "relatedTo": "Связанный с",
+    "instructions": "Инструкции",
+    "conditionsFormula": "Формула условий",
+    "optOutLink": "Ссылка для отписки"
+  },
+  "labels": {
+    "Conditions": "Условия",
+    "Actions": "Действия",
+    "Field": "Поле",
+    "Flows Conditions": "Условия потоков"
+  },
+  "tooltips": {
+    "taskSendMessageEmailAddress": "Доступные заполнители:\n\n* `{$$variable}`",
+    "targetReport": "Записи из отчета-списка будут переданы новому процессу.",
+    "target": "Выберите, какая запись будет использоваться в качестве цели.",
+    "userTaskName": "Название записи пользовательской задачи, которая будет создана.\n\nДоступные заполнители:\n* `{$attribute}`\n* `{$$variable}`",
+    "userTaskInstructions": "Инструкции для пользователя. Markdown поддерживается.\n\nДоступные заполнители:\n* `{$attribute}`\n* `{$$variable}`",
+    "returnVariableList": "Укажите переменные формулы, которые будут скопированы из подпроцесса в родительский процесс после успешного завершения подпроцесса.",
+    "scheduling": "Crontab обозначение. Определяет частоту. Часовой пояс UTC\n\n`* / 5 * * * *` - каждые 5 минут\n\n`0 * / 2 * * *` - каждые 2 часа\n\n`30 1 * * *` - в 01:30 один раз в день\n\n`0 0 1 * *` - в первый день месяца"
+  },
+  "options": {
+    "emailAddress": {
+      "system": "Система",
+      "currentUser": "Текущий пользователь",
+      "specifiedEmailAddress": "Определённый адрес эл. почти",
+      "assignedUser": "Ответственный пользователь",
+      "followers": "Подписанным",
+      "specifiedContacts": "Определённым контактам",
+      "specifiedUsers": "Определённым пользователям",
+      "specifiedTeams": "Определённым группам",
+      "followersExcludingAssignedUser": "Подписанным кроме ответственного пользователя",
+      "processAssignedUser": "Пользователю, которому назначен процесс",
+      "targetEntity": "Целевой записи",
+      "": "Никому"
+    },
+    "triggerType": {
+      "afterRecordCreated": "После создания записи",
+      "afterRecordSaved": "После сохранения записи",
+      "sequential": "Последовательный"
+    },
+    "timerShiftOperator": {
+      "plus": "плюс",
+      "minus": "минус"
+    },
+    "timerShiftUnits": {
+      "minutes": "минут",
+      "hours": "часов",
+      "days": "дней",
+      "months": "месяцев",
+      "seconds": "секунд"
+    },
+    "timerBase": {
+      "moment": "Момент, когда событие сработало",
+      "formula": "Рассчитывается по формуле"
+    },
+    "actionType": {
+      "Approve": "Утвердить",
+      "Review": "Рассмотреть"
+    },
+    "assignmentType": {
+      "": "Никому",
+      "processAssignedUser": "Пользователю, которому назначен процесс",
+      "specifiedUser": "Определённому пользователю",
+      "rule:Round-Robin": "По круговому циклу",
+      "rule:Least-Busy": "Наименее занятому"
+    },
+    "startDirection": {
+      "": "Авто",
+      "r": "Вправо",
+      "d": "Вниз",
+      "u": "Вверх",
+      "l": "Влево"
+    },
+    "messageType": {
+      "Email": "Эл. письмо"
+    }
+  }
+}

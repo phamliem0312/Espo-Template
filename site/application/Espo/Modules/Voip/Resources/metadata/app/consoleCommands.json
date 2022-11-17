@@ -1,0 +1,8 @@
+{
+    "voip": {
+        "className": "\\Espo\\Modules\\Voip\\Console\\Commands\\Voip"
+    },
+    "voipService": {
+        "className": "\\Espo\\Modules\\Voip\\Console\\Commands\\VoipService"
+    }
+}

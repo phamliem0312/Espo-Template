@@ -1,0 +1,10 @@
+{
+  "options": {
+    "job": {
+      "ReportTargetListSync": "Kontaktlisten mit Berichten abgleichen",
+      "ScheduleReportSending": "Senden von Berichten planen",
+      "RunScheduledWorkflows": "Geplante Workflows durchführen",
+      "ProcessPendingProcessFlows": "Schwebende Flows  verarbeiten"
+    }
+  }
+}

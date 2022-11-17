@@ -1,0 +1,14 @@
+{
+    "reportSendingGrid1": {
+        "scope": "Report",
+        "module": "Advanced"
+    },
+    "reportSendingGrid2": {
+        "scope": "Report",
+        "module": "Advanced"
+    },
+    "reportSendingList": {
+        "scope": "Report",
+        "module": "Advanced"
+    }
+}

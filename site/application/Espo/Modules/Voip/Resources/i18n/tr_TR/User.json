@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "voipUser": "Kullanıcı uzantınız",
+    "voipPassword": "VoIP şifreniz",
+    "voipNotifications": "Çağrı bildirimlerini görüntüle",
+    "voipMute": "Sessiz bildirimler",
+    "voipInternalCall": "Dahili tıkla ve ara özelliğini kullanın",
+    "voipConnector": "VoiP Sunucusu",
+    "voipAdditionalNumbers": "Ek Telefon Numaraları",
+    "voipDoNotDisturb": "Rahatsız etmeyin",
+    "voipDoNotDisturbUntil": "Kadar",
+    "voipContext": "Kullanıcı Çevirme İçeriği"
+  },
+  "labels": {
+    "Voip Settings": "VoIP Ayarları",
+    "voipPassword": "VoIP şifreniz"
+  },
+  "tooltips": {
+    "voipUser": "VoIP kullanıcı uzantınız (ör. \"299\", \"1001\").",
+    "voipPassword": "VoIP şifreniz.",
+    "voipNotifications": "Gelen / giden çağrı bildirimlerini almak istiyorsanız.",
+    "voipMute": "Bildirim sesini kapatın.",
+    "voipInternalCall": "Dahili tıkla ve ara, giden bir aramayı başlatmak için bir özelliktir. Onay kutusu işaretli değilse, tel: bağlantılarını işlemek için harici bir uygulama kullanılacaktır.",
+    "voipAdditionalNumbers": "Ek dahili veya dış telefon numaraları.",
+    "voipConnector": "Mevcut VoIP sunucunuz.",
+    "voipDoNotDisturb": "Gelen çağrıları devre dışı bırakın.",
+    "voipContext": "Bir Kullanıcı için arama içeriği. Boşsa, bir bağlayıcının arama içeriği kullanılacaktır."
+  }
+}

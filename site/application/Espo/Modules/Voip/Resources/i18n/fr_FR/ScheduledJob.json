@@ -1,0 +1,8 @@
+{
+  "options": {
+    "job": {
+      "VoipCleanup": "Nettoyage VoIP",
+      "TwilioSyncPhoneNumbers": "Twilio : synchroniser les numéros de téléphone"
+    }
+  }
+}

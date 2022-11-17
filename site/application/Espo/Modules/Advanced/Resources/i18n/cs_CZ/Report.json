@@ -1,0 +1,94 @@
+{
+  "labels": {
+    "Create Report": "Vytvořít zprávu",
+    "Run": "Spustit",
+    "Total": "Souhrn",
+    "-Empty-": "-Prázdný-",
+    "Parameters": "Parametry",
+    "Filters": "Filtry",
+    "Chart": "Diagram",
+    "List Report": "Seznam zpráv",
+    "Grid Report": "Síť zpráv",
+    "days": "Dny",
+    "never": "Nikdy",
+    "Get Csv": "Získat Csv",
+    "EmailSending": "Odesílání emailu",
+    "View Report": "Předváděcí zpráva"
+  },
+  "fields": {
+    "type": "Typ",
+    "entityType": "Typ subjektu",
+    "description": "Popis",
+    "groupBy": "Skupina podle",
+    "columns": "Sloupce",
+    "orderBy": "Zakázka podle",
+    "filters": "Filtry",
+    "runtimeFilters": "Časové filtry",
+    "chartType": "Typ diagramu",
+    "emailSendingInterval": "Interval",
+    "emailSendingTime": "Čas",
+    "emailSendingUsers": "Uživatelé",
+    "emailSendingSettingDay": "Den",
+    "emailSendingSettingMonth": "Měsíc",
+    "emailSendingSettingWeekdays": "Dny",
+    "emailSendingDoNotSendEmptyReport": "Neodesílejte, pokud je zpráva prázdná",
+    "chartColorList": "Barvy diagramu",
+    "chartColor": "Barva diagramu"
+  },
+  "tooltips": {
+    "emailSendingUsers": "Výsledek uživatelské zprávy bude odeslán do",
+    "chartColorList": "Zákaznické barvy pro specifické skupiny"
+  },
+  "functions": {
+    "COUNT": "Spočítat",
+    "SUM": "Součet",
+    "AVG": "Průměr",
+    "MIN": "Min",
+    "MAX": "Max",
+    "YEAR": "Rok",
+    "MONTH": "Měsíc",
+    "DAY": "Den"
+  },
+  "orders": {
+    "ASC": "Vzestupně",
+    "DESC": "Sestupně",
+    "LIST": "Seznam"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Sloupcový (hozintální)",
+      "BarVertical": "Sloupcový (vertikální)",
+      "Pie": "Koláčový",
+      "Line": "Čárový"
+    },
+    "emailSendingInterval": {
+      "": "Žádný",
+      "Daily": "Denní",
+      "Weekly": "Týdenní",
+      "Monthly": "Měsíční",
+      "Yearly": "Roční"
+    },
+    "emailSendingSettingDay": {
+      "32": "Poslední den měsíce"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "Počet nesmí být větší než {maximální počet}",
+    "gridReportDescription": "Seskupení jednoho nebo dvou sloupců a zobrazení součtu, které lze znázornit jako diagram.",
+    "listReportDescription": "Jednoduchý přehled zápisů čelících filtračním kritériím  "
+  },
+  "presetFilters": {
+    "list": "Seznam",
+    "grid": "Síť",
+    "listTargets": "Seznam cílů",
+    "listAccounts": "Seznam účtů",
+    "listContacts": "Seznam kontaktů",
+    "listLeads": "Seznam vedoucích",
+    "listUsers": "Seznam uživatelů"
+  },
+  "errorMessages": {
+    "error": "Chyba",
+    "noChart": "Není vybrán žádný diagram pro zápis",
+    "selectReport": "Vyberte zápis v liště nastavení"
+  }
+}

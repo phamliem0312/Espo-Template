@@ -1,0 +1,115 @@
+{
+  "fields": {
+    "Name": "Název",
+    "entityType": "Cílový subjekt",
+    "type": "Typ spuštění",
+    "isActive": "Aktivní",
+    "description": "Popis",
+    "usersToMakeToFollow": "Uživatelé k vytvoření sledování záznamu.",
+    "whatToFollow": "Co sledovat",
+    "portalOnly": "Pouze portál",
+    "portal": "Portál",
+    "targetReport": "Cílová zpráva",
+    "scheduling": "Plánování"
+  },
+  "links": {
+    "portal": "Portál",
+    "targetReport": "Cílová zpráva"
+  },
+  "tooltips": {
+    "portalOnly": "Pokud zkontrolovaný postup bude spuštěn pouze z portálu ",
+    "portal": "Speciální portál ke spuštění procesu. V případě potřeby k práci na jiném portálu jej zanechte prázdný.",
+    "scheduling": "Crontab zápis. Definování frekvence pracovního chodu.\n\n`*/5 * * * *` - každých  minut\n\n`0 */2 * * *` - každé 2 hodiny\n\n`30 1 * * *` - v 01:30 jednou denně\n\n`0 0 1 * *` - první den v měsíci"
+  },
+  "labels": {
+    "Create Workflow": "Vytvořit pravidla",
+    "General": "Hlavní",
+    "Conditions": "Podmínky",
+    "Actions": "akce",
+    "All": "Všechny",
+    "Any": "Nějaký",
+    "Email Address": "Emailová adresa",
+    "Email Template": "emailová šablona",
+    "From": "Od",
+    "To": "Komu",
+    "immediately": "Ihned",
+    "later": "Později",
+    "today": "teď",
+    "plus": "Plus",
+    "minus": "Mínus",
+    "days": "Dny",
+    "hours": "Hodiny",
+    "minutes": "Minuty",
+    "Link": "Řádek",
+    "Entity": "Subjekt",
+    "Add Field": "Přidat pole",
+    "equals": "Rovno",
+    "wasEqual": "Bylo rovno",
+    "notEquals": "Není rovno",
+    "wasNotEqual": "Nebylo rovno",
+    "changed": "Změněný",
+    "notEmpty": "Není prázdný",
+    "isEmpty": "Prázdný",
+    "value": "Hodnota",
+    "field": "Pole",
+    "true": "Pravda",
+    "false": "Lež",
+    "greaterThan": "Větší než",
+    "lessThan": "Menší než",
+    "greaterThanOrEquals": "Vetší nebo rovno",
+    "lessThanOrEquals": "Menší nebo rovno",
+    "between": "Mezi",
+    "on": "Na",
+    "before": "Před",
+    "after": "Po",
+    "beforeToday": "Před dneškem",
+    "afterToday": "Po dnešku",
+    "recipient": "Příjemce",
+    "has": "Má",
+    "messageTemplate": "Položka zprávy",
+    "users": "Uživatelé",
+    "Target Entity": "Cílový subjekt",
+    "Workflow": "workflow"
+  },
+  "emailAddressOptions": {
+    "currentUser": "Běžný uživatel",
+    "specifiedEmailAddress": "Předepsaná emailová adresa",
+    "assignedUser": "Přiřazený uživatel",
+    "targetEntity": "Cílový subjekt",
+    "specifiedUsers": "Předepsaný uživatel",
+    "teamUsers": "Týmový uživatel",
+    "followers": "Další",
+    "followersExcludingAssignedUser": "Další bez předepsaného uživatele",
+    "specifiedTeams": "Uživatelé předepsaných týmů"
+  },
+  "options": {
+    "type": {
+      "afterRecordSaved": "Po nahrátí uložit",
+      "afterRecordCreated": "Po nahrátí vytvořit",
+      "scheduled": "Naplánováno",
+      "sequential": "Sekvenční"
+    },
+    "subjectType": {
+      "value": "Hodnota",
+      "field": "Pole"
+    }
+  },
+  "actionTypes": {
+    "sendEmail": "Poslat email",
+    "createEntity": "Vytvořit subjekt",
+    "createRelatedEntity": "Vytvořit příbuzný subjekt",
+    "updateEntity": "aktualizovat subjekt",
+    "updateRelatedEntity": "Aktualizovat příbuzný subjekt",
+    "makeFollowed": "Vytvořit další",
+    "createNotification": "Vytvořit poznámku",
+    "triggerWorkflow": "Spustit další proces"
+  },
+  "texts": {
+    "allMustBeMet": "Všechny se musí shodovat",
+    "atLeastOneMustBeMet": "Alespoň jeden se musí shodovat"
+  },
+  "messages": {
+    "loopNotice": "Pozor na možnost neustálého tvoření smyček skrz větší počet(dvě a více) pravidel workflow.",
+    "messageTemplateHelpText": "Známé proměnné:\n{subjekt} - cílový záznam,\n{uživatel} - běžný uživatel."
+  }
+}

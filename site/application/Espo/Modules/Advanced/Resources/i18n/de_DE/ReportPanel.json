@@ -1,0 +1,34 @@
+{
+  "labels": {
+    "Create ReportPanel": "Panel erstellen",
+    "Rebuild Panels": "Panel neu erstellen"
+  },
+  "fields": {
+    "report": "Bericht",
+    "entityType": "Entitätstyp",
+    "isActive": "Ist Aktiviert",
+    "type": "Typ",
+    "reportType": "Berichtstyp",
+    "displayTotal": "Summe anzeigen",
+    "displayOnlyTotal": "Nur Summe anzeigen",
+    "column": "Spalte",
+    "reportEntityType": "Entitätstyp des Berichtes",
+    "columnList": "Spalteliste",
+    "dynamicLogicVisible": "Bedingungen, die das Panel sichtbar machen",
+    "order": "Reihenfolge"
+  },
+  "links": {
+    "report": "Bericht"
+  },
+  "tooltips": {
+    "teams": "Teams, für die das Panel angezeigt wird. Wenn keine Teams angegeben sind, wird keine Beschränkung durch Team angewendet.",
+    "report": "Bericht, der für das Panel verwendet wird.",
+    "order": "[0..1] - vor dem Stream-Panel;\n[3..4] - vor Beziehungspaneln;\n[6 ..] - nach Beziehungspaneln."
+  },
+  "options": {
+    "type": {
+      "side": "Seite",
+      "bottom": "Unterseite"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+    "controller": "controllers/record",
+    "createDisabled": true,
+    "recordViews": {
+        "detail": "advanced:views/bpmn-user-task/record/detail"
+    },
+    "views": {
+        "detail": "advanced:views/bpmn-user-task/detail"
+    },
+    "dynamicLogic": {
+        "options": {
+            "resolution": [
+                {
+                    "optionList": [
+                        "",
+                        "Approved",
+                        "Rejected"
+                    ],
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "actionType",
+                            "value": "Approve"
+                        }
+                    ]
+                },
+                {
+                    "optionList": [
+                        "",
+                        "Reviewed"
+                    ],
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "actionType",
+                            "value": "Review"
+                        }
+                    ]
+                },
+                {
+                    "optionList": [
+                        "",
+                        "Completed",
+                        "Failed"
+                    ],
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "actionType",
+                            "value": "Accomplish"
+                        }
+                    ]
+                }
+            ]
+        },
+        "fields": {
+            "resolution": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "isTrue",
+                                    "attribute": "isResolved"
+                                },
+                                {
+                                    "type": "isTrue",
+                                    "attribute": "isCanceled"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "resolutionNote": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "resolution"
+                        },
+                        {
+                            "type": "isFalse",
+                            "attribute": "isFailed"
+                        }
+                    ]
+                }
+            },
+            "instructions": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "instructions"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "filterList": [
+        "actual",
+        {
+            "name": "resolved",
+            "style": "success"
+        },
+        {
+            "name": "canceled"
+        }
+    ],
+    "boolFilterList": ["onlyMy"],
+    "iconClass": "fas fa-user-cog"
+}

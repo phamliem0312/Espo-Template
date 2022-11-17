@@ -1,0 +1,49 @@
+{
+  "labels": {
+    "Create BpmnProcess": "Запустити процес",
+    "Stop Process": "Зупинити процес",
+    "User Tasks": "Завдання користувача",
+    "Flowcharts": "Блок-схеми",
+    "Interrupt": "Перервати",
+    "Reject": "Відхилити",
+    "Start flow from here": "Почати потік звідси"
+  },
+  "fields": {
+    "status": "Статус",
+    "targetType": "Тип цільової сутності",
+    "target": "Ціль",
+    "createdEntitiesData": "Дані створених сутностей",
+    "flowchartData": "Дані блок-схеми",
+    "flowchart": "Блок-схема",
+    "flowchartVisualization": "Блок-схема (візуалізація)",
+    "flowchartElementsDataHash": "Елементи блок-схеми",
+    "variables": "Змінні",
+    "endedAt": "Закінчено",
+    "startElementId": "Початковий елемент",
+    "parentProcess": "Батьківський процес",
+    "parentProcessFlowNode": "Вузол потоку батьківського процесу"
+  },
+  "links": {
+    "flowchart": "Блок-схема",
+    "target": "Ціль",
+    "flowNodes": "Журнал потоку",
+    "userTasks": "Завдання користувача по процесу",
+    "childProcesses": "Дочірні процеси",
+    "parentProcess": "Батьківський процес",
+    "parentProcessFlowNode": "Вузол потоку батьківського процесу"
+  },
+  "options": {
+    "status": {
+      "Created": "Створено",
+      "Started": "Почалося",
+      "Ended": "Закінчено",
+      "Paused": "Призупинено",
+      "Stopped": "Зупинено",
+      "Interrupted": "Перервано"
+    }
+  },
+  "presetFilters": {
+    "actual": "Актуальний",
+    "ended": "Закінчено"
+  }
+}

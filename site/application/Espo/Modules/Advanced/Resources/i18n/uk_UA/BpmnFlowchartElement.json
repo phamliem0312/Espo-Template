@@ -1,0 +1,119 @@
+{
+  "fields": {
+    "text": "Текст",
+    "triggerType": "Тип тригера",
+    "timer": "Параметри таймера",
+    "defaultFlowId": "Потік за замовчуванням",
+    "from": "Від",
+    "to": "Кому",
+    "replyTo": "Куди відповідати",
+    "fromEmailAddress": "Електронна адреса відправника",
+    "toEmailAddress": "Електронна адреса одержувача",
+    "replyToEmailAddress": "Електронна адреса для відповіді",
+    "toSpecifiedTeams": "Командам",
+    "toSpecifiedUsers": "Користувачам",
+    "toSpecifiedContacts": "Контактам",
+    "emailTemplate": "Шаблон листа",
+    "doNotStore": "Не зберігати надіслані електронні листи",
+    "actions": "Дії",
+    "formula": "Формула (скрипт)",
+    "actionType": "Тип дії",
+    "targetUser": "Цільовий користувач",
+    "assignmentType": "Призначення",
+    "targetTeam": "Цільова команда",
+    "targetUserPosition": "Позиція цільового користувача",
+    "startDirection": "Напрямок старту",
+    "targetReport": "Цільовий звіт",
+    "scheduling": "Планування",
+    "messageType": "Тип повідомлення",
+    "canBeFailed": "Може бути невдалим",
+    "target": "Ціль",
+    "callableType": "Тип дії",
+    "errorCode": "Код помилки",
+    "escalationCode": "Код ескалації",
+    "cancelActivity": "Перериває",
+    "isInterrupting": "Перериває",
+    "targetType": "Тип цільової сутності",
+    "flowchartVisualization": "Блок-схема",
+    "flowchart": "Блок-схема",
+    "signal": "Сигнал",
+    "returnVariableList": "Зворотні змінні",
+    "repliedTo": "Куди відповідати",
+    "relatedTo": "Пов'язаний з",
+    "instructions": "Інструкції",
+    "conditionsFormula": "Формула умов",
+    "optOutLink": "Посилання для відписки"
+  },
+  "labels": {
+    "Conditions": "Умови",
+    "Actions": "Дії",
+    "Field": "Поле",
+    "Flows Conditions": "Умови потоків"
+  },
+  "tooltips": {
+    "taskSendMessageEmailAddress": "Наявні наповнювачі:\n\n* `{$$variable}`",
+    "targetReport": "Записи із звіту-списку будуть передані новому процесу.",
+    "target": "Виберіть, який запис буде використовуватися як цільовий.",
+    "userTaskName": "Назва запису завдання користувача, яке буде створено.\n\nНаявні наповнювачі:\n* `{$attribute}`\n* `{$$variable}`",
+    "userTaskInstructions": "Інструкції для користувача. Markdown підтримується.\n\nНаявні наповнювачі:\n* `{$attribute}`\n* `{$$variable}`",
+    "returnVariableList": "Вкажіть змінні формули, які будуть скопійовані з підпроцесу в батьківський процес після успішного завершення підпроцесу.",
+    "scheduling": "Crontab позначення. Визначає частоту виконання роботи. Часовий пояс UTC.\n\n`*/5 * * * *` - кожні 5 хвилин\n\n`0 */2 * * *` - кожні 2 години\n\n`30 1 * * *` - о 01:30 один раз в день\n\n`0 0 1 * *` - в перший день місяця"
+  },
+  "options": {
+    "emailAddress": {
+      "system": "Система",
+      "currentUser": "Поточний користувач",
+      "specifiedEmailAddress": "Визначена емейл адреса",
+      "assignedUser": "Відповідальний користувач",
+      "followers": "Підписники",
+      "specifiedContacts": "Визначеним контактам",
+      "specifiedUsers": "Визначеним користувачам",
+      "specifiedTeams": "Визначеним командам",
+      "followersExcludingAssignedUser": "Підписаним користувачам за виключенням відповідального",
+      "processAssignedUser": "Користувачеві, якому призначений процес",
+      "targetEntity": "Цільовому запису",
+      "": "Немає"
+    },
+    "triggerType": {
+      "afterRecordCreated": "Після створення запису",
+      "afterRecordSaved": "Після збереження запису",
+      "sequential": "Послідовний"
+    },
+    "timerShiftOperator": {
+      "plus": "плюс",
+      "minus": "мінус"
+    },
+    "timerShiftUnits": {
+      "minutes": "хвилин",
+      "hours": "годин",
+      "days": "днів",
+      "months": "місяців",
+      "seconds": "секунд"
+    },
+    "timerBase": {
+      "moment": "Момент, коли подія спрацювала",
+      "formula": "Вираховується за формулою"
+    },
+    "actionType": {
+      "Approve": "Затвердити",
+      "Review": "На розгляді"
+    },
+    "assignmentType": {
+      "": "Немає",
+      "processAssignedUser": "Користувачеві, якому призначений процес",
+      "specifiedUser": "Визначеному користувачеві",
+      "rule:Round-Robin": "Циклічне",
+      "rule:Least-Busy": "Найвільнішим"
+    },
+    "startDirection": {
+      "": "Авто",
+      "r": "Праворуч",
+      "d": "Вниз",
+      "u": "Вгору",
+      "l": "Ліворуч"
+    },
+    "messageType": {
+      "Email": "Емейл"
+    }
+  }
+}

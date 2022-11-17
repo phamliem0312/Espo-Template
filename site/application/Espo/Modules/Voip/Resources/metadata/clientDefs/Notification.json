@@ -1,0 +1,5 @@
+{
+    "itemViews": {
+        "ShortStatus": "voip:views/notification/items/short-status"
+    }
+}

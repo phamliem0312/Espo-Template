@@ -1,0 +1,50 @@
+{
+    "functionClassNameMap": {
+        "processEntity\\attribute": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\BpmGroup\\ProcessEntityGroup\\AttributeType",
+        "bpm\\broadcastSignal": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\BpmGroup\\BroadcastSignalType",
+        "bpm\\processEntity\\attribute": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\BpmGroup\\ProcessEntityGroup\\AttributeType",
+        "bpm\\createdEntity\\attribute": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\BpmGroup\\CreatedEntityGroup\\AttributeType",
+        "bpm\\targetEntity\\attribute": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\AttributeType",
+        "bpm\\startProcess": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\BpmGroup\\StartProcessType",
+        "targetEntity\\attribute": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\AttributeType",
+        "targetEntity\\attributeFetched": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\AttributeFetchedType",
+        "targetEntity\\isAttributeChanged": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\IsAttributeChangedType",
+        "targetEntity\\isAttributeNotChanged": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\IsAttributeNotChangedType",
+        "targetEntity\\isNew": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\IsNewType",
+        "targetEntity\\isRelated": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\IsRelatedType",
+        "targetEntity\\hasLinkMultipleId": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\TargetEntityGroup\\HasLinkMultipleIdType",
+        "workflow\\lastHttpResponseBody": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\WorkflowGroup\\LastHttpResponseBodyType",
+        "workflow\\lastHttpResponseCode": "Espo\\Modules\\Advanced\\Core\\Workflow\\Formula\\Functions\\WorkflowGroup\\LastHttpResponseCodeType"
+    },
+    "functionList": [
+        "__APPEND__",
+        {
+            "name": "bpm\\processEntity\\attribute",
+            "insertText": "bpm\\processEntity\\attribute(ATTRIBUTE_NAME)",
+            "returnType": "mixed"
+        },
+        {
+            "name": "bpm\\targetEntity\\attribute",
+            "insertText": "bpm\\targetEntity\\attribute(ATTRIBUTE_NAME)",
+            "returnType": "mixed"
+        },
+        {
+            "name": "bpm\\createdEntity\\attribute",
+            "insertText": "bpm\\createdEntity\\attribute(ALIAS_ID, ATTRIBUTE_NAME)",
+            "returnType": "mixed"
+        },
+        {
+            "name": "bpm\\broadcastSignal",
+            "insertText": "bpm\\broadcastSignal(SIGNAL_NAME, [ENTITY_TYPE], [ENTITY_ID])"
+        },
+        {
+            "name": "bpm\\startProcess",
+            "insertText": "bpm\\startProcess(FLOWCHART_ID, TARGET_TYPE, TARGET_ID)"
+        },
+        {
+            "name": "workflow\\lastHttpResponseBody",
+            "insertText": "workflow\\lastHttpResponseBody()",
+            "returnType": "string|null"
+        }
+    ]
+}

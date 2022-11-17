@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "Workflow Manager": "Flussi di lavoro",
+    "Flowcharts": "Diagrammi",
+    "Processes": "Processi",
+    "Business Process Management": "Gestione di processi aziendali",
+    "Report Filters": "Filtri di report",
+    "Report Panels": "Pannelli filtri"
+  },
+  "descriptions": {
+    "workflowManager": "Configura regole del flusso di lavoro.",
+    "bpmnFlowcharts": "Definizione di processi aziendali.",
+    "bpmnProcesses": "Istanze dei processi aziendali.",
+    "reportFilters": "Filtri di visualizzazione elenco personalizzati basati sui report.",
+    "reportPanels": "Pannelli di visualizzazione dettagli che mostrano i risultati del report."
+  },
+  "messages": {
+    "newAdvancedPackVersionIsAvailable": "È disponibile la nuova versione Advanced Pack {latestVersion}. Può essere scaricata sul portale clienti."
+  }
+}

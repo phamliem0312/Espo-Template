@@ -1,0 +1,114 @@
+{
+    "fields": {
+        "number": {
+            "type": "autoincrement"
+        },
+        "status": {
+            "type": "enum",
+            "options": [
+                "Created",
+                "Pending",
+                "In Process",
+                "Standby",
+                "Processed",
+                "Rejected",
+                "Failed",
+                "Interrupted"
+            ],
+            "maxLength": 36
+        },
+        "elementId": {
+            "type": "varchar",
+            "maxLength": 36
+        },
+        "target": {
+            "type": "linkParent"
+        },
+        "elementType": {
+            "type": "varchar",
+            "maxLength": 36
+        },
+        "element": {
+            "type": "varchar",
+            "view": "advanced:views/bpmn-flow-node/fields/element",
+            "notStorable": true
+        },
+        "elementData": {
+            "type": "jsonObject"
+        },
+        "data": {
+            "type": "jsonObject"
+        },
+        "previousFlowNodeElementType": {
+            "type": "varchar",
+            "maxLength": 36
+        },
+        "createdAt": {
+            "type": "datetime"
+        },
+        "proceedAt": {
+            "type": "datetime"
+        },
+        "processedAt": {
+            "type": "datetime"
+        },
+        "userTaskId": {
+            "type": "varchar",
+            "notStorable": true
+        },
+        "subProcessId": {
+            "type": "varchar",
+            "notStorable": true,
+            "maxLength": 36
+        },
+        "isLocked": {
+            "type": "bool"
+        },
+        "isDeferred": {
+            "type": "bool"
+        },
+        "deferredAt": {
+            "type": "datetime"
+        }
+    },
+    "links": {
+        "target": {
+            "type": "belongsToParent"
+        },
+        "process": {
+            "type": "belongsTo",
+            "entity": "BpmnProcess",
+            "noJoin": true
+        },
+        "flowchart": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowchart",
+            "noJoin": true
+        },
+        "previousFlowNode": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowNode",
+            "noJoin": true
+        },
+        "divergentFlowNode": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowNode",
+            "noJoin": true
+        }
+    },
+    "collection": {
+        "sortBy": "number",
+        "asc": false
+    },
+    "indexes": {
+        "statusTargetTypeElementType": {
+            "columns": ["status", "targetType", "elementType"]
+        },
+        "statusElementType": {
+            "columns": ["status", "elementType"]
+        },
+        "statusProcessId": {
+            "columns": ["status", "processId"]
+        }
+    }
+}

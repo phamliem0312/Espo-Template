@@ -1,0 +1,25 @@
+{
+  "labels": {
+    "Workflow Manager": "Flujos de trabajo",
+    "Flowcharts": "Diagramas de flujo",
+    "Processes": "Procesos",
+    "Business Process Management": "Gestión de procesos de negocio",
+    "Report Filters": "Filtros de informes",
+    "Report Panels": "Paneles de informes"
+  },
+  "descriptions": {
+    "workflowManager": "Configurar reglas de flujo de trabajo.",
+    "bpmnFlowcharts": "Definiciones de procesos de negocio.",
+    "bpmnProcesses": "Instancias de procesos de negocio.",
+    "reportFilters": "Filtros de vista de lista personalizados basados en informes.",
+    "reportPanels": "Vista detallada de los paneles que muestran los resultados del informe."
+  },
+  "messages": {
+    "newAdvancedPackVersionIsAvailable": "Hay disponible una nueva versión del paquete avanzado {latestVersion}. Puede descargarla en el portal del cliente."
+  },
+  "templates": {
+    "reportSendingGrid1": "Cuadrícula de informe-1",
+    "reportSendingGrid2": "Cuadrícula de informe-2",
+    "reportSendingList": "Lista de informes"
+  }
+}

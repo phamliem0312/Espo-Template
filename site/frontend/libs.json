@@ -1,0 +1,161 @@
+[
+    {
+        "src": "node_modules/jquery/dist/jquery.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/underscore/underscore.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/es6-promise/dist/es6-promise.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/backbone/backbone.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/handlebars/dist/handlebars.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/bullbone/dist/bullbone.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/js-base64/base64.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/moment/moment.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/moment-timezone/moment-timezone.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/moment-timezone-data-build/build/moment-timezone-data.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/timepicker/jquery.timepicker.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/devbridge-autocomplete/dist/jquery.autocomplete.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/jquery-textcomplete/dist/jquery.textcomplete.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/bootstrap/dist/js/bootstrap.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/marked/lib/marked.umd.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/dompurify/dist/purify.js",
+        "bundle": true
+    },
+    {
+        "name": "gridstack",
+        "files": [
+            {
+                "src": "node_modules/gridstack/dist/gridstack.js"
+            },
+            {
+                "src": "node_modules/gridstack/dist/gridstack.jQueryUI.js"
+            }
+        ],
+        "bundle": true
+    },
+    {
+        "src": "node_modules/autobahn-espo/autobahn.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/jquery-ui-espo/dist/jquery-ui.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/selectize/dist/js/standalone/selectize.js",
+        "bundle": true
+    },
+    {
+        "src": "node_modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"
+    },
+    {
+        "src": "node_modules/cropper/dist/cropper.js"
+    },
+    {
+        "src": "node_modules/cronstrue/dist/cronstrue-i18n.js",
+        "minify": true
+    },
+    {
+        "src": "node_modules/exif-js/exif.js",
+        "minify": true
+    },
+    {
+        "src": "node_modules/jsbarcode/dist/JsBarcode.all.js",
+        "minify": true
+    },
+    {
+        "src": "node_modules/qrcodejs/qrcode.js"
+    },
+    {
+        "src": "node_modules/summernote/dist/summernote.js",
+        "minify": true
+    },
+    {
+        "src": "node_modules/espo-funnel-chart/build/espo-funnel-chart.js"
+    },
+    {
+        "src": "node_modules/flotr2/flotr2.js",
+        "minify": true
+    },
+    {
+        "name": "ace-builds",
+        "files": [
+            {
+                "src": "node_modules/ace-builds/src-noconflict/ace.js",
+                "dest": "client/lib/ace.js"
+            },
+            {
+                "src": "node_modules/ace-builds/src-noconflict/mode-javascript.js",
+                "dest": "client/lib/ace-mode-javascript.js"
+            },
+            {
+                "src": "node_modules/ace-builds/src-noconflict/ext-language_tools.js",
+                "dest": "client/lib/ace-ext-language_tools.js"
+            },
+            {
+                "src": "node_modules/ace-builds/src-noconflict/theme-tomorrow_night.js",
+                "dest": "client/lib/ace-theme-tomorrow_night.js"
+            }
+        ]
+    },
+    {
+        "src": "node_modules/fullcalendar/dist/fullcalendar.js",
+        "dest": "client/modules/crm/lib/fullcalendar.js",
+        "minify": true
+    },
+    {
+        "src": "node_modules/vis/dist/vis.js",
+        "dest": "client/modules/crm/lib/vis.js",
+        "minify": true
+    }
+]

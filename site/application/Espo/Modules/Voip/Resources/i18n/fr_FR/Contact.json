@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "voipLine": "Ligne VoIP"
+  },
+  "tooltips": {
+    "voipLine": "Cette ligne VoIP sera utilisée pour les appels sortants."
+  }
+}

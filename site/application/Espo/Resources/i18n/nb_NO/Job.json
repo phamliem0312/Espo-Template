@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "executeTime": "Utfør på",
+    "attempts": "Forsøk igjen",
+    "failedAttempts": "Mislykkede forsøk",
+    "serviceName": "Tjeneste",
+    "methodName": "Metode",
+    "scheduledJob": "Planlagte oppgaver",
+    "method": "Metode"
+  },
+  "options": {
+    "status": {
+      "Pending": "Ventende",
+      "Success": "Suksess",
+      "Running": "Kjører",
+      "Failed": "Feilet"
+    }
+  }
+}

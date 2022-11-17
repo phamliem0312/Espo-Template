@@ -1,0 +1,33 @@
+{
+  "fields": {
+    "name": "Nome",
+    "username": "Usuário",
+    "password": "Senha",
+    "port": "Porta",
+    "monitoredFolders": "Pastas monitoradas",
+    "fetchSince": "Recuperar desde",
+    "emailAddress": "Endereço de E-mail",
+    "storeSentEmails": "Armazenar emails enviados",
+    "useSmtp": "Usar SMTP",
+    "smtpUsername": "Usuário SMTP",
+    "smtpPassword": "Senha SMTP"
+  },
+  "links": {
+    "filters": "Filtros"
+  },
+  "options": {
+    "status": {
+      "Active": "Ativa",
+      "Inactive": "Inativa"
+    }
+  },
+  "labels": {
+    "Create EmailAccount": "Criar conta de e-mail",
+    "Main": "Principal",
+    "Test Connection": "Testar conexão"
+  },
+  "messages": {
+    "couldNotConnectToImap": "Não foi possível conectar ao servidor IMAP",
+    "connectionIsOk": "Conexão está OK"
+  }
+}

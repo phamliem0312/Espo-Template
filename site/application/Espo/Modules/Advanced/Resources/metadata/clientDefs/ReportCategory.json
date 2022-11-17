@@ -1,0 +1,45 @@
+{
+    "controller": "controllers/record-tree",
+    "collection": "collections/tree",
+    "menu": {
+        "listTree": {
+            "buttons": [
+                {
+                    "label": "List View",
+                    "link": "#ReportCategory\/list",
+                    "acl": "read",
+                    "style": "default"
+                },
+                {
+                    "label": "Reports",
+                    "link": "#Report",
+                    "acl": "read",
+                    "aclScope": "Report",
+                    "style": "default"
+                }
+            ]
+        },
+        "list": {
+            "buttons": [
+                {
+                    "label": "Tree View",
+                    "link": "#ReportCategory",
+                    "acl": "read",
+                    "style": "default"
+                },
+                {
+                    "label": "Reports",
+                    "link": "#Report",
+                    "acl": "read",
+                    "aclScope": "Report",
+                    "style": "default"
+                }
+            ]
+        }
+    },
+    "relationshipPanels": {
+        "reports": {
+            "create": false
+        }
+    }
+}

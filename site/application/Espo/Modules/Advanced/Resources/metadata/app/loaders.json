@@ -1,0 +1,5 @@
+{
+    "WorkflowManager": "\\Espo\\Modules\\Advanced\\Core\\Loaders\\WorkflowManager",
+    "WorkflowHelper": "\\Espo\\Modules\\Advanced\\Core\\Loaders\\WorkflowHelper",
+    "SignalManager": "\\Espo\\Modules\\Advanced\\Core\\Loaders\\SignalManager"
+}

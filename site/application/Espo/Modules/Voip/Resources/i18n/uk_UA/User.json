@@ -1,0 +1,27 @@
+{
+  "fields": {
+    "voipUser": "Внутрішній номер",
+    "voipPassword": "Пароль",
+    "voipNotifications": "Показувати сповіщення",
+    "voipMute": "Безшумні сповіщення",
+    "voipInternalCall": "Використовувати внутрішній click-to-call",
+    "voipConnector": "Сервер VoiP",
+    "voipAdditionalNumbers": "Додаткові номери телефонів",
+    "voipDoNotDisturb": "Не турбувати",
+    "voipDoNotDisturbUntil": "Поки"
+  },
+  "labels": {
+    "Voip Settings": "Налаштування телефонії",
+    "voipPassword": "Пароль"
+  },
+  "tooltips": {
+    "voipUser": "Ваш внутрішній номер VoIP (наприклад, \"299 \", \"1001 \").",
+    "voipPassword": "Ваш VoIP пароль.",
+    "voipNotifications": "Якщо ви хочете отримувати повідомлення про вхідні/вихідні дзвінки.",
+    "voipMute": "Відключення звукового оповіщення.",
+    "voipInternalCall": "Внутрішній click-to-call - це функція, яка ініціює вихідний дзвінок через сервер телефонії. Якщо прапорець знятий, то буде використовуватися зовнішня програма для обробки посилань \"tel: \".",
+    "voipAdditionalNumbers": "Додаткові зовнішні або внутрішні телефонні номери.",
+    "voipConnector": "Ваш поточний сервер VoIP.",
+    "voipDoNotDisturb": "Вимкнути вхідні виклики."
+  }
+}

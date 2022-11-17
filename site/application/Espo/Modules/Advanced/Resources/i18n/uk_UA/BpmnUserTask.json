@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "Resolve": "Вирішити"
+  },
+  "fields": {
+    "actionType": "Тип дії",
+    "resolution": "Рішення",
+    "target": "Ціль",
+    "process": "Процес",
+    "isResolved": "Вирішено",
+    "resolutionNote": "Примітка до рішення",
+    "instructions": "Інструкції",
+    "isCanceled": "Анульовано"
+  },
+  "links": {
+    "process": "Процес",
+    "target": "Ціль",
+    "flowNode": "Вузол потоку"
+  },
+  "options": {
+    "actionType": {
+      "Approve": "Затвердити",
+      "Review": "Розглянути",
+      "Accomplish": "Виконати"
+    },
+    "resolution": {
+      "": "Немає",
+      "Approved": "Затверджено",
+      "Rejected": "Відхилено",
+      "Reviewed": "Розглянуто",
+      "Completed": "Завершено",
+      "Canceled": "Анульовано"
+    }
+  },
+  "presetFilters": {
+    "actual": "Актуальний",
+    "resolved": "Вирішено",
+    "canceled": "Анульовано"
+  }
+}

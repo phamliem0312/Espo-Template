@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "width": "Larghezza (%)",
+    "notSortable": "Non ordinabile",
+    "align": "Allinea",
+    "panelName": "Nome del pannello",
+    "style": "Stile",
+    "sticked": "Fissato",
+    "isLarge": "Misura carattere grande",
+    "dynamicLogicVisible": "Condizioni che rendono visibile il pannello",
+    "hidden": "Nascosto"
+  },
+  "options": {
+    "align": {
+      "left": "Sinistra",
+      "right": "Destra"
+    },
+    "style": {
+      "success": "Successo",
+      "danger": "Pericolo",
+      "warning": "Avvertimento",
+      "primary": "Primario"
+    }
+  },
+  "labels": {
+    "New panel": "Nuovo pannello",
+    "Layout": "Struttura"
+  },
+  "tooltips": {
+    "link": "Se selezionato, verrà visualizzato un valore di campo come collegamento che punta alla vista di dettaglio del record. Di solito è usato per i campi *Nome*."
+  }
+}

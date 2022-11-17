@@ -1,0 +1,29 @@
+{
+    "labels": {
+        "Workflow Manager": "Workflows",
+        "Flowcharts": "Flowcharts",
+        "Processes": "Processes",
+        "Business Process Management": "Business Process Management",
+        "Report Filters": "Report Filters",
+        "Report Panels": "Report Panels"
+    },
+    "descriptions": {
+        "workflowManager": "Configure Workflow rules.",
+        "bpmnFlowcharts": "Definitions of business processes.",
+        "bpmnProcesses": "Instances of business processes.",
+        "reportFilters": "Custom list view filters based on reports.",
+        "reportPanels": "Detail view panels showing report results."
+    },
+    "messages": {
+         "newAdvancedPackVersionIsAvailable": "New Advanced Pack version {latestVersion} is available. It can be downloaded on the customer portal."
+    },
+    "templates": {
+        "reportSendingGrid1": "Report Grid-1",
+        "reportSendingGrid2": "Report Grid-2",
+        "reportSendingList": "Report List"
+    },
+    "keywords": {
+        "bpmnFlowcharts": "bpm",
+        "bpmnProcesses": "bpm"
+    }
+}

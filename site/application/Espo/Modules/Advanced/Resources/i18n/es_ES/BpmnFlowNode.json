@@ -1,0 +1,23 @@
+{
+  "labels": {
+    "Reset": "Restablecer"
+  },
+  "fields": {
+    "status": "Estado",
+    "processedAt": "Procesado en",
+    "elementType": "Tipo de elemento",
+    "element": "Elemento"
+  },
+  "options": {
+    "status": {
+      "Created": "Creado",
+      "Pending": "Pendiente",
+      "In Process": "En proceso",
+      "Standby": "En espera",
+      "Processed": "Procesado",
+      "Rejected": "Rechazado",
+      "Failed": "Ha fallado",
+      "Interrupted": "Interrumpido"
+    }
+  }
+}

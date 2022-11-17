@@ -1,0 +1,22 @@
+[
+    {
+        "label":"Overview",
+        "rows": [
+            [
+                {"name": "type"},
+                {"name": "parent"}
+            ],
+            [
+                {"name": "from"},
+                {"name": "to"}
+            ],
+            [
+                {"name": "body", "fullWidth": true}
+            ],
+            [
+                {"name": "attachments"}, false
+            ]
+
+        ]
+    }
+]

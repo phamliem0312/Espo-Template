@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+    php:
+        build: docker/php
+        env_file:
+            - .env
+        environment:
+            XDEBUG_CONFIG: remote_host=${XDEBUG_HOST} remote_port=${XDEBUG_PORT} idekey=${XDEBUG_IDEKEY}
+            PHP_IDE_CONFIG: serverName=${IDE_SERVER_NAME}
+        volumes:
+            - ~/.composer:/var/www/.composer
+            - .:/var/www/html
+            - tmp:/tmp
+    server:
+        build: docker/server
+        env_file:
+            - .env
+        volumes:
+            - .:/var/www/html
+            - tmp:/tmp
+
+volumes:
+    tmp: {}

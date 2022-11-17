@@ -1,0 +1,10 @@
+{
+  "options": {
+    "job": {
+      "ReportTargetListSync": "Sincronizar listas de destino con informes",
+      "ScheduleReportSending": "Programar envío de informes",
+      "RunScheduledWorkflows": "Ejecutar flujos de trabajo programados",
+      "ProcessPendingProcessFlows": "Procesar flujos pendientes"
+    }
+  }
+}

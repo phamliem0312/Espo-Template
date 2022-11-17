@@ -1,0 +1,89 @@
+{
+  "fields": {
+    "triggerType": "Triggertyp",
+    "timer": "Timer-Parameter",
+    "defaultFlowId": "Standardfluss",
+    "from": "Von",
+    "to": "An",
+    "replyTo": "Antwort-an",
+    "fromEmailAddress": "Von der E-Mail Adresse",
+    "toEmailAddress": "An E-Mail Adresse",
+    "replyToEmailAddress": "Antwort-an E-Mail Adresse",
+    "toSpecifiedTeams": "Zu Teams",
+    "toSpecifiedUsers": "Für Benutzer",
+    "toSpecifiedContacts": "Zu Kontakten",
+    "emailTemplate": "E-Mail Vorlage",
+    "doNotStore": "Keine gesendete E-Mails speichern",
+    "actions": "Aktionen",
+    "formula": "Formel (Skript)",
+    "actionType": "Aktionstyp",
+    "targetUser": "Zielbenutzer",
+    "assignmentType": "Zuweisung",
+    "targetTeam": "Zielteam",
+    "targetUserPosition": "Position des Zielbenutzers",
+    "startDirection": "Startrichtung",
+    "targetReport": "Zielbericht",
+    "scheduling": "Planung",
+    "messageType": "Nachrichttyp",
+    "canBeFailed": "Kann fehlschlagen"
+  },
+  "labels": {
+    "Conditions": "Bedingungen",
+    "Actions": "Aktionen",
+    "Field": "Feld",
+    "Flows Conditions": "Flussbedingungen"
+  },
+  "tooltips": {
+    "targetReport": "Datensätze aus dem Listenbericht werden an den neuen Prozess übergeben.",
+    "scheduling": "Crontab-Notation. Definiert die Frequenz. UTC Zeitzone\n\n`* / 5 * * * *` - alle 5 Minuten\n\n`0 * / 2 * * *` - alle 2 Stunden\n\n`30 1 * * *` - um 01:30 einmal am Tag\n\n`0 0 1 * *` - am ersten Tag des Monats"
+  },
+  "options": {
+    "emailAddress": {
+      "currentUser": "Aktueller Benutzer",
+      "specifiedEmailAddress": "Angegebene E-Mail Adresse",
+      "assignedUser": "Zugewiesener Benutzer",
+      "followers": "Abonnenten",
+      "specifiedContacts": "Angegebene Kontakte",
+      "specifiedUsers": "Angegebene Benutzer",
+      "specifiedTeams": "Angegebene Teams",
+      "followersExcludingAssignedUser": "Follower ohne zugewiesenen Benutzer",
+      "processAssignedUser": "Benutzer wurde dem Prozess zugewiesen",
+      "targetEntity": "Zieldatensatz",
+      "": "Kein(e)"
+    },
+    "triggerType": {
+      "afterRecordCreated": "Nachdem der Datensatz erstellt wurde",
+      "afterRecordSaved": "Nach dem Speichern des Datensatzes",
+      "sequential": "Sequentiell"
+    },
+    "timerShiftUnits": {
+      "minutes": "Minuten",
+      "hours": "Stunden",
+      "days": "Tage",
+      "months": "Monate"
+    },
+    "timerBase": {
+      "moment": "Moment, als das Ereignis ausgelöst wurde",
+      "formula": "Berechnet durch Formel"
+    },
+    "actionType": {
+      "Approve": "Genehmigen",
+      "Review": "Überprüfen"
+    },
+    "assignmentType": {
+      "": "Kein(e)",
+      "processAssignedUser": "dem Prozess zugewiesener Benutzer ",
+      "specifiedUser": "Angegebener Benutzer",
+      "rule:Least-Busy": "Geringste Auslastung"
+    },
+    "startDirection": {
+      "r": "Recht",
+      "d": "Unten",
+      "u": "Oben",
+      "l": "Links"
+    },
+    "messageType": {
+      "Email": "E-Mail"
+    }
+  }
+}

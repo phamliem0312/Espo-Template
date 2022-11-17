@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "voipUser": "Su extensión de usuario",
+    "voipPassword": "Su contraseña de VoIP",
+    "voipNotifications": "Mostrar notificaciones de llamadas",
+    "voipMute": "Notificaciones silenciosas",
+    "voipInternalCall": "Usar \"clic para llamar\" interno",
+    "voipConnector": "Servidor VoiP",
+    "voipAdditionalNumbers": "Números telefónicos adicionales",
+    "voipDoNotDisturb": "No molestar",
+    "voipDoNotDisturbUntil": "Hasta",
+    "voipContext": "Contexto de marcación del usuario"
+  },
+  "labels": {
+    "Voip Settings": "Ajustes de VoIP",
+    "voipPassword": "Su contraseña de VoIP"
+  },
+  "tooltips": {
+    "voipUser": "Su extensión de usuario de VoIP (por ejemplo, \"299\", \"1001\").",
+    "voipPassword": "Su contraseña de VoIP.",
+    "voipNotifications": "Si desea recibir notificaciones de llamadas entrantes/salientes.",
+    "voipMute": "Silenciar sonido de notificación.",
+    "voipInternalCall": "\"Clic para llamar\" interno es una función para originar una llamada saliente. Si la casilla de verificación no está marcada, se utilizará una aplicación externa para manejar los enlaces tel:.",
+    "voipAdditionalNumbers": "Números telefónicos externos o internos adicionales.",
+    "voipConnector": "Su servidor actual de VoIP.",
+    "voipDoNotDisturb": "Deshabilitar llamadas entrantes.",
+    "voipContext": "Contexto de marcación para un usuario. Si está vacío, se utilizará un contexto de marcación de un conector."
+  }
+}

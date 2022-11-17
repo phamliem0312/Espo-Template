@@ -1,0 +1,12 @@
+{
+    "aclDependencies": {
+        "entityDefs.Lead.fields.source.options": {
+        	"scope": "Opportunity",
+        	"field": "leadSource"
+        }
+    },
+    "frontendHiddenPathList": [
+        "__APPEND__",
+        ["app", "calendar", "additionalAttributeList"]
+    ]
+}

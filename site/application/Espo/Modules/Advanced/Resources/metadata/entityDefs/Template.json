@@ -1,0 +1,8 @@
+{
+    "defaultTemplates": {
+        "Report": {
+            "body": "<h1>{{name}}</h1><br>{{reportTable border=1 borderColor=\"#333\" cellpadding=2}}",
+            "footer": "<div style=\"text-align: center;\"><span style=\"font-size: 10px;\">{pageNumber}</span></div>"
+        }
+    }
+}

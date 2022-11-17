@@ -1,0 +1,49 @@
+{
+  "labels": {
+    "Create VoipMessage": "Створити повідомлення",
+    "Calling": "Надсилається...",
+    "Go to message": "Перейти до повідомлень",
+    "Download": "Завантажити"
+  },
+  "fields": {
+    "externalId": "Зовнішній ID",
+    "type": "Тип",
+    "direction": "Напрямок",
+    "status": "Статус",
+    "from": "Від",
+    "to": "Кому",
+    "body": "Тіло",
+    "assignedUser": "Відповідальний",
+    "createdAt": "Створений у",
+    "modifiedAt": "Змінений у",
+    "attachments": "Вкладення",
+    "dateSent": "Дата відправки"
+  },
+  "options": {
+    "direction": {
+      "incoming": "Вхідні",
+      "outgoing": "Вихідні"
+    },
+    "status": {
+      "draft": "Чернетка",
+      "accepted": "Прийнято",
+      "queued": "В черзі",
+      "sending": "Надсилається",
+      "sent": "Надіслано",
+      "receiving": "Отримання",
+      "received": "Отримано",
+      "delivered": "Доставлено",
+      "undelivered": "Не доставлено",
+      "failed": "Невдало"
+    }
+  },
+  "messages": {
+    "messageSent": "Повідомлення надіслано",
+    "savedAsDraft": "Збережено як чернетку"
+  },
+  "presetFilters": {
+    "sent": "Надіслано",
+    "inbox": "Вхідні",
+    "drafts": "Чернетки"
+  }
+}

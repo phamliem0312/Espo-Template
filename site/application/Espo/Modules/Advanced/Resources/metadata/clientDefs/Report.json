@@ -1,0 +1,137 @@
+{
+    "controller": "advanced:controllers/report",
+    "boolFilterList": ["onlyMy"],
+    "boolFilters": ["onlyMy"],
+    "recordViews": {
+        "list":"advanced:views/report/record/list",
+        "detail": "advanced:views/report/record/detail",
+        "edit": "advanced:views/report/record/edit"
+    },
+    "views": {
+        "list": "advanced:views/report/list",
+        "result": "advanced:views/report/result",
+        "detail": "advanced:views/report/detail"
+    },
+    "modalViews": {
+        "select": "advanced:views/report/modals/select-records"
+    },
+    "defaultSidePanelFieldLists": {
+        "detail": [
+            ":assignedUser",
+            "teams",
+            "portals"
+        ],
+        "edit": [
+            ":assignedUser",
+            "teams",
+            "portals"
+        ]
+    },
+    "menu": {
+        "list": {
+            "dropdown": [
+                {
+                    "label": "Create Joint Grid Report",
+                    "link": "#Report/create/type=JointGrid",
+                    "acl": "create"
+                },
+                {
+                    "label": "Manage Categories",
+                    "link": "#ReportCategory",
+                    "acl": "edit",
+                    "aclScope": "ReportCategory"
+                }
+            ]
+        }
+    },
+    "bottomPanels": {
+        "detail": [
+            {
+                "name": "report",
+                "label": "Report",
+                "view": "advanced:views/report/record/panels/report"
+            }
+        ]
+    },
+    "filterList": [
+        "grid",
+        "list"
+    ],
+      "sidePanels":{
+        "detail":[
+            {
+                "name":"emailSending",
+                "label":"EmailSending",
+                "view":"advanced:views/report/record/panels/email-sending",
+                "options":{
+                    "fields":[
+                        "emailSendingInterval",
+                        "emailSendingSettingWeekdays",
+                        "emailSendingSettingDay",
+                        "emailSendingSettingMonth",
+                        "emailSendingTime",
+                        "emailSendingUsers",
+                        "emailSendingDoNotSendEmptyReport"
+                    ],
+                    "fieldList":[
+                        "emailSendingInterval",
+                        "emailSendingSettingWeekdays",
+                        "emailSendingSettingDay",
+                        "emailSendingSettingMonth",
+                        "emailSendingTime",
+                        "emailSendingUsers",
+                        "emailSendingDoNotSendEmptyReport"
+                    ],
+                    "inlineEditDisabled": true,
+                    "mode":"detail"
+                },
+                "isForm": true
+            }
+        ],
+        "edit":[
+            {
+                "name":"emailSending",
+                "label":"EmailSending",
+                "view":"views/record/panels/side",
+                "options":{
+                    "fields":[
+                        "emailSendingInterval",
+                        "emailSendingSettingWeekdays",
+                        "emailSendingSettingDay",
+                        "emailSendingSettingMonth",
+                        "emailSendingTime",
+                        "emailSendingUsers",
+                        "emailSendingDoNotSendEmptyReport"
+                    ],
+                    "fieldList":[
+                        "emailSendingInterval",
+                        "emailSendingSettingWeekdays",
+                        "emailSendingSettingDay",
+                        "emailSendingSettingMonth",
+                        "emailSendingTime",
+                        "emailSendingUsers",
+                        "emailSendingDoNotSendEmptyReport"
+                    ],
+                    "mode":"edit"
+                },
+                "isForm": true
+            }
+        ]
+    },
+    "dynamicLogic": {
+        "fields": {
+            "applyAcl": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "type",
+                            "value": "Grid"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "iconClass": "fas fa-chart-bar"
+}

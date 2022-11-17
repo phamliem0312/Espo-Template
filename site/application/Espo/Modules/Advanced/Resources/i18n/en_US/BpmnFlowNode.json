@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "Reset": "Reset"
+    },
+    "fields": {
+        "status": "Status",
+        "processedAt": "Processed At",
+        "elementType": "Element Type",
+        "element": "Element"
+    },
+    "options": {
+        "status": {
+            "Created": "Created",
+            "Pending": "Pending",
+            "In Process": "In Process",
+            "Standby": "Standby",
+            "Processed": "Processed",
+            "Rejected": "Rejected",
+            "Failed": "Failed",
+            "Interrupted": "Interrupted"
+        }
+    }
+}

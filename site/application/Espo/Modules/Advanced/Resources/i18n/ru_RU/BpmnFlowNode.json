@@ -1,0 +1,23 @@
+{
+  "labels": {
+    "Reset": "Сбросить"
+  },
+  "fields": {
+    "status": "Статус",
+    "processedAt": "Обработано в",
+    "elementType": "Тип элемента",
+    "element": "Элемент"
+  },
+  "options": {
+    "status": {
+      "Created": "Создано",
+      "Pending": "В ожидании",
+      "In Process": "В процессе",
+      "Standby": "Наготове",
+      "Processed": "Обработано",
+      "Rejected": "Отклонено",
+      "Failed": "Сбой",
+      "Interrupted": "Прервано"
+    }
+  }
+}

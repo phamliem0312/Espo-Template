@@ -1,0 +1,82 @@
+[
+    {
+        "route": "/Voip/webhook/:connector/:accessKey",
+        "method": "get",
+        "params": {
+            "controller": "Voip",
+            "action": "webhook",
+            "connector": ":connector",
+            "accessKey": ":accessKey"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/:connector/:accessKey/",
+        "method": "get",
+        "params": {
+            "controller": "Voip",
+            "action": "webhook",
+            "connector": ":connector",
+            "accessKey": ":accessKey"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/:connector/:accessKey",
+        "method": "post",
+        "params": {
+            "controller": "Voip",
+            "action": "webhook",
+            "connector": ":connector",
+            "accessKey": ":accessKey"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/:connector/:accessKey/",
+        "method": "post",
+        "params": {
+            "controller": "Voip",
+            "action": "webhook",
+            "connector": ":connector",
+            "accessKey": ":accessKey"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/Starface",
+        "method": "get",
+        "params": {
+            "controller": "Voip",
+            "action": "starface"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/Starface/",
+        "method": "get",
+        "params": {
+            "controller": "Voip",
+            "action": "starface"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/Starface",
+        "method": "post",
+        "params": {
+            "controller": "Voip",
+            "action": "starface"
+        },
+        "noAuth": true
+    },
+    {
+        "route": "/Voip/webhook/Starface/",
+        "method": "post",
+        "params": {
+            "controller": "Voip",
+            "action": "starface"
+        },
+        "noAuth": true
+    }
+]

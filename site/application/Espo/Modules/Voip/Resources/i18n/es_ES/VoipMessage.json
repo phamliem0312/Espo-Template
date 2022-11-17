@@ -1,0 +1,68 @@
+{
+  "labels": {
+    "Create VoipMessage": "Crear mensaje",
+    "Calling": "Enviando...",
+    "markAsRead": "Marcar leído",
+    "markAsNotRead": "Marcar como no leido",
+    "Compose Message": "Componer mensaje",
+    "Save Draft": "Guardar borrador",
+    "Send": "Enviar",
+    "Reply": "Responder",
+    "Forward": "Reenviar",
+    "Download": "Descargar"
+  },
+  "fields": {
+    "externalId": "ID externo",
+    "type": "Tipo",
+    "direction": "Dirección",
+    "status": "Estado",
+    "from": "De",
+    "to": "Para",
+    "body": "Cuerpo",
+    "numMedia": "Número de medios",
+    "numSegments": "Número de segmentos",
+    "assignedUser": "Usuario asignado",
+    "connector": "Conector",
+    "createdAt": "Creado el",
+    "modifiedAt": "Modificado a las",
+    "attachments": "Archivos adjuntos",
+    "dateSent": "Fecha de envío",
+    "voipRouter": "Router VoIP",
+    "replies": "Respuestas",
+    "replied": "Respondido",
+    "sentBy": "Enviado por"
+  },
+  "options": {
+    "direction": {
+      "incoming": "Entrante",
+      "outgoing": "Saliente"
+    },
+    "status": {
+      "draft": "Borrador",
+      "accepted": "Aceptado",
+      "queued": "Puesto en cola",
+      "sending": "Enviando",
+      "sent": "Enviado",
+      "receiving": "Recibiendo",
+      "received": "Recibido",
+      "delivered": "Entregado",
+      "undelivered": "No entregado",
+      "failed": "Ha fallado"
+    }
+  },
+  "messages": {
+    "messageSent": "El mensaje se ha enviado",
+    "savedAsDraft": "Guardado como borrador"
+  },
+  "presetFilters": {
+    "sent": "Enviado",
+    "inbox": "Bandeja de entrada",
+    "drafts": "Borradores",
+    "trash": "Papelera",
+    "important": "Importante"
+  },
+  "massActions": {
+    "markAsRead": "Marcar leído",
+    "markAsNotRead": "Marcar como no leido"
+  }
+}

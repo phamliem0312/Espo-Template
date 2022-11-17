@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "report": "Report",
+        "column": "Summation Column",
+        "displayOnlyCount": "Display Only Total",
+        "displayTotal": "Display Total",
+        "useSiMultiplier": "SI Multiplier",
+        "displayType": "What to display"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "labels": {
+    "Create ReportFilter": "Filter erstellen",
+    "Rebuild Filters": "Filter neu erstellen"
+  },
+  "fields": {
+    "order": "Reihenfolge",
+    "report": "Bericht",
+    "entityType": "Entitätstyp",
+    "isActive": "Ist Aktiviert"
+  },
+  "links": {
+    "report": "Bericht"
+  },
+  "tooltips": {
+    "teams": "Teams, für die der Filter verfügbar sein wird. Wenn keine Teams angegeben sind, wendet keine Teambeschränkung an.",
+    "report": "Listenbericht, der für den Filter verwendet wird."
+  }
+}

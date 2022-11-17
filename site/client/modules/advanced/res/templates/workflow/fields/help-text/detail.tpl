@@ -1,0 +1,1 @@
+{{#if isNotEmpty}}<div class="well"><span class="complex-text">{{{value}}}</span></div>{{/if}}

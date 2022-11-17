@@ -1,0 +1,14 @@
+{
+  "scopeNames": {
+    "VoipMessage": "Повідомлення"
+  },
+  "scopeNamesPlural": {
+    "VoipMessage": "Повідомлення"
+  },
+  "streamMessages": {
+    "shortStatus": "{field} в {entityType} {entity} було змінено"
+  },
+  "dashlets": {
+    "VoipSettings": "Налаштування VoIP"
+  }
+}

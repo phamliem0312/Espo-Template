@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "Create ReportCategory": "Створити категорію",
+    "Manage Categories": "Управління категоріями",
+    "Reports": "Звіти"
+  },
+  "fields": {
+    "order": "Порядок"
+  },
+  "links": {
+    "reports": "Звіти"
+  }
+}

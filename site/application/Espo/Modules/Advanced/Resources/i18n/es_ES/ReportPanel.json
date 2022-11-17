@@ -1,0 +1,35 @@
+{
+  "labels": {
+    "Create ReportPanel": "Crear panel",
+    "Rebuild Panels": "Reconstruir paneles"
+  },
+  "fields": {
+    "report": "Informe",
+    "entityType": "Tipo de entidad",
+    "isActive": "Está habilitado",
+    "type": "Tipo",
+    "reportType": "Tipo de informe",
+    "displayTotal": "Mostrar total",
+    "displayOnlyTotal": "Mostrar solo el total",
+    "column": "Columna",
+    "reportEntityType": "Tipo de entidad de informe",
+    "columnList": "Lista de columnas",
+    "dynamicLogicVisible": "Condiciones que hacen visible el panel",
+    "order": "Orden",
+    "useSiMultiplier": "Multiplicador SI"
+  },
+  "links": {
+    "report": "Informe"
+  },
+  "tooltips": {
+    "teams": "Equipos para los que se mostrará el panel. Si no se especificó ningún equipo, no se aplicará ninguna restricción por equipo.",
+    "report": "Informe que se utilizará para el panel.",
+    "order": "[0..1] - antes del panel de transmisión;\n[3..4] - antes de los paneles de relaciones;\n[6..] - después de los paneles de relaciones."
+  },
+  "options": {
+    "type": {
+      "side": "Lado",
+      "bottom": "Inferior"
+    }
+  }
+}

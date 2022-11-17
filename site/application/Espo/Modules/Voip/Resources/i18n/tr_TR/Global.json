@@ -1,0 +1,21 @@
+{
+  "scopeNames": {
+    "VoipEvent": "VoIP Olayı",
+    "VoipMessage": "Mesaj",
+    "VoipRouter": "VoIP Yönlendirici"
+  },
+  "scopeNamesPlural": {
+    "VoipEvent": "VoIP Olayı",
+    "VoipMessage": "Mesaj",
+    "VoipRouter": "VoIP Yönlendiriciler"
+  },
+  "streamMessages": {
+    "shortStatus": "{entityType} {entity} nin {field} i değiştirildi"
+  },
+  "dashlets": {
+    "VoipSettings": "VoIP Ayarları"
+  },
+  "labels": {
+    "Schedule VoipMessage": "Mesaj oluştur"
+  }
+}

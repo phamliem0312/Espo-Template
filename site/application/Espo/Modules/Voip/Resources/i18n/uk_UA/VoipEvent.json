@@ -1,0 +1,20 @@
+{
+  "labels": {
+    "Calling": "Виклик...",
+    "Unknown": "Невідомий",
+    "goToCrm": "Перейти в CRM",
+    "doNotCallIsOn": "Не телефонувати включено"
+  },
+  "callNames": {
+    "incomingCallTitle": "{incomingCall} {from} {phoneNumber} {to} {user.userName}",
+    "outgoingCallTitle": "{outgoingCall} {from} {user.userName} {to} {phoneNumber}",
+    "incomingCall": "Вхідний дзвінок",
+    "outgoingCall": "Вихідний дзвінок",
+    "from": "від",
+    "to": "до"
+  },
+  "voicemailNames": {
+    "incomingCallTitle": "Повідомлення голосової пошти від {phone Number}",
+    "incomingCallTitleWithoutRecipient": "Повідомлення голосової пошти від {phone Number}"
+  }
+}

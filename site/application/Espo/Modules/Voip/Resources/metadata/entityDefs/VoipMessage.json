@@ -1,0 +1,311 @@
+{
+   "fields":{
+        "name": {
+           "type": "varchar",
+           "view": "voip:views/voip-message/fields/name",
+           "readOnly": true
+        },
+        "type":{
+           "type":"enum",
+           "options":[
+              "sms",
+              "mms"
+           ],
+           "default":"sms",
+           "maxLength": 50
+        },
+        "direction":{
+           "type":"enum",
+           "options":[
+              "incoming",
+              "outgoing"
+           ],
+           "default":"outgoing",
+           "readOnly": true,
+           "maxLength": 50
+        },
+        "status":{
+           "type":"enum",
+           "options":[
+              "draft",
+              "accepted",
+              "queued",
+              "sending",
+              "sent",
+              "receiving",
+              "received",
+              "delivered",
+              "undelivered",
+              "failed"
+           ],
+           "view": "views/fields/enum-styled",
+           "style": {
+              "delivered": "success",
+              "received": "success",
+              "undelivered": "danger",
+              "failed": "danger"
+           },
+           "default":"draft",
+           "audited": true,
+           "readOnly": true,
+           "maxLength": 50
+        },
+        "connector":{
+           "type":"varchar",
+           "maxLength": 100,
+           "disabled": true,
+           "readOnly": true
+        },
+        "parent": {
+           "type": "linkParent",
+           "entityList": ["Account", "Contact", "Lead"]
+        },
+        "account": {
+           "type": "link",
+           "readOnly": true,
+           "disabled": true
+        },
+        "from":{
+           "type":"varchar",
+           "maxLength": 16,
+           "required":true,
+           "view": "voip:views/voip-message/fields/from"
+        },
+        "to":{
+           "type":"varchar",
+           "maxLength": 16,
+           "view": "voip:views/voip-message/fields/to",
+           "required": true
+        },
+        "body":{
+           "type":"text"
+        },
+        "mediaUrls":{
+          "type": "jsonArray",
+          "disabled": true
+        },
+        "numSegments":{
+          "type": "int",
+          "readOnly": true
+        },
+        "assignedUser":{
+           "type":"link"
+        },
+        "connector":{
+           "type":"varchar",
+           "maxLength": 100,
+           "readOnly": true
+        },
+        "dateSent": {
+           "type": "datetime",
+           "readOnly": true
+        },
+        "externalId": {
+           "type":"varchar",
+           "maxLength": 100,
+           "readOnly": true,
+           "disabled": true
+        },
+        "processed":{
+           "type":"bool",
+           "default": false,
+           "disabled": true
+        },
+        "hidden":{
+           "type":"bool",
+           "default": false,
+           "disabled": true
+        },
+        "entities":{
+           "type": "jsonObject",
+           "disabled": true
+        },
+        "data":{
+           "type": "jsonObject",
+           "disabled": true
+        },
+        "teams": {
+          "type": "linkMultiple"
+        },
+        "createdAt": {
+           "type": "datetime",
+           "readOnly": true
+        },
+        "modifiedAt": {
+           "type": "datetime",
+           "readOnly": true
+        },
+        "attachments": {
+            "type": "attachmentMultiple",
+            "sourceList": ["Document"],
+            "layoutListDisabled": true
+        },
+        "hasAttachment": {
+            "type": "bool",
+            "readOnly": true
+        },
+        "users": {
+            "type": "linkMultiple",
+            "noLoad": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "readOnly": true,
+            "columns": {
+                "inTrash": "inTrash",
+                "folderId": "folderId"
+            },
+            "disabled": true
+        },
+        "folderId": {
+            "type": "varchar",
+            "notStorable": true,
+            "default": false,
+            "textFilterDisabled": true,
+            "disabled": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "sentBy": {
+            "type": "link",
+            "readOnly": true,
+            "noLoad": true
+        },
+        "voipRouter": {
+            "type": "link",
+            "readOnly": true
+        },
+        "isRead": {
+            "type": "bool",
+            "notStorable": true,
+            "default": true,
+            "readOnly": true,
+            "disabled": true
+        },
+        "isImportant": {
+            "type": "bool",
+            "notStorable": true,
+            "default": false,
+            "disabled": true
+        },
+        "inTrash": {
+            "type": "bool",
+            "notStorable": true,
+            "default": false,
+            "disabled": true
+        },
+        "isUsers": {
+            "type": "bool",
+            "notStorable": true,
+            "default": false,
+            "disabled": true
+        },
+        "replied": {
+            "type": "link",
+            "noJoin": true,
+            "readOnly": true,
+            "disabled": true
+        },
+        "replies": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "orderBy": "dateSent",
+            "disabled": true
+        }
+   },
+   "links":{
+        "assignedUser":{
+           "type":"belongsTo",
+           "entity":"User"
+        },
+        "voipRouter": {
+            "type": "belongsTo",
+            "foreign": "voipMessages",
+            "entity": "VoipRouter"
+        },
+        "parent": {
+           "type": "belongsToParent",
+           "foreign": "voipMessages"
+        },
+        "account": {
+           "type": "belongsTo",
+           "entity": "Account"
+        },
+        "teams": {
+          "type": "hasMany",
+          "entity": "Team",
+          "relationName": "entityTeam",
+          "layoutRelationshipsDisabled": true
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "sentBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "users": {
+           "type": "hasMany",
+           "entity": "User",
+           "foreign": "voipMessages",
+           "additionalColumns": {
+               "isRead": {
+                   "type": "bool",
+                   "default": false
+               },
+               "isImportant": {
+                   "type": "bool",
+                   "default": false
+               },
+               "inTrash": {
+                   "type": "bool",
+                   "default": false
+               },
+               "folderId": {
+                   "type": "varchar",
+                   "default": null,
+                   "maxLength": 24
+               }
+           }
+        },
+        "replied": {
+            "type": "belongsTo",
+            "entity": "VoipMessage",
+            "foreign": "replies"
+        },
+        "replies": {
+            "type": "hasMany",
+            "entity": "VoipMessage",
+            "foreign": "replied"
+        }
+   },
+   "collection": {
+        "orderBy": "dateSent",
+        "order": "desc",
+        "textFilterFields": ["name"]
+   },
+   "indexes": {
+        "createdById": {
+            "columns": ["createdById"]
+        },
+        "externalId": {
+           "columns": ["externalId", "deleted"]
+        },
+        "dateSentStatus": {
+           "columns": ["dateSent", "status", "deleted"]
+        }
+   }
+}

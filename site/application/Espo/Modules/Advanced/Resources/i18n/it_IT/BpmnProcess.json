@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "Create BpmnProcess": "Avvia processo",
+    "Stop Process": "Ferma il processo",
+    "User Tasks": "Attività utente",
+    "Flowcharts": "Diagrammi di flusso"
+  },
+  "fields": {
+    "status": "Stato",
+    "targetType": "Tipo di entità di destinazione",
+    "target": "Destinazione",
+    "createdEntitiesData": "Dati entità creati",
+    "flowchartData": "Dati del diagramma di flusso",
+    "flowchart": "Diagramma di flusso",
+    "flowchartVisualization": "Diagramma di flusso (visualizzazione)",
+    "flowchartElementsDataHash": "Elementi del diagramma di flusso",
+    "variables": "Variabili",
+    "endedAt": "Finito a",
+    "startElementId": "Elemento Start"
+  },
+  "links": {
+    "flowchart": "Diagramma di flusso",
+    "target": "Destinazione",
+    "flowNodes": "Log di flusso",
+    "userTasks": "Elaborare le attività dell'utente"
+  },
+  "options": {
+    "status": {
+      "Created": "Creato",
+      "Started": "Iniziato",
+      "Ended": "Terminata",
+      "Paused": "In pausa",
+      "Stopped": "Arrestato"
+    }
+  },
+  "presetFilters": {
+    "actual": "Attuale",
+    "ended": "Terminata"
+  }
+}

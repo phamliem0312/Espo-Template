@@ -1,0 +1,71 @@
+[
+    {
+        "rows": [
+            [
+                {"name": "name"},
+                {"name": "connector"}
+            ],
+            [
+                {"name": "team"},
+                {"name": "status"}
+            ]
+        ]
+    },
+    {
+        "label": "DefaultAssignment",
+        "name": "defaultAssignment",
+        "rows": [
+            [
+                {"name": "smsAssignTo"},
+                {"name": "callAssignTo"}
+            ],
+            [
+                {"name": "mmsAssignTo"},
+                false
+            ]
+        ]
+    },
+    {
+        "label": "AdditionalSettings",
+        "name": "additionalSettings",
+        "rows": [
+            [
+                {"name": "greetingAtCallStart"},
+                false
+            ],
+            [
+                {"name": "greetingFile"},
+                false
+            ],
+            [
+                {"name": "greetingText", "isWide": true}
+            ],
+            [
+                {"name": "voicemail"},
+                false
+            ],
+            [
+                {"name": "voicemailGreetingFile"},
+                false
+            ],
+            [
+                {"name": "voicemailGreetingText", "isWide": true}
+            ],
+            [
+                {"name": "voicemailNotifications"},
+                false
+            ],
+            [
+                {"name": "farewell"},
+                false
+            ],
+            [
+                {"name": "farewellFile"},
+                false
+            ],
+            [
+                {"name": "farewellText", "isWide": true}
+            ]
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "fields": {
+        "actionId": {
+            "type": "varchar",
+            "maxLength": 100,
+            "index": true
+        },
+        "entityType": {
+            "type": "varchar"
+        },
+        "lastUserId": {
+            "type": "varchar"
+        }
+    },
+    "links": {
+        "workflow": {
+            "type": "belongsTo",
+            "entity": "Workflow"
+        },
+        "flowchart": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowchart"
+        }
+    }
+}

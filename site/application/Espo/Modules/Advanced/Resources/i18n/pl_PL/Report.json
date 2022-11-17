@@ -1,0 +1,94 @@
+{
+  "labels": {
+    "Create Report": "Utwórz raport",
+    "Run": "Uruchom",
+    "Total": "Total",
+    "-Empty-": "- puste -",
+    "Parameters": "Parametry",
+    "Filters": "Filtry",
+    "Chart": "Wykresy",
+    "List Report": "List Report",
+    "Grid Report": "Grid Report",
+    "days": "dni",
+    "never": "nigdy",
+    "Get Csv": "Pobierz CSV",
+    "EmailSending": "Wysyłanie wiadomości",
+    "View Report": "Wyświetl raport"
+  },
+  "fields": {
+    "type": "Typ",
+    "entityType": "Typ jednostki",
+    "description": "Opis",
+    "groupBy": "Grupowanie",
+    "columns": "Columny",
+    "orderBy": "Sortowanie",
+    "filters": "Filtry",
+    "runtimeFilters": "Runtime Filters",
+    "chartType": "Rodzaj wykresu",
+    "emailSendingInterval": "Przedział",
+    "emailSendingTime": "Czas",
+    "emailSendingUsers": "Użytkownicy",
+    "emailSendingSettingDay": "Dzień",
+    "emailSendingSettingMonth": "Miesiąc",
+    "emailSendingSettingWeekdays": "Dni",
+    "emailSendingDoNotSendEmptyReport": "Nie wysyłaj kiedy raport jest pusty",
+    "chartColorList": "Kolory wykresu",
+    "chartColor": "Kolor wykresu"
+  },
+  "tooltips": {
+    "emailSendingUsers": "Raporty użytkowników zostaną wysłane do",
+    "chartColorList": "Własne kolory dla określonych grup."
+  },
+  "functions": {
+    "COUNT": "Ilość",
+    "SUM": "Suma",
+    "AVG": "Średnio",
+    "MIN": "Min",
+    "MAX": "Maks",
+    "YEAR": "Rok",
+    "MONTH": "Miesiąc",
+    "DAY": "Dzień"
+  },
+  "orders": {
+    "ASC": "Rosnąco",
+    "DESC": "Malejąco",
+    "LIST": "LISTA"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Słupek (poziomo)",
+      "BarVertical": "Słupek (pionowo)",
+      "Pie": "Kołowy",
+      "Line": "Liniowy"
+    },
+    "emailSendingInterval": {
+      "": "Brak",
+      "Daily": "Dziennie",
+      "Weekly": "Tygodniowo",
+      "Monthly": "Miesięcznie",
+      "Yearly": "Rocznie"
+    },
+    "emailSendingSettingDay": {
+      "32": "Ostatni dzień miesiąca"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "Ilość nie może przekraczać {maxCount}",
+    "gridReportDescription": "Grupuj po jednej lub więcj kolumnach i zobacz podsumowania. Może być wyświetlone jako wykres.",
+    "listReportDescription": "Prosta lista rekordów spełniających kryteria filtrowania."
+  },
+  "presetFilters": {
+    "list": "Lista",
+    "grid": "Siatka",
+    "listTargets": "List (Targets)",
+    "listAccounts": "List (Accounts)",
+    "listContacts": "List (Contacts)",
+    "listLeads": "List (Leads)",
+    "listUsers": "List (Users)"
+  },
+  "errorMessages": {
+    "error": "Błąd",
+    "noChart": "Nie wybrano wykresu do raportu",
+    "selectReport": "Select Report in dashlet options"
+  }
+}

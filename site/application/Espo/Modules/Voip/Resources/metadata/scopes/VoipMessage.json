@@ -1,0 +1,17 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "aclPortal": "recordAllAccountContactOwnNo",
+    "module": "Voip",
+    "stream": false,
+    "customizable": true,
+    "notifications": true,
+    "importable": false,
+    "object": true,
+    "activity": true,
+    "activityStatusList": ["draft"],
+    "historyStatusList": ["accepted", "queued", "sending", "sent", "receiving", "received", "delivered", "undelivered", "failed"],
+    "statusField": "status"
+}

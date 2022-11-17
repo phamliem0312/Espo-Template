@@ -1,0 +1,23 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "status",
+        "width": 12
+    },
+    {
+        "name": "targetType",
+        "width": 15
+    },
+    {
+        "name": "target",
+        "width": 22
+    },
+    {
+        "name": "createdAt",
+        "width": 12,
+        "align": "right"
+    }
+]

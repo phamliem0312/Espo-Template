@@ -1,0 +1,18 @@
+{
+  "fields": {
+    "voipUniqueid": "Voip Olay Kimliği",
+    "voipPhoneNumber": "Telefon numarası",
+    "voipLine": "Voip Hattı",
+    "voipRecording": "Kayıt",
+    "voipRouter": "Voip Yönlendirici",
+    "isVoicemail": "Sesli Mesaj"
+  },
+  "labels": {
+    "noRecording": "Veri yok",
+    "Dial": "Arama yap"
+  },
+  "tooltips": {
+    "voipPhoneNumber": "Gelen / giden çağrı için kullanılan telefon numarası.",
+    "voipUser": "Gelen / giden çağrı için kullanılan telefon hattı."
+  }
+}

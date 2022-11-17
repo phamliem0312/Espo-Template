@@ -1,0 +1,186 @@
+{
+  "labels": {
+    "Create Report": "Створити звіт",
+    "Run": "Згенерувати",
+    "Total": "Підсумок",
+    "-Empty-": "-Пусто-",
+    "Parameters": "Параметри",
+    "Filters": "Фільтри",
+    "Chart": "Графік",
+    "List Report": "Звіт-список",
+    "Grid Report": "Звіт-сітка",
+    "days": "днів",
+    "never": "ніколи",
+    "Get Csv": "Отримати Csv",
+    "EmailSending": "Відправка листів",
+    "View Report": "Переглянути звіт",
+    "Report": "Звіт",
+    "AND": "ТА",
+    "OR": "АБО",
+    "NOT": "НЕ В",
+    "IN": "В",
+    "Complex expression": "Складний вираз",
+    "Having": "Має",
+    "Add AND group": "Додати групу ТА",
+    "Add OR group": "Додати групу АБО",
+    "Add NOT group": "Додати групу НЕ",
+    "Add IN group": "Додати групу В",
+    "Add Having group": "Додати групу Має",
+    "Add Complex expression": "Додати складний вираз",
+    "Columns": "Колонки",
+    "Send Email": "Відправити листа",
+    "Results View": "Перегляд результатів",
+    "Create Joint Grid Report": "Створити об'єднаний звіт-сітку"
+  },
+  "fields": {
+    "type": "Тип",
+    "entityType": "Тип сутності",
+    "description": "Опис",
+    "groupBy": "Групувати за",
+    "columns": "Колонки",
+    "orderBy": "Сортувати за",
+    "filters": "Фільтри",
+    "runtimeFilters": "Фільтри під час виконання",
+    "chartType": "Тип графіку",
+    "emailSendingInterval": "Інтервал",
+    "emailSendingTime": "Час",
+    "emailSendingUsers": "Користувачі",
+    "emailSendingSettingDay": "День",
+    "emailSendingSettingMonth": "Місяць",
+    "emailSendingSettingWeekdays": "Дні",
+    "emailSendingDoNotSendEmptyReport": "Не відправляти порожній звіт",
+    "chartColorList": "Кольори графіку",
+    "chartColor": "Колір графіку",
+    "orderByList": "Сортувати за",
+    "column": "Колонка",
+    "exportFormat": "Формат",
+    "category": "Категорія",
+    "applyAcl": "Застосовувати ACL",
+    "portals": "Портали",
+    "joinedReports": "Підзвіти",
+    "joinedReportLabel": "Мітка підзвіту"
+  },
+  "tooltips": {
+    "emailSendingUsers": "Користувачі, яким будуть надіслані результати звіту",
+    "chartColorList": "Спеціальні кольори для певних груп.",
+    "applyAcl": "Результати звіту залежатимуть від доступу користувача.",
+    "groupBy": "Дані будуть агреговані в одну або дві групи. Якщо порожньо, то дані не будуть агреговані, відображатимуться лише підсумки.\n\n[Складні вирази]\n(https://www.espocrm.com/documentation/user-guide/complex-expressions/) можуть використовуватися.",
+    "columns": "Які дані відображати.",
+    "runtimeFilters": "Додаткові фільтри, які будуть доступні при перегляді звіту.",
+    "portals": "Звіт буде доступний тільки на зазначених порталах."
+  },
+  "functions": {
+    "COUNT": "Кількість",
+    "SUM": "Сума",
+    "AVG": "Середнє",
+    "MIN": "Мінімальне",
+    "MAX": "Максимальне",
+    "YEAR": "Рік",
+    "QUARTER": "Квартал",
+    "MONTH": "Місяць",
+    "DAY": "День",
+    "WEEK": "Тиждень",
+    "YEAR_FISCAL": "Фіскальний рік",
+    "QUARTER_FISCAL": "Фіскальний квартал"
+  },
+  "orders": {
+    "ASC": "за зростанням",
+    "DESC": "за спаданням",
+    "LIST": "Список"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Стрічковий",
+      "BarVertical": "Стовпчиковий",
+      "BarGroupedHorizontal": "Згрупований стрічковий",
+      "BarGroupedVertical": "Згрупований стовпчиковий",
+      "Pie": "Секторний",
+      "Line": "Лінійний"
+    },
+    "emailSendingInterval": {
+      "": "Не налаштовано",
+      "Daily": "Щоденно",
+      "Weekly": "Щотижнево",
+      "Monthly": "Щомісячно",
+      "Yearly": "Щорічно"
+    },
+    "emailSendingSettingDay": {
+      "32": "Останнього дня місяця"
+    },
+    "type": {
+      "Grid": "Сітка",
+      "List": "Список",
+      "JointGrid": "Об'єднана сітка"
+    },
+    "function": {
+      "": "Без фунції",
+      "custom": "Вираз",
+      "customWithOperator": "Вираз без оператора",
+      "DATE_NUMBER": "ДАТА",
+      "MONTH_NUMBER": "МІСЯЦЬ",
+      "YEAR_NUMBER": "РІК",
+      "QUARTER_NUMBER": "КВАРТАЛ",
+      "DAYOFWEEK_NUMBER": "ДЕНЬ ТИЖНЯ",
+      "HOUR_NUMBER": "ГОДИНА",
+      "MINUTE_NUMBER": "ХВИЛИНА",
+      "WEEK_NUMBER_0": "ТИЖДЕНЬ (Неділя)",
+      "WEEK_NUMBER_1": "ТИЖДЕНЬ (Понеділок)",
+      "COUNT": "КІЛЬКІСТЬ",
+      "SUM": "СУМА",
+      "AVG": "СЕРЕДНЄ",
+      "MAX": "МАКСИМАЛЬНЕ",
+      "MIN": "МІНІМАЛЬНЕ"
+    },
+    "operator": {
+      "equals": "Дорівнює",
+      "notEquals": "Не дорівнює",
+      "greaterThan": "Більше ніж",
+      "lessThan": "Менше ніж",
+      "greaterThanOrEquals": "Більше ніж або дорівнює",
+      "lessThanOrEquals": "Менше ніж або дорівнює",
+      "in": "В",
+      "notIn": "Не в",
+      "isTrue": "Правда",
+      "isFalse": "Хибно",
+      "isNull": "Пусто",
+      "isNotNull": "Не пусто",
+      "like": "Є як"
+    },
+    "layoutAlign": {
+      "left": "По лівому краю",
+      "right": "По правому краю"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "Кількість не може бути більшою за {maxCount}",
+    "gridReportDescription": "Групуйте за одною чи двома колонками та отримаєте підсумок. Може бути представлено у вигляді графіку.",
+    "listReportDescription": "Звичайний список записів, в яких виконується критерій"
+  },
+  "presetFilters": {
+    "list": "Список",
+    "grid": "Сітка",
+    "listTargets": "Список (Цілі)",
+    "listAccounts": "Список (Контрагенти)",
+    "listContacts": "Список (Контакти)",
+    "listLeads": "Список (Ліди)",
+    "listUsers": "Список (Користувачі)"
+  },
+  "errorMessages": {
+    "error": "Помилка",
+    "noChart": "Не вибрано графік для звіту",
+    "selectReport": "Виберіть звіт серед елементів дашлету"
+  },
+  "filtersGroupTypes": {
+    "or": "АБО",
+    "and": "ТА",
+    "not": "НЕ",
+    "subQueryIn": "В",
+    "having": "Має"
+  },
+  "layoutFields": {
+    "link": "Посилання",
+    "width": "Ширина",
+    "notSortable": "Відключити сортування",
+    "align": "Вирівняти"
+  }
+}

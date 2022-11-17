@@ -1,0 +1,11 @@
+{
+    "entity": true,
+    "layouts": false,
+    "tab": false,
+    "acl": "recordAllTeamNo",
+    "module": "Advanced",
+    "customizable": true,
+    "importable": false,
+    "type": "CategoryTree",
+    "notifications": false
+}

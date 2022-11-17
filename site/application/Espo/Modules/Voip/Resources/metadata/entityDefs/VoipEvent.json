@@ -1,0 +1,123 @@
+{
+   "fields":{
+      "uniqueid":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "destuniqueid":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "type":{
+         "type":"enum",
+         "options":[
+            "incomingCall",
+            "outgoingCall"
+         ]
+      },
+      "status":{
+         "type":"enum",
+         "options":[
+            "dialing",
+            "ringing",
+            "active",
+            "noAnswer",
+            "answered",
+            "busy",
+            "missed"
+         ]
+      },
+      "userExtension":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "phoneNumber":{
+         "type":"varchar",
+         "maxLength": 50
+      },
+      "entities":{
+         "type": "jsonObject"
+      },
+      "dateStart": {
+         "type": "datetime",
+         "required": true
+      },
+      "dateEnd": {
+         "type": "datetime"
+      },
+      "assignedUser":{
+         "type":"link"
+      },
+      "connector":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "line":{
+         "type":"varchar",
+         "maxLength": 30
+      },
+      "originalPhoneNumber":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "channel":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "isQueue":{
+         "type":"bool",
+         "default": false
+      },
+      "queueNumber":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "call":{
+         "type":"link"
+      },
+      "voipRouter":{
+         "type":"link"
+      },
+      "processed":{
+         "type":"bool",
+         "default": false
+      },
+      "hidden":{
+         "type":"bool",
+         "default": false
+      },
+      "data":{
+         "type": "jsonObject"
+      },
+      "ready":{
+         "type":"bool",
+         "default": true
+      },
+      "system":{
+         "type":"bool",
+         "default": false
+      },
+      "createdAt": {
+         "type": "datetime",
+         "readOnly": true
+      },
+      "modifiedAt": {
+         "type": "datetime",
+         "readOnly": true
+      }
+   },
+   "links":{
+      "assignedUser":{
+         "type":"belongsTo",
+         "entity":"User"
+      },
+      "call":{
+         "type":"belongsTo",
+         "entity":"Call"
+     },
+     "voipRouter":{
+        "type":"belongsTo",
+        "entity":"VoipRouter"
+     }
+   }
+}

@@ -1,0 +1,21 @@
+{
+    "menu": {
+        "detail": {
+            "dropdown": [
+                "__APPEND__",
+                {
+                    "name": "startProcessGlobal",
+                    "action": "startProcessGlobal",
+                    "label": "Start Process",
+                    "acl": "create",
+                    "aclScope": "BpmnProcess",
+                    "hidden": true,
+                    "data": {
+                        "handler": "advanced:start-process-action-handler"
+                    },
+                    "initFunction": "init"
+                }
+            ]
+        }
+    }
+}

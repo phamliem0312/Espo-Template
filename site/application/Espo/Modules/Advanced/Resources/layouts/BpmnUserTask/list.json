@@ -1,0 +1,23 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "target",
+        "width": 22
+    },
+    {
+        "name": "resolution",
+        "width": 15
+    },
+    {
+        "name": "assignedUser",
+        "width": 18
+    },
+    {
+        "name": "createdAt",
+        "width": 12,
+        "align": "right"
+    }
+]

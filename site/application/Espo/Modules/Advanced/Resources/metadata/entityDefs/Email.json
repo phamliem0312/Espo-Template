@@ -1,0 +1,53 @@
+{
+    "fields": {
+        "from": {
+            "reportDisabled": true
+        },
+        "to": {
+            "reportDisabled": true
+        },
+        "cc": {
+            "reportDisabled": true
+        },
+        "bcc": {
+            "reportDisabled": true
+        },
+        "replyTo": {
+            "reportDisabled": true
+        },
+        "folder": {
+            "reportDisabled": true
+        },
+        "folderId": {
+            "reportDisabled": true
+        },
+        "isUsers": {
+            "reportDisabled": true,
+            "workflowDisabled": true
+        },
+        "isNotRead": {
+            "reportGroupByDisabled": true,
+            "reportFilterDisabled": true,
+            "reportOrderByDisabled": true,
+            "workflowDisabled": true
+        },
+        "isRead": {
+            "reportGroupByDisabled": true,
+            "reportFilterDisabled": true,
+            "reportOrderByDisabled": true,
+            "workflowDisabled": true
+        },
+        "inTrash": {
+            "reportGroupByDisabled": true,
+            "reportFilterDisabled": true,
+            "reportOrderByDisabled": true,
+            "workflowDisabled": true
+        },
+        "isImportant": {
+            "reportGroupByDisabled": true,
+            "reportFilterDisabled": true,
+            "reportOrderByDisabled": true,
+            "workflowDisabled": true
+        }
+    }
+}

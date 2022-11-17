@@ -1,0 +1,6 @@
+{
+    "workflowLog": {
+        "className": "\\Espo\\Modules\\Advanced\\Core\\Cleanup\\WorkflowLog",
+        "order": 20
+    }
+}

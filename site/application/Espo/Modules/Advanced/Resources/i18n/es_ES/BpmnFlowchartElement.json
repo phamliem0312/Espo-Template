@@ -1,0 +1,119 @@
+{
+  "fields": {
+    "text": "Texto",
+    "triggerType": "Tipo de desencadenador",
+    "timer": "Parámetros de temporizador",
+    "defaultFlowId": "Flujo predeterminado",
+    "from": "De",
+    "to": "Para",
+    "replyTo": "Responder a",
+    "fromEmailAddress": "Dirección de correo electrónico del remitente",
+    "toEmailAddress": "Dirección de correo electrónico del destinatario",
+    "replyToEmailAddress": "Dirección de correo electrónico de respuesta",
+    "toSpecifiedTeams": "A equipos",
+    "toSpecifiedUsers": "A usuarios",
+    "toSpecifiedContacts": "Contactos \"Para\"",
+    "emailTemplate": "Plantilla de correo electrónico",
+    "doNotStore": "No almacenar correo electrónico enviado",
+    "actions": "Acciones",
+    "formula": "Fórmula (script)",
+    "actionType": "Tipo de acción",
+    "targetUser": "Usuario objetivo",
+    "assignmentType": "Asignación",
+    "targetTeam": "Equipo objetivo",
+    "targetUserPosition": "Posición de usuario objetivo",
+    "startDirection": "Dirección de inicio",
+    "targetReport": "Informe de destino",
+    "scheduling": "Programación",
+    "messageType": "Tipo de mensaje",
+    "canBeFailed": "Puede fallar",
+    "target": "Objetivo",
+    "callableType": "Tipo llamable",
+    "errorCode": "Código de error",
+    "escalationCode": "Código de remisión a instancia superior",
+    "cancelActivity": "Está interrumpiendo",
+    "isInterrupting": "Está interrumpiendo",
+    "targetType": "Tipo de entidad objetivo",
+    "flowchartVisualization": "Diagrama de flujo",
+    "flowchart": "Diagrama de flujo",
+    "signal": "Señal",
+    "returnVariableList": "Variables de retorno",
+    "repliedTo": "Responder a",
+    "relatedTo": "Relacionado con",
+    "instructions": "Instrucciones",
+    "conditionsFormula": "Fórmula de condiciones",
+    "optOutLink": "Enlace de exclusión"
+  },
+  "labels": {
+    "Conditions": "Condiciones",
+    "Actions": "Acciones",
+    "Field": "Campo",
+    "Flows Conditions": "Condiciones de flujo"
+  },
+  "tooltips": {
+    "taskSendMessageEmailAddress": "Marcadores de posición disponibles:\n\n* `{$$variable}`",
+    "targetReport": "Los registros del informe de la lista se pasarán al nuevo proceso.",
+    "target": "Seleccione qué registro se utilizará como objetivo.",
+    "userTaskName": "Un nombre del registro de tareas de usuario que se creará.\n\nMarcadores de posición disponibles:\n* `{$attribute}`\n* `{$$variable}`",
+    "userTaskInstructions": "Instrucciones para un usuario. Se admite reducción.\n\nMarcadores de posición disponibles:\n* `{$attribute}`\n* `{$$variable}`",
+    "returnVariableList": "Especifique las variables de fórmula que se copiarán del subproceso al proceso principal una vez que el subproceso finalice correctamente.",
+    "scheduling": "Notación de Crontab. Define la frecuencia. Zona horaria UTC.\n\n`*/5 * * * *` - cada 5 minutos\n\n`0 */2 * * *` - cada 2 horas\n\n`30 1 * * *` - a las 01:30 una vez al día\n\n`0 0 1 * *` - el primer día de el mes"
+  },
+  "options": {
+    "emailAddress": {
+      "system": "Sistema",
+      "currentUser": "Usuario actual",
+      "specifiedEmailAddress": "Dirección de correo electrónico especificada",
+      "assignedUser": "Usuario asignado",
+      "followers": "Seguidores",
+      "specifiedContacts": "Contactos especificados",
+      "specifiedUsers": "Usuarios especificados",
+      "specifiedTeams": "Equipos especificados",
+      "followersExcludingAssignedUser": "Seguidores excluyendo el usuario asignado",
+      "processAssignedUser": "Usuario asignado al proceso",
+      "targetEntity": "Registro objetivo",
+      "": "Ninguna"
+    },
+    "triggerType": {
+      "afterRecordCreated": "Después de crear el registro",
+      "afterRecordSaved": "Después de guardar el registro",
+      "afterRecordUpdated": "Después de actualizar el registro",
+      "sequential": "Secuencial"
+    },
+    "timerShiftOperator": {
+      "plus": "más",
+      "minus": "menos"
+    },
+    "timerShiftUnits": {
+      "minutes": "minutos",
+      "hours": "horas",
+      "days": "días",
+      "months": "meses",
+      "seconds": "segundos"
+    },
+    "timerBase": {
+      "moment": "Momento en el que se desencadena el evento",
+      "formula": "Calculado por fórmula"
+    },
+    "actionType": {
+      "Approve": "Aprobar",
+      "Review": "Revisar"
+    },
+    "assignmentType": {
+      "": "Ninguna",
+      "processAssignedUser": "Usuario asignado al proceso",
+      "specifiedUser": "Usuario especificado",
+      "rule:Round-Robin": "Todos contra todos",
+      "rule:Least-Busy": "Menos ocupado"
+    },
+    "startDirection": {
+      "r": "Derecha",
+      "d": "Abajo",
+      "u": "Arriba",
+      "l": "Izquierda"
+    },
+    "messageType": {
+      "Email": "Correo electrónico"
+    }
+  }
+}

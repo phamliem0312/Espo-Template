@@ -1,0 +1,8 @@
+{
+    "options": {
+        "job": {
+            "VoipCleanup": "VoIP Clean-up",
+            "TwilioSyncPhoneNumbers": "Twilio: Sync phone numbers"
+        }
+    }
+}

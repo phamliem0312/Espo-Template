@@ -1,0 +1,5 @@
+{
+    "itemViews": {
+        "VoipMessageStatus": "voip:views/stream/notes/message-status"
+    }
+}

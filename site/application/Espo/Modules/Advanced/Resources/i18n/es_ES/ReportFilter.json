@@ -1,0 +1,19 @@
+{
+  "labels": {
+    "Create ReportFilter": "Crear filtro",
+    "Rebuild Filters": "Reconstruir filtros"
+  },
+  "fields": {
+    "order": "Orden",
+    "report": "Informe",
+    "entityType": "Tipo de entidad",
+    "isActive": "Está habilitado"
+  },
+  "links": {
+    "report": "Informe"
+  },
+  "tooltips": {
+    "teams": "Equipos para los que estará disponible el filtro. Si no se especificó ningún equipo, no se aplicará ninguna restricción por equipo.",
+    "report": "Informe de lista que se utilizará para el filtro."
+  }
+}

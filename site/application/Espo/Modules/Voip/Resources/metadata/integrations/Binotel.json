@@ -1,0 +1,127 @@
+{
+    "voip": true,
+    "view": "voip:views/admin/integrations/base",
+    "fields": {
+        "connectorName": {
+            "type": "varchar",
+            "maxLength": 255,
+            "tooltip": true
+        },
+        "binotelKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "tooltip": true
+        },
+        "binotelSecret": {
+            "type": "password",
+            "maxLength": 100,
+            "required": true,
+            "tooltip": true
+        },
+        "binotelUseSsl": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "binotelApiVersion": {
+            "type":"enum",
+            "options":[
+               "2",
+               "3",
+               "4"
+            ],
+            "maxLength": 50,
+            "default": "4",
+            "tooltip": true
+        },
+        "accessKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "tooltip": true
+        },
+        "defaultCountry": {
+            "type":"enum",
+            "required": true,
+            "options":[],
+            "maxLength": 10,
+            "view": "voip:views/fields/country-list",
+            "tooltip": true,
+            "default": "UA"
+        },
+        "dialFormat": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "default": "0{NATIONAL_NUMBER}",
+            "tooltip": true
+        },
+        "ignoredNumberList": {
+            "type": "array",
+            "default": ["*"],
+            "tooltip": true
+        },
+        "permittedEntities": {
+            "type": "multiEnum",
+            "required": false,
+            "options": [
+                "Contact",
+                "Lead",
+                "Account"
+            ],
+            "default": [
+                "Contact",
+                "Lead",
+                "Account"
+            ],
+            "tooltip": true
+        },
+        "hideLead": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "displayRelatedAccount": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "autoSaveCall": {
+            "type":"enum",
+            "options":[
+               "yes",
+               "no",
+               "incomingCall",
+               "outgoingCall"
+            ],
+            "maxLength": 50,
+            "default": "no",
+            "tooltip": true,
+            "metadata": true
+        },
+        "autoOpenCallerInfo": {
+            "type":"enum",
+            "options":[
+               "yes",
+               "no",
+               "incomingCall",
+               "outgoingCall"
+            ],
+            "maxLength": 50,
+            "default": "no",
+            "tooltip": true,
+            "metadata": true
+        },
+        "quickCreateEntities": {
+            "type": "multiEnum",
+            "required": false,
+            "options": [
+                "Opportunity",
+                "Meeting",
+                "Task",
+                "Case"
+            ],
+            "tooltip": true
+        }
+    }
+}

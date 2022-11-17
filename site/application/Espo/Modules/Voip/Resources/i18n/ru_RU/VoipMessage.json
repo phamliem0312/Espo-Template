@@ -1,0 +1,48 @@
+{
+  "labels": {
+    "Create VoipMessage": "Создать сообщение",
+    "Calling": "Отправляется...",
+    "Go to message": "Перейти к сообщению",
+    "Download": "Скачать"
+  },
+  "fields": {
+    "type": "Тип",
+    "direction": "Направление",
+    "status": "Статус",
+    "from": "От",
+    "to": "Кому",
+    "body": "Тело",
+    "assignedUser": "Ответственный",
+    "createdAt": "Создано в",
+    "modifiedAt": "Изменено в",
+    "attachments": "Вложения",
+    "dateSent": "Дата отправки"
+  },
+  "options": {
+    "direction": {
+      "incoming": "Входящие",
+      "outgoing": "Исходящие"
+    },
+    "status": {
+      "draft": "Черновик",
+      "accepted": "Принято",
+      "queued": "В очереди",
+      "sending": "Отправляется",
+      "sent": "Отправлено",
+      "receiving": "Получается",
+      "received": "Получено",
+      "delivered": "Доставлено",
+      "undelivered": "Не доставлено",
+      "failed": "Сбой"
+    }
+  },
+  "messages": {
+    "messageSent": "Сообщение было отправлено",
+    "savedAsDraft": "Сохранено как черновик"
+  },
+  "presetFilters": {
+    "sent": "Отправлено",
+    "inbox": "Входящие",
+    "drafts": "Черновики"
+  }
+}

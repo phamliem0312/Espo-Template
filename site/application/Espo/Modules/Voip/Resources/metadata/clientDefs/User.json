@@ -1,0 +1,64 @@
+{
+   "recordViews":{
+      "detail":"voip:views/user/record/detail"
+   },
+   "formDependency": {
+      "voipConnector": {
+         "map": {
+            "Twilio" : [
+               {
+                  "action": "hide",
+                  "fields": ["voipPassword", "voipTestConnection", "voipContext"]
+               },
+               {
+                  "action": "setReadOnly",
+                  "fields": ["voipUser"]
+               }
+            ],
+            "Starface" : [
+               {
+                  "action": "show",
+                  "fields": ["voipPassword", "voipTestConnection"]
+               },
+               {
+                  "action": "hide",
+                  "fields": ["voipContext"]
+               },
+               {
+                  "action": "setNotReadOnly",
+                  "fields": ["voipUser"]
+               }
+           ],
+           "Asterisk" : [
+              {
+                 "action": "show",
+                 "fields": ["voipContext"]
+             },
+             {
+                "action": "hide",
+                "fields": ["voipTestConnection"]
+             },
+             {
+                "action": "setNotReadOnly",
+                "fields": ["voipUser"]
+             }
+           ]
+         },
+         "default": [
+               {
+                  "action": "show",
+                  "fields": ["voipPassword"]
+               },
+               {
+                  "action": "hide",
+                  "fields": ["voipTestConnection", "voipContext"]
+               },
+               {
+                  "action": "setNotReadOnly",
+                  "fields": ["voipUser"]
+               }
+         ]
+      }
+   }
+
+}

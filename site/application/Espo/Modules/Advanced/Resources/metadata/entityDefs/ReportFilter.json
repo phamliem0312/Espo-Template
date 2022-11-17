@@ -1,0 +1,78 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true,
+            "maxLength": 50
+        },
+        "entityType": {
+            "type": "enum",
+            "required": true,
+            "view": "views/fields/entity-type"
+        },
+        "order": {
+            "type": "int",
+            "minValue": 1,
+            "required": true,
+            "default": 1
+        },
+        "isActive": {
+            "type": "bool",
+            "default": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "tooltip": true
+        },
+        "report": {
+            "type": "link",
+            "tooltip": true,
+            "required": true,
+            "view": "advanced:views/report-filter/fields/report"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "report": {
+            "type": "belongsTo",
+            "entity": "Report"
+        }
+    },
+    "collection": {
+        "sortBy": "order",
+        "asc": true
+    }
+}

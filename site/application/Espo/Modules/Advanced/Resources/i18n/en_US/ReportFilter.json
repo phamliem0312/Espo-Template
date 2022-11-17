@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "Create ReportFilter": "Create Filter",
+        "Rebuild Filters": "Rebuild Filters"
+    },
+    "fields": {
+        "order": "Order",
+        "report": "Report",
+        "entityType": "Entity Type",
+        "isActive": "Is Enabled"
+    },
+    "links": {
+        "report": "Report"
+    },
+    "tooltips": {
+        "teams": "Teams the filter will be available for. If no teams specified then no restriction by team will be applied.",
+        "report": "List Report that will be used for the filter."
+    }
+}

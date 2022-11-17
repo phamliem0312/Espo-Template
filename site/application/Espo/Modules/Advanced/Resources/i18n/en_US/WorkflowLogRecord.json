@@ -1,0 +1,8 @@
+{
+    "labels": {
+    },
+    "fields": {
+        "target": "Target",
+        "workflow": "Workflow"
+    }
+}

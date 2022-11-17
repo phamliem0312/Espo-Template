@@ -1,0 +1,10 @@
+{
+  "options": {
+    "job": {
+      "ReportTargetListSync": "Синхронизировать целевые списки с отчётами",
+      "ScheduleReportSending": "Запланировать отправку отчётов",
+      "RunScheduledWorkflows": "Запустить запланированные рабочие потоки",
+      "ProcessPendingProcessFlows": "Обработать ожидающие потоки"
+    }
+  }
+}

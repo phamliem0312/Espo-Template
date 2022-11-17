@@ -1,0 +1,29 @@
+{
+    "fields": {
+        "syncWithReportsEnabled": {
+            "type": "bool",
+            "inlineEditDisabled": true,
+            "layoutAvailabilityList": [],
+            "tooltip": true
+        },
+        "syncWithReports": {
+            "type": "linkMultiple",
+            "view": "advanced:views/target-list/fields/sync-with-reports",
+            "layoutAvailabilityList": [],
+            "tooltip": true
+        },
+        "syncWithReportsUnlink": {
+            "type": "bool",
+            "layoutAvailabilityList": [],
+            "tooltip": true
+        }
+    },
+    "links": {
+        "syncWithReports": {
+            "type": "hasMany",
+            "entity": "Report",
+            "foreign": "syncTargetLists",
+            "disabled": true
+        }
+    }
+}

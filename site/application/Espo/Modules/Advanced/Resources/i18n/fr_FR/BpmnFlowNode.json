@@ -1,0 +1,23 @@
+{
+  "labels": {
+    "Reset": "Réinitialiser"
+  },
+  "fields": {
+    "status": "État",
+    "processedAt": "Traité à",
+    "elementType": "Type d'article",
+    "element": "Élément"
+  },
+  "options": {
+    "status": {
+      "Created": "Créé",
+      "Pending": "En attente",
+      "In Process": "En cours",
+      "Standby": "En attente",
+      "Processed": "Traité",
+      "Rejected": "Rejeté",
+      "Failed": "Échoué",
+      "Interrupted": "Interrompu"
+    }
+  }
+}

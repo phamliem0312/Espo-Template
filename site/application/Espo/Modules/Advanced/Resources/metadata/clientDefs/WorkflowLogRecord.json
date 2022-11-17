@@ -1,0 +1,9 @@
+{
+    "controller": "controllers/record",
+    "views": {
+        "list":"advanced:views/workflow-log-record/list"
+    },
+    "recordViews": {
+        "list":"advanced:views/workflow-log-record/record/list"
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true,
+            "readOnly": true
+        },
+        "actionType": {
+            "type": "enum",
+            "options": ["Approve", "Review", "Accomplish"],
+            "readOnly": true
+        },
+        "resolution": {
+            "type": "enum",
+            "options": ["", "Approved", "Rejected", "Reviewed", "Completed", "Failed", "Canceled"],
+            "default": "",
+            "style": {
+                "Approved": "success",
+                "Completed": "success"
+            }
+        },
+        "target": {
+            "type": "linkParent",
+            "readOnly": true,
+            "view": "advanced:views/bpmn-user-task/fields/target"
+        },
+        "process": {
+            "type": "link",
+            "readOnly": true
+        },
+        "isResolved": {
+            "type": "bool",
+            "readOnly": true,
+            "default": false
+        },
+        "instructions": {
+            "type": "text",
+            "readOnly": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "resolutionNote": {
+            "type": "text"
+        },
+        "isCanceled": {
+            "type": "bool"
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "process": {
+            "type": "belongsTo",
+            "entity": "BpmnProcess"
+        },
+        "flowNode": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowNode",
+            "noJoin": true,
+            "disabled": true,
+            "layoutRelationshipsDisabled": true
+        },
+        "target": {
+            "type": "belongsToParent",
+            "foreign": "userTasks"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false
+    }
+}

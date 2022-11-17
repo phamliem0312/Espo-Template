@@ -1,0 +1,49 @@
+{
+    "customization": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url":"#ReportFilter",
+                "label": "Report Filters",
+                "iconClass": "fas fa-filter",
+                "description": "reportFilters"
+            },
+            {
+                "url":"#ReportPanel",
+                "label": "Report Panels",
+                "iconClass": "fas fa-chart-area",
+                "description": "reportPanels"
+            }
+        ]
+    },
+    "workflows": {
+        "label": "Workflow Manager",
+        "itemList": [
+            {
+                "url":"#Workflow",
+                "label":"Workflow Manager",
+                "iconClass": "fas fa-code-branch icon-rotate-180",
+                "description":"workflowManager"
+            }
+        ],
+        "order": 99
+    },
+    "bpmn": {
+        "label": "Business Process Management",
+        "itemList": [
+            {
+                "url":"#BpmnFlowchart",
+                "label":"Flowcharts",
+                "iconClass": "fas fa-project-diagram",
+                "description":"bpmnFlowcharts"
+            },
+            {
+                "url":"#BpmnProcess",
+                "label":"Processes",
+                "iconClass": "fas fa-cogs",
+                "description":"bpmnProcesses"
+            }
+        ],
+        "order": 100
+    }
+}

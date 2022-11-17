@@ -1,0 +1,10 @@
+{
+  "options": {
+    "job": {
+      "ReportTargetListSync": "Синхронізувати цільові списки зі звітами",
+      "ScheduleReportSending": "Запланувати відправлення звітів",
+      "RunScheduledWorkflows": "Запустити заплановані робочі потоки",
+      "ProcessPendingProcessFlows": "Обробити потоки, які в очукуванні"
+    }
+  }
+}

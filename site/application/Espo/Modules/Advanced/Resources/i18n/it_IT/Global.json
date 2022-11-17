@@ -1,0 +1,26 @@
+{
+  "scopeNames": {
+    "Workflow": "Flusso di lavoro",
+    "ReportCategory": "Categoria report",
+    "WorkflowLogRecord": "Record del log del flusso di lavoro",
+    "BpmnFlowchart": "Diagramma di flusso del processo",
+    "BpmnProcess": "Processo",
+    "BpmnUserTask": "Attività processo utente",
+    "ReportFilter": "Filtro report",
+    "ReportPanel": "Pannello report"
+  },
+  "scopeNamesPlural": {
+    "Workflow": "Flussi di lavoro",
+    "Report": "Report",
+    "ReportCategory": "Categorie di report",
+    "WorkflowLogRecord": "Log flussi di lavoro",
+    "BpmnFlowchart": "Diagrammi di flusso dei processi",
+    "BpmnProcess": "Processi",
+    "BpmnUserTask": "Processi attività dell'utente",
+    "ReportFilter": "Filtri di report",
+    "ReportPanel": "Pannelli filtri"
+  },
+  "dashlets": {
+    "BpmnUserTasks": "Processi attività dell'utente"
+  }
+}

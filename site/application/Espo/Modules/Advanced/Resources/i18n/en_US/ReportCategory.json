@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "Create ReportCategory": "Create Category",
+        "Manage Categories": "Manage Categories",
+        "Reports": "Reports"
+    },
+    "fields": {
+        "order": "Order"
+    },
+    "links": {
+        "reports": "Reports"
+    }
+}

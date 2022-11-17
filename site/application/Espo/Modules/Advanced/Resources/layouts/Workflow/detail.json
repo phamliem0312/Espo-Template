@@ -1,0 +1,13 @@
+[
+    {
+        "label": "General",
+        "rows": [
+            [{"name": "name"}, {"name": "isActive"}],
+            [{"name": "entityType"}, {"name": "type"}],
+            [false, {"name": "signalName"}],
+            [{"name": "targetReport"}, {"name": "scheduling"}],
+            [{"name":"portalOnly"}, {"name":"portal"}],
+            [{"name": "description", "fullWidth": true}]
+        ]
+    }
+]

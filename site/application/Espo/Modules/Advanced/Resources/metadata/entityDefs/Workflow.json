@@ -1,0 +1,326 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "trim": true
+        },
+        "entityType": {
+            "type": "varchar",
+            "required": true,
+            "view": "advanced:views/workflow/fields/entity-type"
+        },
+        "type": {
+            "type": "enum",
+            "options": ["afterRecordCreated", "afterRecordUpdated", "afterRecordSaved", "scheduled", "sequential", "signal"],
+            "default": "afterRecordCreated"
+        },
+        "signalName": {
+            "type": "varchar",
+            "maxLength": 200,
+            "trim": true,
+            "options": [
+                "@create",
+                "@update",
+                "@delete",
+                "@leadCapture",
+                "@optOut"
+            ]
+        },
+        "isActive": {
+            "type": "bool",
+            "default": true
+        },
+        "isInternal": {
+            "type": "bool",
+            "default": false,
+            "readOnly": true,
+            "disabled": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "conditionsAll": {
+            "type": "jsonArray"
+        },
+        "conditionsAny": {
+            "type": "jsonArray"
+        },
+        "conditionsFormula": {
+            "type": "text"
+        },
+        "actions": {
+            "type": "jsonArray"
+        },
+        "portalOnly": {
+            "type": "bool",
+            "tooltip": true
+        },
+        "portal": {
+            "type": "link",
+            "tooltip": true
+        },
+        "targetReport": {
+            "type": "link",
+            "view": "advanced:views/workflow/fields/target-report"
+        },
+        "scheduling": {
+            "type": "varchar",
+            "maxLength": 16,
+            "default": "0 0 * * *",
+            "tooltip": true
+        },
+        "lastRun": {
+            "type": "datetime",
+            "readOnly": true,
+            "exportDisabled": true
+        },
+        "flowchart": {
+            "type": "link",
+            "noJoin": true,
+            "disabled": true,
+            "exportDisabled": true,
+            "importDisabled": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "portal": {
+            "type": "belongsTo",
+            "entity": "Portal"
+        },
+        "targetReport": {
+            "type": "belongsTo",
+            "entity": "Report"
+        },
+        "workflowLogRecords": {
+            "type": "hasMany",
+            "entity": "WorkflowLogRecord",
+            "foreign": "workflow"
+        },
+        "flowchart": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowchart",
+            "foreign": "startWorkflows"
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false
+    },
+    "conditionFieldTypes": {
+        "varchar": "varchar",
+        "enum": "enum",
+        "enumInt": "enum",
+        "enumFloat": "enum",
+        "phone": "varchar",
+        "email": "varchar",
+        "url": "varchar",
+        "int": "int",
+        "currency": "currency",
+        "float": "float",
+        "bool": "bool",
+        "password": "varchar",
+        "text": "text",
+        "wysiwyg": "text",
+        "link": "link",
+        "file": "link",
+        "image": "link",
+        "linkParent": "linkParent",
+        "date": "date",
+        "datetime": "date",
+        "linkMultiple": "linkMultiple",
+        "attachmentMultiple": "attachmentMultiple",
+        "checklist": "array",
+        "multiEnum": "array",
+        "array": "array"
+    },
+    "fieldDefinitions": {
+        "date": "date",
+        "datetime": "date",
+        "datetimeOptional": "date",
+        "jsonArray": "wide"
+    },
+    "fieldTypeComparison": {
+        "enumInt": ["int"],
+        "enumFloat": ["float"],
+        "date": ["datetime", "datetimeOptional"],
+        "datetime": ["date", "datetimeOptional"],
+        "datetimeOptional": ["date", "datetime"],
+        "float": ["enumFloat"],
+        "linkMultiple": "link",
+        "personName": ["varchar"],
+        "email": ["varchar"],
+        "phone": ["varchar"],
+        "personName": ["varchar"],
+        "varchar": ["email", "phone"],
+        "text": ["varchar"],
+        "wysiwyg": ["varchar"]
+    },
+    "ignoreActualAttributesOnValueCopyFieldList": [
+        "personName",
+        "email",
+        "phone"
+    ],
+    "entityListToIgnore": [
+        "PhoneNumber",
+        "Notification",
+        "EmailAddress",
+        "Attachment",
+        "Extension",
+        "Currency",
+        "Reminder",
+        "PasswordChangeRequest",
+        "Workflow",
+        "AuthToken",
+        "Team",
+        "Role",
+        "EmailAccount",
+        "EmailTemplate",
+        "ExternalAccount",
+        "Integration",
+        "Job",
+        "Preferences",
+        "ScheduledJob",
+        "ScheduledJobLogRecord",
+        "Settings",
+        "UniqueId",
+        "InboundEmail",
+        "BpmnFlowchart",
+        "BpmnProcess",
+        "Report"
+    ],
+    "forcedSupportEntityList": [
+        "LeadCaptureLogRecord"
+    ],
+    "assignmentRuleList": [
+        "Round-Robin",
+        "Least-Busy"
+    ],
+    "actionList": [
+        "sendEmail",
+        "createEntity",
+        "createRelatedEntity",
+        "updateEntity",
+        "updateRelatedEntity",
+        "relateWithEntity",
+        "unrelateFromEntity",
+        "applyAssignmentRule",
+        "triggerWorkflow",
+        "createNotification",
+        "makeFollowed",
+        "runService",
+        "startBpmnProcess",
+        "sendRequest",
+        "executeFormula"
+    ],
+    "serviceActions": {
+        "Meeting": {
+            "sendEventInvitations": {
+                "serviceName": "EventInvitationsAdvanced",
+                "methodName": "sendInvitationsAction"
+            }
+        },
+        "Call": {
+            "sendEventInvitations": {
+                "serviceName": "EventInvitationsAdvanced",
+                "methodName": "sendInvitationsAction"
+            }
+        },
+        "Contact": {
+            "optOut": {
+                "serviceName": "TargetListWorkflow",
+                "methodName": "optOut"
+            }
+        },
+        "Lead": {
+            "optOut": {
+                "serviceName": "TargetListWorkflow",
+                "methodName": "optOut"
+            }
+        },
+        "Account": {
+            "optOut": {
+                "serviceName": "TargetListWorkflow",
+                "methodName": "optOut"
+            }
+        },
+        "User": {
+            "generateAndSendPassword": {
+                "serviceName": "UserWorkflow",
+                "methodName": "generateAndSendPassword"
+            }
+        },
+        "Quote": {
+            "addQuoteItemList": {
+                "serviceName": "QuoteWorkflow",
+                "methodName": "addItemList"
+            },
+            "convertCurrency": {
+                "serviceName": "QuoteWorkflow",
+                "methodName": "convertCurrency"
+            },
+            "sendInEmail": {
+                "serviceName": "QuoteWorkflow",
+                "methodName": "sendInEmail"
+            }
+        },
+        "Invoice": {
+            "addInvoiceItemList": {
+                "serviceName": "InvoiceWorkflow",
+                "methodName": "addItemList"
+            },
+            "convertCurrency": {
+                "serviceName": "InvoiceWorkflow",
+                "methodName": "convertCurrency"
+            },
+            "sendInEmail": {
+                "serviceName": "InvoiceWorkflow",
+                "methodName": "sendInEmail"
+            }
+        },
+        "SalesOrder": {
+            "addSalesOrderItemList": {
+                "serviceName": "SalesOrderWorkflow",
+                "methodName": "addItemList"
+            },
+            "convertCurrency": {
+                "serviceName": "SalesOrderWorkflow",
+                "methodName": "convertCurrency"
+            },
+            "sendInEmail": {
+                "serviceName": "SalesOrderWorkflow",
+                "methodName": "sendInEmail"
+            }
+        },
+        "Opportunity": {
+            "convertCurrency": {
+                "serviceName": "OpportunityWorkflow",
+                "methodName": "convertCurrency"
+            }
+        }
+    }
+}

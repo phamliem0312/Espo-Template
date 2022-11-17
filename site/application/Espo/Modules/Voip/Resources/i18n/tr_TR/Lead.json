@@ -1,0 +1,8 @@
+{
+  "fields": {
+    "voipLine": "VoIP Hattı"
+  },
+  "tooltips": {
+    "voipLine": "Bu voip hattı giden çağrı için kullanılacaktır."
+  }
+}

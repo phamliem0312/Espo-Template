@@ -1,0 +1,49 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "status",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "targetType",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "flowchart",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "target",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "startElementId",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

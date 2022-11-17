@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "VoIP": "Настройки VoIP",
+    "voipRouter": "VoIP маршрутизация"
+  },
+  "descriptions": {
+    "VoIP": "Настройте параметры интеграции VoIP.",
+    "voipRouter": "Настройте маршрутизацию телефонных номеров."
+  },
+  "messages": {
+    "newVoIPIntegrationVersionIsAvailable": "Доступна новая версия расширения интеграции VoIP {latestVersion}. Его можно скачать на портале для клиентов."
+  }
+}

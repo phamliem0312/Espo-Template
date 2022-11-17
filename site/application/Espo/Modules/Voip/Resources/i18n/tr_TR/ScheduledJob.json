@@ -1,0 +1,8 @@
+{
+  "options": {
+    "job": {
+      "VoipCleanup": "VoIP Temizleme",
+      "TwilioSyncPhoneNumbers": "Twilio: Telefon numaralarını eşitleyin"
+    }
+  }
+}

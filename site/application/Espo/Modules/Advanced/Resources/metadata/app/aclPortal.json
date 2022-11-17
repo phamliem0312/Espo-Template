@@ -1,0 +1,40 @@
+{
+    "mandatory": {
+        "scopeFieldLevel": {
+            "Report": {
+                "portals": false,
+                "assignedUser": false,
+                "teams": false,
+                "emailSendingInterval": false,
+                "emailSendingSettingMonth": false,
+                "emailSendingSettingDay": false,
+                "emailSendingSettingWeekdays": false,
+                "emailSendingTime": false,
+                "emailSendingUsers": false,
+                "emailSendingLastDateSent": false,
+                "emailSendingDoNotSendEmptyReport": false,
+                "applyAcl": false
+            }
+        }
+    },
+    "default": {
+        "scopeFieldLevel": {
+            "Report": {
+                "modifiedAt": false,
+                "modifiedBy": false,
+                "createdAt": false,
+                "createdBy": false
+            }
+        }
+    },
+    "strictDefault": {
+        "scopeFieldLevel": {
+            "Report": {
+                "modifiedAt": false,
+                "modifiedBy": false,
+                "createdAt": false,
+                "createdBy": false
+            }
+        }
+    }
+}

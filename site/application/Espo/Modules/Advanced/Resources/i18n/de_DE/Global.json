@@ -1,0 +1,25 @@
+{
+  "scopeNames": {
+    "Workflow": "WorkFlow",
+    "Report": "Bericht",
+    "WorkflowLogRecord": "Workflow Protokollsatz",
+    "BpmnFlowchart": "Flussdiagramm zu verarbeiten",
+    "BpmnProcess": "Prozess",
+    "BpmnUserTask": "Benutzeraufgabe zu verarbeiten",
+    "ReportFilter": "Berichtsfilter",
+    "ReportPanel": "Berichtspanel"
+  },
+  "scopeNamesPlural": {
+    "Report": "Berichte",
+    "WorkflowLogRecord": "Workflows Protokoll",
+    "BpmnFlowchart": "Flowcharts zu verarbeiten",
+    "BpmnProcess": "Prozesse",
+    "BpmnUserTask": "Benutzeraufgaben zu verarbeiten",
+    "ReportFilter": "Berichtsfilter",
+    "ReportPanel": "Berichtspanels"
+  },
+  "dashlets": {
+    "Report": "Bericht",
+    "BpmnUserTasks": "Benutzeraufgaben zu verarbeiten"
+  }
+}

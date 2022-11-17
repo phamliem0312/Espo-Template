@@ -1,0 +1,91 @@
+{
+  "fields": {
+    "text": "Testo",
+    "triggerType": "Tipo di trigger",
+    "timer": "Parametri del timer",
+    "defaultFlowId": "Flusso predefinito",
+    "from": "Da",
+    "to": "A",
+    "replyTo": "Rispondi a",
+    "fromEmailAddress": "Indirizzo e-mail del mittente",
+    "toEmailAddress": "Indirizzo email destinatario",
+    "replyToEmailAddress": "Indirizzo E-Mail Risposta",
+    "toSpecifiedTeams": "Al team",
+    "toSpecifiedUsers": "Agli utenti",
+    "toSpecifiedContacts": "Ai contatti",
+    "emailTemplate": "Modello di e-mail",
+    "doNotStore": "Non conservare e-mail inviate",
+    "actions": "Azioni",
+    "actionType": "Tipo di azione",
+    "targetUser": "Utente di destinazione",
+    "assignmentType": "Assegnazione",
+    "targetTeam": "Team di destinazione",
+    "targetUserPosition": "Posizione utente di destinazione",
+    "startDirection": "Direzione di partenza",
+    "targetReport": "Report di destinazione",
+    "scheduling": "Programmazione",
+    "messageType": "Tipo di messaggio",
+    "canBeFailed": "Può fallire"
+  },
+  "labels": {
+    "Conditions": "Condizioni",
+    "Actions": "Azioni",
+    "Field": "Campo",
+    "Flows Conditions": "Condizioni di flusso"
+  },
+  "tooltips": {
+    "targetReport": "I record verranno passati dalla lista report al nuovo processo.",
+    "scheduling": "Notazione crontab. Definisce la frequenza. UTC TimeZone.\n\n`*/5 * * * *`-ogni 5 minuti `0 */2 * * *`-ogni 2 ore `30 1 * * *`-a 01:30 una volta al giorno `0 0 1 * *`-il primo giorno del mese"
+  },
+  "options": {
+    "emailAddress": {
+      "system": "Sistema",
+      "currentUser": "Utente Attuale",
+      "specifiedEmailAddress": "Indirizzo email specificato",
+      "assignedUser": "utente assegnato.",
+      "specifiedContacts": "Contatti specificati",
+      "specifiedUsers": "Utenti specificati",
+      "specifiedTeams": "Team specificati",
+      "followersExcludingAssignedUser": "Followers escluso utente assegnato",
+      "processAssignedUser": "Utente assegnato al processo",
+      "targetEntity": "Record di destinazione",
+      "": "Nessuno"
+    },
+    "triggerType": {
+      "afterRecordCreated": "Dopo aver creato il record",
+      "afterRecordSaved": "Dopo aver salvato il record",
+      "sequential": "Sequenziale"
+    },
+    "timerShiftOperator": {
+      "plus": "più",
+      "minus": "Meno"
+    },
+    "timerShiftUnits": {
+      "minutes": "minuti",
+      "hours": "ore",
+      "days": "giorni",
+      "months": "mesi"
+    },
+    "timerBase": {
+      "moment": "Momento in cui l'evento viene attivato",
+      "formula": "Calcolato dalla formula"
+    },
+    "actionType": {
+      "Approve": "Approva",
+      "Review": "Revisione"
+    },
+    "assignmentType": {
+      "": "Nessuno",
+      "processAssignedUser": "Utente assegnato al processo",
+      "specifiedUser": "Utente specificato",
+      "rule:Round-Robin": "Round Robin",
+      "rule:Least-Busy": "Meno occupato"
+    },
+    "startDirection": {
+      "r": "Destra",
+      "d": "Giù",
+      "u": "Su",
+      "l": "Sinistra"
+    }
+  }
+}

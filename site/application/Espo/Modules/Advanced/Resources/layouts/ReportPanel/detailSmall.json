@@ -1,0 +1,57 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "isActive"
+                },
+                {
+                    "name": "type"
+                }
+            ],
+            [
+                {
+                    "name": "entityType",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "report",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "displayType"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "teams",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "column",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

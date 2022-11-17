@@ -1,0 +1,19 @@
+{
+    "connectorList":[
+        "Asterisk",
+        "Starface",
+        "Binotel",
+        "Twilio",
+        "IexPBX"
+    ],
+    "defaults": {
+        "phoneNumberLength": 10,
+        "autoOpenCallerInfo": "no",
+        "displayRelatedAccount": false
+    },
+    "phoneNumberReplacement": {
+        "Asterisk": {
+            "^goip-.*?\\/": ""
+        }
+    }
+}

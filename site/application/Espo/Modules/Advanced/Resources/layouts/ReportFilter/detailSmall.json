@@ -1,0 +1,45 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "isActive"
+                },
+                {
+                    "name": "order"
+                }
+            ],
+            [
+                {
+                    "name": "entityType",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "report",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "teams",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

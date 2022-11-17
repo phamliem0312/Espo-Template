@@ -1,0 +1,21 @@
+{
+   "fields":{
+      "connector":{
+         "type":"varchar",
+         "maxLength": 100
+      },
+      "lastOnlineTime": {
+         "type": "datetime"
+      },
+      "status":{
+         "type":"varchar",
+         "maxLength": 255
+      }
+   },
+   "links":{
+      "user":{
+         "type":"belongsTo",
+         "entity":"User"
+      }
+   }
+}

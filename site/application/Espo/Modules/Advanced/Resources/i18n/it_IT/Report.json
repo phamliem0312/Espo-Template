@@ -1,0 +1,115 @@
+{
+  "labels": {
+    "Create Report": "Crea report",
+    "Run": "Esegui",
+    "Total": "Totale",
+    "-Empty-": "-Vuoto-",
+    "Parameters": "Parametri",
+    "Filters": "Filtri",
+    "Chart": "Grafico",
+    "List Report": "Report elenco",
+    "Grid Report": "Report griglia",
+    "days": "giorni",
+    "never": "mai",
+    "Get Csv": "Get CSV",
+    "EmailSending": "Invio e-mail",
+    "View Report": "Visualizza report",
+    "Complex expression": "Espressione complessa",
+    "Add AND group": "Aggiungi gruppo AND",
+    "Add OR group": "Aggiungi gruppo OR",
+    "Add NOT group": "Aggiungi gruppo NOT",
+    "Add Having group": "Aggiungi Having gruppo",
+    "Add Complex expression": "Aggiungi espressione complessa",
+    "Columns": "Colonne",
+    "Send Email": "Invia Email"
+  },
+  "fields": {
+    "type": "Tipo",
+    "entityType": "Tipo di entità",
+    "description": "Descrizione",
+    "groupBy": "Raggruppa per",
+    "columns": "Colonne",
+    "orderBy": "Ordina per",
+    "filters": "Filtri",
+    "runtimeFilters": "Filtri di runtime",
+    "chartType": "Tipo di grafico",
+    "emailSendingInterval": "Intervallo",
+    "emailSendingTime": "Orario",
+    "emailSendingUsers": "Utenti",
+    "emailSendingSettingDay": "Giorno",
+    "emailSendingSettingMonth": "Mese",
+    "emailSendingSettingWeekdays": "Giorni",
+    "emailSendingDoNotSendEmptyReport": "Non inviare se il rapporto è vuoto",
+    "chartColorList": "Colori del grafico",
+    "chartColor": "Colore grafico",
+    "orderByList": "Ordine di elenco",
+    "column": "Colonna",
+    "exportFormat": "Formato",
+    "category": "Categoria",
+    "applyAcl": "Applica ACL"
+  },
+  "tooltips": {
+    "emailSendingUsers": "Il risultato del rapporto degli utenti verrà inviato",
+    "chartColorList": "Colori personalizzati per gruppi specifici.",
+    "applyAcl": "I risultati del report dipenderanno dall'accesso dell'utente."
+  },
+  "functions": {
+    "COUNT": "Conteggio",
+    "SUM": "Somma",
+    "AVG": "Media",
+    "MIN": "Min ",
+    "YEAR": "Anno",
+    "MONTH": "Mese",
+    "DAY": "Giorno",
+    "WEEK": "Settimana"
+  },
+  "orders": {
+    "ASC": "Ascendente",
+    "DESC": "Discendente",
+    "LIST": "Elenco"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Barra (orizzontale)",
+      "BarVertical": "Barra (verticale)",
+      "Pie": "Torta",
+      "Line": "Linea"
+    },
+    "emailSendingInterval": {
+      "": "Nessuno",
+      "Daily": "Giornaliero",
+      "Weekly": "Settimanale",
+      "Monthly": "Mensile",
+      "Yearly": "Annuale"
+    },
+    "emailSendingSettingDay": {
+      "32": "Ultimo giorno del mese"
+    },
+    "type": {
+      "Grid": "Griglia",
+      "List": "Lista"
+    },
+    "function": {
+      "": "--Nessuna funzione--"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "Count non deve essere maggiore di {maxCount}",
+    "gridReportDescription": "Raggruppare per una o due colonne e vedere sommatoria. Può essere visualizzato come un grafico.",
+    "listReportDescription": "Semplice elenco di record che soddisfano i criteri dei filtri."
+  },
+  "presetFilters": {
+    "list": "Lista",
+    "grid": "Griglia",
+    "listTargets": "Elenco (destinazioni)",
+    "listAccounts": "Elenco (account)",
+    "listContacts": "Lista (contatti)",
+    "listLeads": "Elenco (lead)",
+    "listUsers": "Elenco (utenti)"
+  },
+  "errorMessages": {
+    "error": "Errore",
+    "noChart": "Nessun grafico selezionato per il report.",
+    "selectReport": "Selezionare un report nelle opzioni dashlet."
+  }
+}

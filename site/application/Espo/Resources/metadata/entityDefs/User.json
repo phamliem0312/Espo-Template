@@ -1,0 +1,441 @@
+{
+    "fields": {
+        "userName": {
+            "type": "varchar",
+            "maxLength": 50,
+            "required": true,
+            "view": "views/user/fields/user-name",
+            "tooltip": true
+        },
+        "name": {
+            "type": "personName",
+            "view": "views/user/fields/name",
+            "dependeeAttributeList": [
+                "userName"
+            ]
+        },
+        "type": {
+            "type": "enum",
+            "options": ["regular", "admin", "portal", "system", "super-admin", "api"],
+            "default": "regular",
+            "maxLength": 24,
+            "index": true,
+            "inlineEditDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true
+        },
+        "password": {
+            "type": "password",
+            "maxLength": 150,
+            "internal": true,
+            "disabled": true
+        },
+        "passwordConfirm": {
+            "type": "password",
+            "maxLength": 150,
+            "internal": true,
+            "disabled": true,
+            "notStorable": true
+        },
+        "authMethod": {
+            "type": "enum",
+            "options": ["ApiKey", "Hmac"],
+            "maxLength": 24,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true
+        },
+        "apiKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "readOnly": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true
+        },
+        "secretKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "readOnly": true,
+            "notStorable": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutListDisabled": true
+        },
+        "salutationName": {
+            "type": "enum",
+            "options": ["", "Mr.", "Ms.", "Mrs.", "Dr."]
+        },
+        "firstName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "default":"",
+            "trim": true
+        },
+        "lastName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "default":"",
+            "trim": true
+        },
+        "isActive": {
+            "type": "bool",
+            "layoutDetailDisabled": true,
+            "tooltip": true,
+            "default": true
+        },
+        "title": {
+            "type": "varchar",
+            "maxLength": 100,
+            "trim": true
+        },
+        "position": {
+            "type": "varchar",
+            "maxLength": 100,
+            "notStorable": true,
+            "where": {
+                "LIKE": {
+                    "leftJoins": [["teams", "teamsPosition"]],
+                    "whereClause": {
+                        "teamsPositionMiddle.role*": "{value}"
+                    },
+                    "distinct": true
+                },
+                "NOT LIKE": {
+                    "leftJoins": [["teams", "teamsPosition"]],
+                    "whereClause": {
+                        "teamsPositionMiddle.role!*": "{value}"
+                    },
+                    "distinct": true
+                },
+                "=": {
+                    "leftJoins": [["teams", "teamsPosition"]],
+                    "whereClause": {
+                        "teamsPositionMiddle.role": "{value}"
+                    },
+                    "distinct": true
+                },
+                "<>": {
+                    "whereClause": {
+                        "id!=s": {
+                            "from": "TeamUser",
+                            "select": ["userId"],
+                            "whereClause": {
+                                "deleted": 0,
+                                "role": "{value}"
+                            }
+                        }
+                    }
+                },
+                "IS NULL": {
+                    "leftJoins": [["teams", "teamsPosition"]],
+                    "whereClause": {
+                        "teamsPositionMiddle.role": null
+                    },
+                    "distinct": true
+                },
+                "IS NOT NULL": {
+                    "leftJoins": [["teams", "teamsPosition"]],
+                    "whereClause": {
+                        "teamsPositionMiddle.role!=": null
+                    },
+                    "distinct": true
+                }
+            },
+            "directUpdateDisabled": true,
+            "trim": true,
+            "readOnly": true,
+            "importDisabled": true,
+            "exportDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "textFilterDisabled": true
+        },
+        "emailAddress": {
+            "type": "email",
+            "required": false,
+            "layoutMassUpdateDisabled": true
+        },
+        "phoneNumber": {
+            "type": "phone",
+            "typeList": ["Mobile", "Office", "Home", "Fax", "Other"],
+            "defaultType": "Mobile"
+        },
+        "token": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "authTokenId": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "authLogRecordId": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "ipAddress": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "defaultTeam": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "tooltip": true
+        },
+        "acceptanceStatus": {
+            "type": "varchar",
+            "notStorable": true,
+            "exportDisabled": true,
+            "disabled": true
+        },
+        "acceptanceStatusMeetings": {
+            "type": "enum",
+            "notStorable": true,
+            "directUpdateDisabled": true,
+            "layoutAvailabilityList": ["filters"],
+            "importDisabled": true,
+            "exportDisabled": true,
+            "view": "crm:views/lead/fields/acceptance-status",
+            "link": "meetings",
+            "column": "status"
+        },
+        "acceptanceStatusCalls": {
+            "type": "enum",
+            "notStorable": true,
+            "directUpdateDisabled": true,
+            "layoutAvailabilityList": ["filters"],
+            "importDisabled": true,
+            "exportDisabled": true,
+            "view": "crm:views/lead/fields/acceptance-status",
+            "link": "calls",
+            "column": "status"
+        },
+        "teamRole": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "tooltip": true,
+            "columns": {
+                "role": "userRole"
+            },
+            "additionalAttributeList": ["columns"],
+            "layoutDetailDisabled": true,
+            "view": "views/user/fields/teams",
+            "default": "javascript: return {teamsIds: []}"
+        },
+        "roles": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "tooltip": true
+        },
+        "portals": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "tooltip": true
+        },
+        "portalRoles": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "tooltip": true
+        },
+        "contact": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "view": "views/user/fields/contact"
+        },
+        "accounts": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true
+        },
+        "account": {
+            "type": "link",
+            "notStorable": true,
+            "directAccessDisabled": true,
+            "foreignAccessDisabled": true,
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true,
+            "readOnly": true
+        },
+        "portal": {
+            "type": "link",
+            "notStorable": true,
+            "readOnly": true,
+            "disabled": true
+        },
+        "avatar": {
+            "type": "image",
+            "view": "views/user/fields/avatar",
+            "layoutDetailDisabled": true,
+            "previewSize": "small"
+        },
+        "sendAccessInfo": {
+            "type": "bool",
+            "notStorable": true,
+            "disabled": true
+        },
+        "gender": {
+            "type": "enum",
+            "options": ["", "Male", "Female", "Neutral"],
+            "default": ""
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "dashboardTemplate": {
+            "type": "link",
+            "layoutDetailDisabled": true,
+            "layoutListDisabled": true
+        },
+        "auth2FA": {
+            "type": "foreign",
+            "link": "userData",
+            "field": "auth2FA",
+            "readOnly": true,
+            "view": "views/fields/foreign-bool"
+        },
+        "userData": {
+            "type": "linkOne",
+            "disabled": true
+        },
+        "lastAccess": {
+            "type": "datetime",
+            "notStorable": true,
+            "readOnly": true,
+            "layoutListDisabled": true,
+            "layoutFiltersDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "layoutDetailDisabled": true,
+            "directAccessDisabled": true,
+            "exportDisabled": true
+        }
+    },
+    "links": {
+        "defaultTeam": {
+            "type": "belongsTo",
+            "entity": "Team"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "foreign": "users",
+            "additionalColumns": {
+                "role": {
+                    "type": "varchar",
+                    "len": 100
+                }
+            },
+            "layoutRelationshipsDisabled": true,
+            "columnAttributeMap": {
+                "role": "teamRole"
+            }
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "roles": {
+            "type": "hasMany",
+            "entity": "Role",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "portals": {
+            "type": "hasMany",
+            "entity": "Portal",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "portalRoles": {
+            "type": "hasMany",
+            "entity": "PortalRole",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "dashboardTemplate": {
+            "type": "belongsTo",
+            "entity": "DashboardTemplate"
+        },
+        "preferences": {
+            "type": "hasOne",
+            "entity": "Preferences",
+            "noJoin": true
+        },
+        "userData": {
+            "type": "hasOne",
+            "entity": "UserData",
+            "foreign": "user",
+            "foreignName": "id"
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "users",
+            "columnAttributeMap": {
+                "status": "acceptanceStatus"
+            }
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "users",
+            "columnAttributeMap": {
+                "status": "acceptanceStatus"
+            }
+        },
+        "emails": {
+            "type": "hasMany",
+            "entity": "Email",
+            "foreign": "users"
+        },
+        "notes": {
+            "type": "hasMany",
+            "entity": "Note",
+            "foreign": "users",
+            "layoutRelationshipsDisabled": true
+        },
+        "contact": {
+            "type": "belongsTo",
+            "entity": "Contact",
+            "foreign": "portalUser"
+        },
+        "accounts": {
+            "type": "hasMany",
+            "entity": "Account",
+            "foreign": "portalUsers",
+            "relationName": "AccountPortalUser"
+        },
+        "tasks": {
+            "type": "hasMany",
+            "entity": "Task",
+            "foreign": "assignedUser"
+        }
+    },
+    "collection": {
+        "orderBy": "userName",
+        "order": "asc",
+        "textFilterFields": ["name", "userName", "emailAddress"]
+    }
+}

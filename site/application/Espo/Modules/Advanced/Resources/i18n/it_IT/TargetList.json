@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Sincronizzazione con i report"
+  },
+  "fields": {
+    "syncWithReports": "Report",
+    "syncWithReportsEnabled": "Abilitato",
+    "syncWithReportsUnlink": "Rimuovi Link"
+  },
+  "links": {
+    "syncWithReports": "Sincronizzazione con i report"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Le voci che non sono contenute nei risultati del report verranno scollegate dall'elenco di destinazione.",
+    "syncWithReports": "L'elenco di destinazione verrà sincronizzato con i risultati dei report selezionati."
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "targetList": {
+            "reportDisabled": true
+        },
+        "acceptanceStatusMeetings": {
+            "reportDisabled": true,
+            "notStorable": true
+        },
+        "acceptanceStatusCalls": {
+            "reportDisabled": true,
+            "notStorable": true
+        },
+        "originalLead": {
+            "reportColumnDisabled": true
+        },
+        "portalUser": {
+            "reportColumnDisabled": true
+        }
+    }
+}

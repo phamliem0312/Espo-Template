@@ -1,0 +1,39 @@
+<?php
+/*********************************************************************************
+ * The contents of this file are subject to the EspoCRM VoIP Integration
+ * Extension Agreement ("License") which can be viewed at
+ * https://www.espocrm.com/voip-extension-agreement.
+ * By installing or using this file, You have unconditionally agreed to the
+ * terms and conditions of the License, and You may not use this file except in
+ * compliance with the License.  Under the terms of the license, You shall not,
+ * sublicense, resell, rent, lease, distribute, or otherwise  transfer rights
+ * or usage to the software.
+ * 
+ * Copyright (C) 2015-2021 Letrium Ltd.
+ * 
+ * License ID: e36042ded1ed7ba87a149ac5079bd238
+ ***********************************************************************************/
+
+namespace Espo\Modules\Voip\Core;
+
+class RecordingManager extends BaseManager
+{
+    protected $data = array();
+
+    public function getClass($connector)
+    {
+        if (!isset($this->data[$connector])) {
+            $class = '\\Espo\\Custom\\Modules\\Voip\\Providers\\'.$this->getProviderName($connector).'\\Scripts\\Recording';
+            if (!class_exists($class)) {
+                $class = '\\Espo\\Modules\\Voip\\Providers\\'.$this->getProviderName($connector).'\\Scripts\\Recording';
+                if (!class_exists($class)) {
+                    return null;
+                }
+            }
+
+            $this->data[$connector] = new $class($this->getContainer());
+        }
+
+        return $this->data[$connector];
+    }
+}

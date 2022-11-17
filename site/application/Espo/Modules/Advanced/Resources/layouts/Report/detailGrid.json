@@ -1,0 +1,86 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [{"name": "name"},{"name":"type", "readOnly": true}],
+            [{"name": "category"}, {"name": "entityType", "readOnly": true}],
+            [{"name": "description", "fullWidth": true}]
+        ]
+    },
+    {
+        "label": "Parameters",
+        "rows": [
+            [
+                {
+                    "name": "groupBy",
+                    "view": "advanced:views/report/fields/group-by"
+                }
+            ],
+            [
+                {
+                    "name": "columns",
+                    "view": "advanced:views/report/fields/columns",
+                    "params": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "orderBy",
+                    "view": "advanced:views/report/fields/order-by"
+                }
+            ],
+            [
+
+                {
+                    "name": "runtimeFilters",
+                    "view": "advanced:views/report/fields/runtime-filters"
+                },
+                {"name": "applyAcl"}
+            ]
+        ]
+    },
+    {
+        "label": "Filters",
+        "rows": [
+            [
+                {
+                    "name": "filtersControl",
+                    "customLabel": "",
+                    "view": "advanced:views/report/fields/filters-control-2",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Chart",
+        "rows": [
+            [
+                {
+                    "name": "chartType"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "chartColor"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "chartColorList"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "chartOneColumns"
+                },
+                {
+                    "name": "chartOneY2Columns"
+                }
+            ]
+        ]
+    }
+]

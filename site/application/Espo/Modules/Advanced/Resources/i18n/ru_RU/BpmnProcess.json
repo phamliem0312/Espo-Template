@@ -1,0 +1,49 @@
+{
+  "labels": {
+    "Create BpmnProcess": "Запустить процесс",
+    "Stop Process": "Остановить процесс",
+    "User Tasks": "Пользовательские задачи",
+    "Flowcharts": "Блок-схемы",
+    "Interrupt": "Прервать",
+    "Reject": "Отклонить",
+    "Start flow from here": "Начать поток отсюда"
+  },
+  "fields": {
+    "status": "Статус",
+    "targetType": "Тип целевого объекта",
+    "target": "Цель",
+    "createdEntitiesData": "Данные созданных объектов",
+    "flowchartData": "Данные блок-схемы",
+    "flowchart": "Блок-схема",
+    "flowchartVisualization": "Блок-схема (визуализация)",
+    "flowchartElementsDataHash": "Элементы блок-схемы",
+    "variables": "Переменные",
+    "endedAt": "Завершено",
+    "startElementId": "Начальный элемент",
+    "parentProcess": "Родительский процесс",
+    "parentProcessFlowNode": "Узел потока родительского процесса"
+  },
+  "links": {
+    "flowchart": "Блок-схема",
+    "target": "Цель",
+    "flowNodes": "Журнал потока",
+    "userTasks": "Пользовательские задачи по процессу",
+    "childProcesses": "Дочерний процесс",
+    "parentProcess": "Родительский процесс",
+    "parentProcessFlowNode": "Узел потока родительского процесса"
+  },
+  "options": {
+    "status": {
+      "Created": "Создан",
+      "Started": "Начался",
+      "Ended": "Закончился",
+      "Paused": "Приостановлен",
+      "Stopped": "Остановлен",
+      "Interrupted": "Прерван"
+    }
+  },
+  "presetFilters": {
+    "actual": "Актуальный",
+    "ended": "Закончился"
+  }
+}

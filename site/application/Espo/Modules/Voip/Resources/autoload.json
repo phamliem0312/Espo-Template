@@ -1,0 +1,18 @@
+{
+    "psr-4": {
+        "PAMI\\": "application/Espo/Modules/Voip/Providers/Asterisk/Ami/vendor/marcelog/pami/src/PAMI",
+        "Starface\\": "application/Espo/Modules/Voip/Providers/Starface/Api/StarfaceApiFork/src/Starface",
+        "Twilio\\": "application/Espo/Modules/Voip/Providers/Twilio/Api/vendor/twilio/sdk/Twilio"
+    },
+    "psr-0": {
+        "NullLogger": "application/Espo/Modules/Voip/Providers/Asterisk/Ami/vendor/psr/log",
+        "libphonenumber": "application/Espo/Modules/Voip/vendor/giggsey/libphonenumber-for-php/src"
+    },
+    "PAMI": "application/Espo/Modules/Voip/Providers/Asterisk/Ami/vendor/marcelog/pami/src",
+    "NullLogger": "application/Espo/Modules/Voip/Providers/Asterisk/Ami/vendor/psr/log",
+    "libphonenumber": "application/Espo/Modules/Voip/vendor/giggsey/libphonenumber-for-php/src",
+    "Twilio": "application/Espo/Modules/Voip/Providers/Twilio/Api/vendor/twilio/sdk",
+    "autoloadFileList": [
+        "application/Espo/Modules/Voip/Providers/Starface/Api/StarfaceApiFork/vendor/autoload.php"
+    ]
+}

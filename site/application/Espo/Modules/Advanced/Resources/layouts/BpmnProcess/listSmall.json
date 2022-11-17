@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "status",
+        "width": 20
+    },
+    {
+        "name": "target",
+        "width": 30
+    }
+]

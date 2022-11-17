@@ -1,0 +1,71 @@
+{
+  "labels": {
+    "Create BpmnFlowchart": "Crear diagrama de flujo",
+    "Hand tool": "Herramienta de mano",
+    "Create Event tool": "Herramienta de crear evento",
+    "Create Gateway tool": "Herramienta de crear evento",
+    "Create Activity tool": "Herramienta de crear actividad",
+    "Connect tool": "Herramienta de conexión",
+    "Erase tool": "Herramienta de borrado",
+    "Full Screen": "Pantalla completa",
+    "Processes": "Procesos",
+    "data": "Datos",
+    "Zoom In": "Acercarse",
+    "Zoom Out": "Alejarse"
+  },
+  "fields": {
+    "isActive": "Está activo",
+    "targetType": "Tipo de entidad objetivo",
+    "data": "Datos",
+    "hasNoneStartEvent": "Tiene evento de inicio de tipo Ninguno"
+  },
+  "links": {
+    "processes": "Procesos"
+  },
+  "elements": {
+    "eventStartConditional": "Evento de inicio condicional",
+    "eventStartTimer": "Evento de inicio de temporizador",
+    "eventStartError": "Evento de inicio de error",
+    "eventStartEscalation": "Evento de inicio de remisión a instancia superior",
+    "eventStartSignal": "Evento de inicio de señal",
+    "eventStart": "Evento de inicio",
+    "eventStartConditionalEventSubProcess": "Evento de inicio condicional de subproceso",
+    "eventStartTimerEventSubProcess": "Evento de inicio del temporizador de subproceso",
+    "eventStartSignalEventSubProcess": "Evento de inicio de señal de subproceso",
+    "eventIntermediateTimerCatch": "Evento intermedio del temporizador (captura)",
+    "eventIntermediateConditionalCatch": "Evento intermedio condicional (captura)",
+    "eventIntermediateEscalationThrow": "Evento intermedio de remisión a instancia superior (lanzamiento)",
+    "eventIntermediateSignalThrow": "Evento intermedio de señal (lanzamiento)",
+    "eventIntermediateSignalCatch": "Evento intermedio de señal (captura)",
+    "eventIntermediateMessageCatch": "Evento intermedio de mensaje (captura)",
+    "eventEnd": "Evento de finalización",
+    "eventEndTerminate": "Evento final de finalización",
+    "eventEndError": "Evento final de error",
+    "eventEndEscalation": "Evento final de remisión a instancia superior",
+    "eventEndSignal": "Evento final de señal",
+    "eventIntermediateErrorBoundary": "Evento intermedio de error (límite)",
+    "eventIntermediateTimerBoundary": "Evento intermedio del temporizador (límite)",
+    "eventIntermediateConditionalBoundary": "Evento intermedio condicional (límite)",
+    "eventIntermediateEscalationBoundary": "Evento intermedio de remisión a instancia superior (límite)",
+    "eventIntermediateSignalBoundary": "Evento intermedio de señal (límite)",
+    "eventIntermediateMessageBoundary": "Evento intermedio de mensaje (límite)",
+    "gatewayExclusive": "Pasarela exclusiva",
+    "gatewayInclusive": "Pasarela inclusiva",
+    "gatewayParallel": "Pasarela paralela",
+    "gatewayEventBased": "Pasarela basada en eventos",
+    "taskSendMessage": "Tarea de enviar mensaje",
+    "taskScript": "Tarea de script",
+    "taskBusinessRule": "Tarea de regla de negocios",
+    "taskUser": "Tarea de usuario",
+    "task": "Tarea",
+    "callActivity": "Actividad de llamada",
+    "subProcess": "Subproceso",
+    "eventSubProcess": "Subproceso de evento",
+    "flow": "Flujo de secuencia"
+  },
+  "presetFilters": {
+    "isManuallyStartable": "Iniciable manualmente",
+    "activeHasNoneStartEvent": "Activo sin evento de inicio",
+    "active": "Activo"
+  }
+}

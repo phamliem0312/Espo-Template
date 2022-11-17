@@ -1,0 +1,14 @@
+{
+    "jobs": {
+        "AdvancedPack": {
+            "isSystem": true,
+            "scheduling": "3 3 * * 6"
+        }
+    },
+    "jobSchedulingMap": {
+        "ReportTargetListSync": "0 2 * * *",
+        "ScheduleReportSending": "0 * * * *",
+        "RunScheduledWorkflows": "*/10 * * * *",
+        "ProcessPendingProcessFlows": "* * * * *"
+    }
+}

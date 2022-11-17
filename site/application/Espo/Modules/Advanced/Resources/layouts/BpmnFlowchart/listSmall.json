@@ -1,0 +1,14 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "targetType",
+        "width": 30
+    },
+    {
+        "name": "isActive",
+        "width": 15
+    }
+]

@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "VoIP": "Paramètres VoIP",
+    "voipRouter": "Routage VoIP"
+  },
+  "descriptions": {
+    "VoIP": "Configurer les paramètres d'intégration VoIP.",
+    "voipRouter": "Configurer le routage des numéros de téléphone."
+  },
+  "messages": {
+    "newVoIPIntegrationVersionIsAvailable": "Une nouvelle version de l'extension d'intégration VoIP {latestVersion} est disponible. Elle peut être téléchargée sur le portail client."
+  }
+}

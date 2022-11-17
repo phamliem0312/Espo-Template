@@ -1,0 +1,8 @@
+{
+  "labels": {
+    "Workflow Manager": "Przepływy pracy"
+  },
+  "descriptions": {
+    "workflowManager": "Kongiguracja reguł przepływów pracy"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "labels": {
+    "Create VoipRouter": "Crear router VoIP",
+    "TeamUsers": "Usuarios del equipo",
+    "User": "Usuario",
+    "Current Number": "El # actual es",
+    "phoneIsNotConfigured": "Este número de teléfono aún no está configurado. Inténtelo de nuevo más tarde.",
+    "DefaultAssignment": "Asignación predeterminada",
+    "AdditionalSettings": "Ajustes adicionales",
+    "VoicemailSettings": "Buzón de voz",
+    "noAvailableAgent": "No hay ningún agente disponible. Deje un mensaje después de la señal.",
+    "applicationError": "Ha ocurrido un error en la aplicación. Llame más tarde.",
+    "forbiddenExternalCalls": "No se permiten llamadas externas para su usuario. Póngase en contacto con su administrador para habilitar esta posibilidad.",
+    "calls": "Llamadas",
+    "voipMessages": "Mensajes"
+  },
+  "fields": {
+    "type": "Tipo",
+    "externalId": "ID externo",
+    "status": "Estado",
+    "team": "Equipo asignado",
+    "connector": "Conector",
+    "smsAssignTo": "Para SMS",
+    "mmsAssignTo": "Para MMS",
+    "callAssignTo": "Por llamada perdida",
+    "voice": "Voz",
+    "voicemailGreetingText": "Texto de saludo del buzón de voz",
+    "voicemailGreetingFile": "Audio de saludo del buzón de voz",
+    "greetingAtCallStart": "Saludo al comienzo de la llamada",
+    "greetingFile": "Audio de saludo",
+    "greetingText": "Texto de saludo",
+    "voicemailNotifications": "Notificaciones de buzón de voz",
+    "voicemail": "Buzón de voz",
+    "farewell": "Despedida al final de la llamada",
+    "farewellFile": "Audio de despedida",
+    "farewellText": "Texto de despedida"
+  },
+  "tooltips": {
+    "voicemailGreetingText": "Cuando no hay ningún agente disponible, la llamada se reenviará al buzón de voz. Este texto se reproducirá para la persona que llama antes de que deje un mensaje. El campo se omite si se ha subido un archivo de audio de saludo del buzón de boz.",
+    "voicemailGreetingFile": "Cuando no hay ningún agente disponible, la llamada se reenviará al buzón de voz. Este audio se reproducirá para la persona que llama antes de que deje un mensaje.",
+    "greetingFile": "Al principio de la llamada, se reproducirá este audio para la persona que llama.",
+    "greetingText": "Este texto se reproducirá para la persona que llama al comienzo de la llamada. El campo se ignora cuando se carga el archivo de Audio de saludo.",
+    "voicemailNotifications": "Tipos de notificación para un nuevo mensaje del buzón de voz.",
+    "farewellFile": "Al final de la llamada, se reproducirá este audio para la persona que llama.",
+    "farewellText": "Este texto se reproducirá para la persona que llama al final de la llamada. El campo se ignora cuando se carga el archivo de Audio de despedida."
+  },
+  "options": {
+    "status": {
+      "Active": "Activo",
+      "Inactive": "Inactivo"
+    }
+  },
+  "actions": {
+    "inQueue": "Cola",
+    "incoming": "Entrante",
+    "outgoing": "Saliente"
+  },
+  "links": {
+    "calls": "Llamadas",
+    "voipMessages": "Mensajes"
+  }
+}

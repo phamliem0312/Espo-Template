@@ -1,0 +1,27 @@
+{
+  "labels": {
+    "Create VoipEvent": "VoIP Etkinliği Oluşturun",
+    "Calling": "Aranıyor ...",
+    "Unknown": "Bilinmiyor",
+    "goToCrm": "CRM e git",
+    "doNotCallIsOn": "Çağrı Yapma modu etkinleştirildi",
+    "optedOutIsOn": "Telefon numarası Kapsam Dışı Bırakıldı"
+  },
+  "fields": {
+    "type": "Tür",
+    "phoneNumber": "Telefon Numarası",
+    "userExtension": "Kullanıcı Uzantısı"
+  },
+  "callNames": {
+    "incomingCall": "Gelen çağrı",
+    "outgoingCall": "Giden arama",
+    "from": "kimden",
+    "to": "kime",
+    "defaultCallTitle": "Arama"
+  },
+  "voicemailNames": {
+    "incomingCallTitle": "{phoneNumber} numarasından sesli mesaj",
+    "incomingCallTitleWithoutRecipient": "{phoneNumber} numarasından sesli mesaj",
+    "defaultCallTitle": "Kaçan Çağrı"
+  }
+}

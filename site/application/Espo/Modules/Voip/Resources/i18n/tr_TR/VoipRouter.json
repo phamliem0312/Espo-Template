@@ -1,0 +1,62 @@
+{
+  "labels": {
+    "Create VoipRouter": "VoIP Yönlendirici Oluştur",
+    "TeamUsers": "Takım Kullanıcıları",
+    "User": "Kullanıcı",
+    "Current Number": "Geçerli numara #",
+    "phoneIsNotConfigured": "Bu telefon numarası henüz ayarlanmamış. Lütfen daha sonra tekrar deneyiniz.",
+    "DefaultAssignment": "Varsayılan Atama",
+    "AdditionalSettings": "Ek ayarlar",
+    "VoicemailSettings": "Sesli mesaj",
+    "noAvailableAgent": "Müsait temsilci yok. Lütfen sinyal sesinden sonra mesaj bırakın.",
+    "applicationError": "Bir uygulama hatası oluştu. Lütfen daha sonra tekrar arayın.",
+    "forbiddenExternalCalls": "Kullanıcı için dış aramalara izin verilmez. Bu özelliği etkinleştirmek için yöneticinizle iletişime geçin.",
+    "calls": "Aramalar",
+    "voipMessages": "Mesajlar"
+  },
+  "fields": {
+    "type": "Tür",
+    "externalId": "Dış ID",
+    "status": "Durum",
+    "team": "Atanan Takım",
+    "connector": "Bağlayıcı",
+    "smsAssignTo": "SMS için",
+    "mmsAssignTo": "MMS için",
+    "callAssignTo": "Kaçan Çağrılar için",
+    "voice": "Ses",
+    "voicemailGreetingText": "Sesli Mesaj Karşılama Metni",
+    "voicemailGreetingFile": "Sesli Mesaj Karşılama Sesi",
+    "greetingAtCallStart": "Aramanın başında karşılama",
+    "greetingFile": "Karşılama Sesi",
+    "greetingText": "Karşılama Metni",
+    "voicemailNotifications": "Sesli Mesaj Bildirimleri",
+    "voicemail": "Sesli Mesaj",
+    "farewell": "Görüşmenin sonunda veda",
+    "farewellFile": "Veda Sesi",
+    "farewellText": "Veda Metni"
+  },
+  "tooltips": {
+    "voicemailGreetingText": "Temsilci bulunmadığında, çağrı sesli postaya yönlendirilecektir. Bu metin arayan mesaj bırakmadan önce çalınacaktır. Sesli mesaj karşılama sesi dosyası yüklendiğinde bu alan yok sayılır.",
+    "voicemailGreetingFile": "Temsilci bulunmadığında, çağrı sesli postaya yönlendirilecektir. Bu ses, arayan kişi mesaj bırakmadan önce çalınacaktır.",
+    "greetingFile": "Bu ses, aramanın başlangıcında arayan için çalınacaktır.",
+    "greetingText": "Bu metin, aramanın başlangıcında arayan için çalınacaktır. Karşılama sesi dosyası yüklendiğinde bu alan yok sayılır.",
+    "voicemailNotifications": "Sesli mesaj için bildirim türleri.",
+    "farewellFile": "Bu ses, aramanın sonunda arayan için çalınacaktır.",
+    "farewellText": "Bu metin, aramanın sonunda arayan için çalınacaktır. Veda sesi dosyası yüklendiğinde bu alan yok sayılır."
+  },
+  "options": {
+    "status": {
+      "Active": "Aktif",
+      "Inactive": "Pasif"
+    }
+  },
+  "actions": {
+    "inQueue": "Kuyruk",
+    "incoming": "Gelen",
+    "outgoing": "Giden"
+  },
+  "links": {
+    "calls": "Aramalar",
+    "voipMessages": "Mesajlar"
+  }
+}

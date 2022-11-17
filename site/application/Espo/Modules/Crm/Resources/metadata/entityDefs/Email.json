@@ -1,0 +1,30 @@
+{
+    "fields": {
+        "account": {
+            "type": "link",
+            "readOnly": true
+        },
+        "parent": {
+            "entityList": ["Account", "Lead", "Contact", "Opportunity", "Case"]
+        },
+        "tasks": {
+            "type": "linkMultiple",
+            "readOnly": true,
+            "columns": {
+                "status": "status"
+            },
+            "view": "views/fields/link-multiple-with-status"
+        }
+    },
+    "links": {
+        "account": {
+            "type": "belongsTo",
+            "entity": "Account"
+        },
+        "tasks": {
+            "type": "hasMany",
+            "entity": "Task",
+            "foreign": "email"
+        }
+    }
+}

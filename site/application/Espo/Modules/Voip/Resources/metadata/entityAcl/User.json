@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "voipPassword": {
+            "internal": true
+        }
+    }
+}

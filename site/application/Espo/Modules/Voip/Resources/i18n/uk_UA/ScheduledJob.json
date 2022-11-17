@@ -1,0 +1,7 @@
+{
+  "options": {
+    "job": {
+      "TwilioSyncPhoneNumbers": "Twilio: Синхронізація телефонних номерів"
+    }
+  }
+}

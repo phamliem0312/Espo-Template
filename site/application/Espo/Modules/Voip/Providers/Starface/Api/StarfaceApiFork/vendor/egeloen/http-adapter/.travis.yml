@@ -1,0 +1,43 @@
+language: php
+
+php:
+    - 5.4
+    - 5.5
+    - 5.6
+    - 7.0
+    - 7.1
+    - hhvm
+
+branches:
+    only: master
+
+env:
+    global:
+        - SYMFONY_DEPRECATIONS_HELPER=strict
+        - GUZZLE_VERSION=6.*
+        - DOCKER_BUILD=false
+        - COMPOSER_PREFER_LOWEST=false
+        - ENABLE_CURL=true
+
+install: travis/install.sh
+script: travis/script.sh
+after_success: travis/success.sh
+
+matrix:
+    include:
+        - php: 5.6
+          services: [docker]
+          env: DOCKER_BUILD=true
+        - php: 5.6
+          env: GUZZLE_VERSION=4.*
+        - php: 5.6
+          env: GUZZLE_VERSION=5.*
+        - php: 5.4
+          env: COMPOSER_PREFER_LOWEST=true
+        - php: 5.6
+          env: ENABLE_CURL=false
+    allow_failures:
+        - php: hhvm
+
+notifications:
+    email: geloen.eric@gmail.com

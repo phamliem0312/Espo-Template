@@ -1,0 +1,160 @@
+{
+    "controller": "controllers/record",
+    "recordViews": {
+        "detail": "advanced:views/bpmn-process/record/detail",
+        "edit": "advanced:views/bpmn-process/record/edit",
+        "detailQuick": "advanced:views/bpmn-process/record/detail-quick",
+        "editQuick": "advanced:views/bpmn-process/record/edit-quick",
+        "list": "advanced:views/bpmn-process/record/list"
+    },
+    "menu": {
+        "list": {
+            "dropdown": [
+                {
+                    "label": "Flowcharts",
+                    "link": "#BpmnFlowchart",
+                    "acl": "read",
+                    "aclScope": "BpmnFlowchart"
+                },
+                {
+                    "label": "User Tasks",
+                    "link": "#BpmnUserTask",
+                    "acl": "read",
+                    "aclScope": "BpmnUserTask"
+                }
+            ]
+        }
+    },
+    "dynamicLogic": {
+       "fields": {
+            "endedAt": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Ended"
+                        }
+                    ]
+                }
+            },
+            "status": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "id"
+                        }
+                    ]
+                }
+            },
+            "name": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "id"
+                        }
+                    ]
+                }
+            },
+            "parentProcess": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "parentProcessId",
+                            "data": {
+                                "field": "parentProcess"
+                            }
+                        }
+                    ]
+                }
+            },
+            "flowchartVisualization": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "id"
+                        },
+                        {
+                            "type": "and",
+                            "value": [
+                                {
+                                    "type": "notEquals",
+                                    "attribute": "status",
+                                    "value": "Created"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "targetType": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "id"
+                        }
+                    ]
+                }
+            },
+            "flowchart": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                           "type": "isNotEmpty",
+                           "attribute": "id"
+                        }
+                    ]
+                }
+            },
+            "target": {
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                   "type": "isNotEmpty",
+                                   "attribute": "id"
+                                },
+                                {
+                                   "type": "isEmpty",
+                                   "attribute": "targetType",
+                                   "data": {
+                                        "field": "targetType"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "relationshipPanels": {
+        "flowNodes": {
+            "rowActionsView": "advanced:views/bpmn-flow-node/record/row-actions/default",
+            "recordListView": "advanced:views/bpmn-flow-node/record/list",
+            "select": false,
+            "create": false,
+            "unlinkDisabled": true,
+            "view": "advanced:views/bpmn-process/record/panels/flow-nodes"
+        },
+        "userTasks": {
+            "rowActionsView": "views/record/row-actions/empty",
+            "unlinkDisabled": true,
+            "select": false,
+            "create": false
+        }
+    },
+    "filterList": [
+        "actual",
+        "ended"
+    ],
+    "boolFilterList": ["onlyMy"],
+    "iconClass": "fas fa-cogs"
+}

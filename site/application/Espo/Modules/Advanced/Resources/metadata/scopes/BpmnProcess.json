@@ -1,0 +1,13 @@
+{
+    "entity": true,
+    "object": true,
+    "layouts": false,
+    "tab": true,
+    "acl": true,
+    "aclActionList": ["create", "read", "edit", "delete", "stream"],
+    "aclPortal": false,
+    "module": "Advanced",
+    "customizable": true,
+    "importable": false,
+    "notifications": true
+}

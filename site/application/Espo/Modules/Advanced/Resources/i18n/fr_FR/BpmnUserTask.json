@@ -1,0 +1,39 @@
+{
+  "labels": {
+    "Resolve": "Résoudre"
+  },
+  "fields": {
+    "actionType": "Type d'action",
+    "resolution": "Résolution",
+    "target": "Cible",
+    "process": "Processus",
+    "isResolved": "Est résolu",
+    "resolutionNote": "Note de résolution",
+    "isCanceled": "Est annulé"
+  },
+  "links": {
+    "process": "Processus",
+    "target": "Cible",
+    "flowNode": "Nœud de flux"
+  },
+  "options": {
+    "actionType": {
+      "Approve": "Approuver",
+      "Review": "Réviser",
+      "Accomplish": "Accomplir"
+    },
+    "resolution": {
+      "": "Aucun",
+      "Approved": "Approuvé",
+      "Rejected": "Rejeté",
+      "Reviewed": "Révisé",
+      "Completed": "Terminé",
+      "Canceled": "Annulé"
+    }
+  },
+  "presetFilters": {
+    "actual": "Réel",
+    "resolved": "Résolu",
+    "canceled": "Annulé"
+  }
+}

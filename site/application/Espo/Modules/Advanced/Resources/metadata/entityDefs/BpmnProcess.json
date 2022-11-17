@@ -1,0 +1,159 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "trim": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Created", "Started", "Ended", "Paused", "Stopped", "Interrupted"],
+            "default": "Created",
+            "readOnly": true
+        },
+        "targetType": {
+            "type": "enum",
+            "view": "advanced:views/bpmn-flowchart/fields/entity-type",
+            "readOnly": true
+        },
+        "target": {
+            "type": "linkParent",
+            "view": "advanced:views/bpmn-process/fields/target",
+            "required": true
+        },
+        "flowchartData": {
+            "type": "jsonObject",
+            "disabled": true
+        },
+        "startElementId": {
+            "type": "varchar",
+            "maxLength": 24,
+            "required": true,
+            "view": "advanced:views/bpmn-process/fields/start-element-id"
+        },
+        "flowchartElementsDataHash": {
+            "type": "jsonObject",
+            "disabled": true,
+            "readOnly": true
+        },
+        "flowchartVisualization": {
+            "type": "base",
+            "readOnly": true,
+            "view": "advanced:views/bpmn-process/fields/flowchart-visualization",
+            "notStorabe": true
+        },
+        "flowchart": {
+            "type": "link",
+            "required": true,
+            "view": "advanced:views/bpmn-process/fields/flowchart"
+        },
+        "parentProcess": {
+            "type": "link",
+            "readOnly": true
+        },
+        "parentProcessFlowNode": {
+            "type": "link",
+            "readOnly": true
+        },
+        "createdEntitiesData": {
+            "type": "jsonObject",
+            "disabled": true
+        },
+        "variables": {
+            "type": "jsonObject",
+            "disabled": true
+        },
+        "workflowId": {
+            "type": "varchar",
+            "maxLength": 24
+        },
+        "assignedUser": {
+            "type": "link",
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "endedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "flowNodes": {
+            "type": "hasMany",
+            "entity": "BpmnFlowNode",
+            "foreign": "process"
+        },
+        "userTasks": {
+            "type": "hasMany",
+            "entity": "BpmnUserTask",
+            "foreign": "process"
+        },
+        "flowchart": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowchart",
+            "foreign": "processes"
+        },
+        "parentProcess": {
+            "type": "belongsTo",
+            "entity": "BpmnProcess",
+            "foreign": "childProcesses"
+        },
+        "childProcesses": {
+            "type": "hasMany",
+            "entity": "BpmnProcess",
+            "foreign": "parentProcess"
+        },
+        "parentProcessFlowNode": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowNode",
+            "foreignName": "id"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "target": {
+            "type": "belongsToParent",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false
+    }
+}

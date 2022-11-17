@@ -1,0 +1,26 @@
+{
+    "voipNotification": {
+        "url": "VoipEvent/action/checkCall",
+        "interval": 3,
+        "view": "voip:views/call-notification",
+        "disabled": true,
+        "useWebSocket": true,
+        "portalDisabled": true,
+        "additionalFields": {
+            "callDescription" : {
+                "display": true,
+                "fullWidth": true,
+                "entity": "Call",
+                "field": "description"
+            }
+       }
+    },
+    "voipMessageNotification": {
+        "url": "VoipMessage/action/checkMessage",
+        "interval": 30,
+        "useWebSocket": true,
+        "portalDisabled": true,
+        "view": "voip:views/message-notification",
+        "disabled": true
+    }
+}

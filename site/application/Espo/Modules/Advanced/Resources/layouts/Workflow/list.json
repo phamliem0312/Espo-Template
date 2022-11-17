@@ -1,0 +1,6 @@
+[
+    {"name":"name","width":30,"link":true},
+    {"name":"entityType"},
+    {"name":"type"},
+    {"name":"isActive"}
+]

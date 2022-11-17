@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "phoneNumber": {
+            "view": "voip:views/fields/phone"
+        },
+        "voipUniqueid": {
+            "type": "varchar",
+            "notStorable": true,
+            "disabled": true
+        },
+        "voipLine": {
+            "type": "varchar",
+            "maxLenght": 30
+        }
+    },
+    "links": {
+        "voipMessages": {
+            "type": "hasChildren",
+            "entity": "VoipMessage",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        }
+    }
+}

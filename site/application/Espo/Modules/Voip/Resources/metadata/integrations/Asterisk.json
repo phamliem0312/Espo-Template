@@ -1,0 +1,216 @@
+{
+    "voip": true,
+    "view": "voip:views/admin/integrations/asterisk",
+    "fields": {
+        "connectorName": {
+            "type": "varchar",
+            "maxLength": 255,
+            "tooltip": true
+        },
+        "host": {
+            "type": "varchar",
+            "maxLength": 255,
+            "required": true,
+            "tooltip": true
+        },
+        "port": {
+            "type": "varchar",
+            "maxLength": 11,
+            "default": "5038",
+            "required": true,
+            "tooltip": true
+        },
+        "username": {
+            "type": "varchar",
+            "maxLength": 255,
+            "required": true,
+            "tooltip": true
+        },
+        "secret": {
+            "type": "password",
+            "maxLength": 255,
+            "required": true,
+            "tooltip": true
+        },
+        "asteriskVersion": {
+            "type":"enum",
+            "options":[
+               "1p8",
+               "10",
+               "11",
+               "12",
+               "13",
+               "14",
+               "15",
+               "16",
+               "17",
+               "18"
+            ],
+            "maxLength": 50,
+            "default": "16",
+            "required": true,
+            "tooltip": true
+        },
+        "scheme": {
+            "type":"enum",
+            "options":[
+               "tcp",
+               "udp",
+               "tls"
+            ],
+            "maxLength": 50,
+            "default": "tcp",
+            "required": true,
+            "tooltip": true
+        },
+        "channel": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "default": "PJSIP/###",
+            "tooltip": true
+        },
+        "context": {
+            "type": "varchar",
+            "maxLength": 50,
+            "required": true,
+            "default": "from-internal",
+            "tooltip": true
+        },
+        "connectTimeout": {
+            "type": "int",
+            "maxLength": 11,
+            "default": 30,
+            "required": true,
+            "tooltip": true
+        },
+        "readTimeout": {
+            "type": "int",
+            "maxLength": 11,
+            "default": 30,
+            "required": true,
+            "tooltip": true
+        },
+        "defaultCountry": {
+            "type":"enum",
+            "required": true,
+            "options":[],
+            "maxLength": 10,
+            "view": "voip:views/fields/country-list",
+            "tooltip": true
+        },
+        "dialFormat": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "default": "00{COUNTRY_CODE}{NATIONAL_NUMBER}",
+            "tooltip": true
+        },
+        "ignoredNumberList": {
+            "type": "array",
+            "default": ["*"],
+            "tooltip": true
+        },
+        "permittedEntities": {
+            "type": "multiEnum",
+            "required": false,
+            "options": [
+                "Contact",
+                "Lead",
+                "Account"
+            ],
+            "default": [
+                "Contact",
+                "Lead",
+                "Account"
+            ],
+            "tooltip": true
+        },
+        "hideLead": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "displayRelatedAccount": {
+            "type": "bool",
+            "default": true,
+            "tooltip": true
+        },
+        "autoSaveCall": {
+            "type":"enum",
+            "options":[
+               "yes",
+               "no",
+               "incomingCall",
+               "outgoingCall"
+            ],
+            "maxLength": 50,
+            "default": "no",
+            "tooltip": true,
+            "metadata": true
+        },
+        "autoOpenCallerInfo": {
+            "type":"enum",
+            "options":[
+               "yes",
+               "no",
+               "incomingCall",
+               "outgoingCall"
+            ],
+            "maxLength": 50,
+            "default": "no",
+            "tooltip": true
+        },
+        "accessKey": {
+            "type": "varchar",
+            "maxLength": 100,
+            "tooltip": true
+        },
+        "playRecordings": {
+            "type": "bool",
+            "default": false,
+            "tooltip": true
+        },
+        "recordingUrl": {
+            "type": "varchar",
+            "maxLength": 255,
+            "default": "http://URL/{UNIQUEID}.mp3",
+            "tooltip": true
+        },
+        "useOutgoingCallRecording": {
+            "type": "bool",
+            "default": false,
+            "tooltip": true
+        },
+        "outgoingCallRecordingUrl": {
+            "type": "varchar",
+            "maxLength": 255,
+            "default": "http://URL/{DESTUNIQUEID}.mp3",
+            "tooltip": true
+        },
+        "lines": {
+            "type": "array",
+            "tooltip": true
+        },
+        "quickCreateEntities": {
+            "type": "multiEnum",
+            "required": false,
+            "options": [
+                "Opportunity",
+                "Meeting",
+                "Task",
+                "Case"
+            ],
+            "tooltip": true
+        },
+        "activeQueueNumbers": {
+            "type": "array",
+            "tooltip": true
+        },
+        "displayPopupAfterAnswer": {
+            "type": "bool",
+            "default": false,
+            "tooltip": true
+        }
+    }
+}

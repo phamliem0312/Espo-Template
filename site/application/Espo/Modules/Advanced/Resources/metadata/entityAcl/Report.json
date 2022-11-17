@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "internalClassName": {
+            "internal": true
+        }
+    },
+    "links": {
+        "portals": {
+            "internal": true
+        }
+    }
+}

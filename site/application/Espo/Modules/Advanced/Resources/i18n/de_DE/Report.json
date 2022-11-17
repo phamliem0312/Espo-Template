@@ -1,0 +1,146 @@
+{
+  "labels": {
+    "Create Report": "Bericht erstellen",
+    "Run": "Ausführen",
+    "Total": "Gesamt",
+    "-Empty-": "-Leer-",
+    "Parameters": "Parameter",
+    "Filters": "Filter",
+    "Chart": "Diagramm",
+    "List Report": "Listenbericht",
+    "Grid Report": "Matrixbericht",
+    "days": "Tage",
+    "never": "nie",
+    "Get Csv": "CSV holen",
+    "EmailSending": "E-Mail wird gesendet",
+    "View Report": "Berichte ansehen",
+    "Report": "Bericht",
+    "AND": "UND",
+    "OR": "ODER",
+    "NOT": "NICHT",
+    "Complex expression": "Komplexer Ausdruck",
+    "Having": "Haben",
+    "Add AND group": "UND Gruppe hinzufügen ",
+    "Add OR group": "ODER Gruppe hinzufügen",
+    "Add NOT group": "NOT-Gruppe hinzufügen",
+    "Add Having group": "Haben Gruppe hinzufügen",
+    "Add Complex expression": "Komplexer Ausdruck hinzufügen",
+    "Columns": "Spalten",
+    "Send Email": "E-Mail senden"
+  },
+  "fields": {
+    "type": "Typ",
+    "entityType": "Entitätstyp",
+    "description": "Beschreibung",
+    "groupBy": "Gruppieren nach",
+    "columns": "Spalten",
+    "orderBy": "Sortieren nach",
+    "filters": "Filter",
+    "runtimeFilters": "Laufzeit Filter",
+    "chartType": "Diagrammtyp",
+    "emailSendingInterval": "Intervall",
+    "emailSendingTime": "Zeit",
+    "emailSendingUsers": "Benutzer",
+    "emailSendingSettingDay": "Tag",
+    "emailSendingSettingMonth": "Monat",
+    "emailSendingSettingWeekdays": "Tage",
+    "emailSendingDoNotSendEmptyReport": "Nicht senden wenn Bericht leer ist",
+    "chartColorList": "Diagrammfarben",
+    "chartColor": "Diagrammfarbe",
+    "orderByList": "Listenreihenfolge",
+    "column": "Spalte",
+    "category": "Kategorie",
+    "applyAcl": "ACL anwenden"
+  },
+  "tooltips": {
+    "emailSendingUsers": "Das Ergebnis der Benutzerberichte wird versendet an",
+    "chartColorList": "Benutzerdefinierte Farben für spezifische Gruppen.",
+    "applyAcl": "Berichtsergebnisse hängen vom Zugriff des Benutzers ab."
+  },
+  "functions": {
+    "COUNT": "Zähler",
+    "SUM": "Summe",
+    "AVG": "Durchschnitt",
+    "YEAR": "Jahr",
+    "MONTH": "Monat",
+    "DAY": "Tag",
+    "WEEK": "Woche"
+  },
+  "orders": {
+    "ASC": "Aufsteigend",
+    "DESC": "Absteigend",
+    "LIST": "Liste"
+  },
+  "options": {
+    "chartType": {
+      "BarHorizontal": "Balken (horizontal)",
+      "BarVertical": "Balken (vertikal)",
+      "Pie": "Tortenstück",
+      "Line": "Linie"
+    },
+    "emailSendingInterval": {
+      "": "Kein(e)",
+      "Daily": "Täglich",
+      "Weekly": "Wöchentlich",
+      "Monthly": "Monatlich",
+      "Yearly": "Jährlich"
+    },
+    "emailSendingSettingDay": {
+      "32": "Letzter Tag des Monats"
+    },
+    "function": {
+      "": "--KEINE FUNKTION--",
+      "DATE_NUMBER": "DATUM",
+      "MONTH_NUMBER": "MONAT",
+      "YEAR_NUMBER": "JAHR",
+      "DAYOFWEEK_NUMBER": "WOCHENTAG",
+      "HOUR_NUMBER": "STUNDE",
+      "LOWER": "UNTERER",
+      "UPPER": "OBENER",
+      "TRIM": " STUTZEN",
+      "LENGTH": "DAUER",
+      "WEEK_NUMBER_0": "WOCHE (Sonntag)",
+      "WEEK_NUMBER_1": "WOCHE (Montag)",
+      "COUNT": "ANZAHL"
+    },
+    "operator": {
+      "equals": "Gleich",
+      "notEquals": "Nicht gleich",
+      "greaterThan": "Größer als",
+      "lessThan": "Weniger als",
+      "greaterThanOrEquals": "Größer als oder Gleich",
+      "lessThanOrEquals": "Weniger als oder Gleich",
+      "notIn": "Nicht in",
+      "isTrue": "Ist wahr",
+      "isFalse": "Ist falsch",
+      "isNull": "Ist Null",
+      "isNotNull": "Ist Nicht Null",
+      "like": "Wie"
+    }
+  },
+  "messages": {
+    "validateMaxCount": "Anzahl darf nicht größer sein als {maxCount}",
+    "gridReportDescription": "Gruppieren nach einer oder zwei Spalten und Summen anzeigen. Kann als Diagramm dargestellt werden.",
+    "listReportDescription": "Einfache Liste von Datensätzen auf die die Filterkriterien zutreffen."
+  },
+  "presetFilters": {
+    "list": "Liste",
+    "grid": "Raster",
+    "listTargets": "Liste (Zielkontakte)",
+    "listAccounts": "Liste (Firmen)",
+    "listContacts": "Liste (Kontakte)",
+    "listLeads": "Liste (Interessenten)",
+    "listUsers": "Liste (Benutzer)"
+  },
+  "errorMessages": {
+    "error": "Fehler",
+    "noChart": "Kein Diagramm für den Bericht ausgewählt",
+    "selectReport": "Bericht in den Dashlet Optionen auswählen"
+  },
+  "filtersGroupTypes": {
+    "or": "ODER",
+    "and": "UND",
+    "not": "NICHT",
+    "having": "Haben"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "fields": {
+        "number": {
+            "type": "autoincrement",
+            "dbType": "bigint"
+        },
+        "name": {
+            "type": "varchar",
+            "maxLength": 200
+        },
+        "isTriggered": {
+            "type": "bool",
+            "default": false
+        },
+        "triggeredAt": {
+            "type": "datetime"
+        },
+        "createdAt": {
+            "type": "datetime"
+        }
+    },
+    "links": {
+        "flowNode": {
+            "type": "belongsTo",
+            "entity": "BpmnFlowNode"
+        }
+    },
+    "collection": {
+        "sortBy": "number",
+        "asc": false
+    },
+    "indexes": {
+        "name": {
+            "columns": ["name"]
+        },
+        "nameNumber": {
+            "columns": ["name", "number"]
+        }
+    }
+}

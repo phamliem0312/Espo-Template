@@ -1,0 +1,12 @@
+{
+    "module": "Template",
+    "name": "Template",
+    "description": "Template",
+    "author": "crm-team",
+    "acceptableVersions": [
+        ">=5.9.0"
+    ],
+    "php": [
+        ">=7.2"
+    ]
+}

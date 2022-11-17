@@ -1,0 +1,47 @@
+{
+    "fields": {
+        "assignedUser": {
+            "required": false
+        },
+        "voipUniqueid": {
+            "type": "varchar",
+            "required": false,
+            "disabled": true
+        },
+        "voipRecording": {
+            "type": "varchar",
+            "required": false,
+            "maxLength": 255,
+            "view": "voip:views/fields/player"
+        },
+        "voipPhoneNumber": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "voipLine": {
+            "type": "varchar",
+            "maxLength": 30
+        },
+        "contacts": {
+            "view": "voip:views/call/fields/contacts"
+        },
+        "leads": {
+            "view": "voip:views/call/fields/leads"
+        },
+        "voipRouter": {
+            "type": "link",
+            "readOnly": true
+        },
+        "isVoicemail": {
+            "type": "bool",
+            "default": false
+        }
+    },
+    "links": {
+        "voipRouter": {
+            "type": "belongsTo",
+            "foreign": "calls",
+            "entity": "VoipRouter"
+        }
+    }
+}

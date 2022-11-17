@@ -1,0 +1,6 @@
+[
+    {"name":"workflow"},
+    {"name":"target", "width":30},
+    {"name":"createdBy", "width":20},
+    {"name":"createdAt", "width":15}
+]

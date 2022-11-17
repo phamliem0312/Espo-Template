@@ -1,0 +1,25 @@
+{
+  "name": "ext-template",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-all": "node build --all",
+    "fetch": "node build --fetch",
+    "copy": "node build --copy",
+    "after-install": "node build --after-install",
+    "extension": "node build --extension",
+    "rebuild": "node build --rebuild",
+    "composer-install": "node build --composer-install"
+  },
+  "author": "crm-team",
+  "dependencies": {
+    "archiver": "^4.0.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^9.0.0",
+    "mv": "^2.1.1",
+    "request": "^2.88.2",
+    "unzipper": "^0.10.11",
+    "xlsx": "^0.18.5"
+  }
+}

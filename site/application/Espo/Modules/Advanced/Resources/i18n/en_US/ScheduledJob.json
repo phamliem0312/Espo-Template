@@ -1,0 +1,10 @@
+{
+    "options": {
+        "job": {
+            "ReportTargetListSync": "Sync Target Lists with Reports",
+            "ScheduleReportSending": "Schedule Report Sending",
+            "RunScheduledWorkflows": "Run Scheduled Workflows",
+            "ProcessPendingProcessFlows": "Process Pending Flows"
+        }
+    }
+}

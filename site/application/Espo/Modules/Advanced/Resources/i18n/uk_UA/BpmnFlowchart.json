@@ -1,0 +1,71 @@
+{
+  "labels": {
+    "Create BpmnFlowchart": "Створити блок-схему",
+    "Hand tool": "Інструмент рука",
+    "Create Event tool": "Інструмент створити подію",
+    "Create Gateway tool": "Інструмент створити подію",
+    "Create Activity tool": "Інструмент створити дію",
+    "Connect tool": "Інструмент для з'єднання",
+    "Erase tool": "Інструмент для стирання",
+    "Full Screen": "На весь екран",
+    "Processes": "Процеси",
+    "data": "Дані",
+    "Zoom In": "Збільшити",
+    "Zoom Out": "Зменшити",
+    "Error": "Помилка"
+  },
+  "fields": {
+    "isActive": "Активний",
+    "targetType": "Тип цільової сутності",
+    "hasNoneStartEvent": "Має стартову подію без типу"
+  },
+  "links": {
+    "processes": "Процеси"
+  },
+  "elements": {
+    "eventStartConditional": "Умовна стартова подія",
+    "eventStartTimer": "Стартова подія-таймер",
+    "eventStartError": "Стартова подія-помилка",
+    "eventStartEscalation": "Стартова подія-ескалація",
+    "eventStartSignal": "Стартова подія-сигнал",
+    "eventStart": "Стартова подія",
+    "eventStartConditionalEventSubProcess": "Умовна стартова подія підпроцесу",
+    "eventStartTimerEventSubProcess": "Стартова подія-таймер підпроцесу",
+    "eventStartSignalEventSubProcess": "Стартова подія-сигнал підпроцесу",
+    "eventIntermediateTimerCatch": "Проміжна подія-таймер (Catching)",
+    "eventIntermediateConditionalCatch": "Проміжна умовна подія (Catching)",
+    "eventIntermediateEscalationThrow": "Проміжна подія-ескалація (Throwing)",
+    "eventIntermediateSignalThrow": "Проміжна подія-сигнал (Throwing)",
+    "eventIntermediateSignalCatch": "Проміжна подія-сигнал (Catching)",
+    "eventIntermediateMessageCatch": "Проміжна подія-повідомлення (Catching)",
+    "eventEnd": "Кінцева подія",
+    "eventEndTerminate": "Завершальна кінцева подія",
+    "eventEndError": "Кінцева подія-помилка",
+    "eventEndEscalation": "Кінцева подія-ескалація",
+    "eventEndSignal": "Кінцева подія-сигнал",
+    "eventIntermediateErrorBoundary": "Проміжна подія-помилка (Boundary)",
+    "eventIntermediateTimerBoundary": "Проміжна подія-таймер (Boundary)",
+    "eventIntermediateConditionalBoundary": "Проміжна умовна подія (Boundary)",
+    "eventIntermediateEscalationBoundary": "Проміжна подія-ескалація (Boundary)",
+    "eventIntermediateSignalBoundary": "Проміжна подія-сигнал (Boundary)",
+    "eventIntermediateMessageBoundary": "Проміжна подія-повідомлення (Boundary)",
+    "gatewayExclusive": "Ексклюзивний шлюз",
+    "gatewayInclusive": "Включаючий шлюз",
+    "gatewayParallel": "Паралельний шлюз",
+    "gatewayEventBased": "Шлюз на основі події",
+    "taskSendMessage": "Завдання «Надіслати повідомлення»",
+    "taskScript": "Завдання-скрипт",
+    "taskBusinessRule": "Завдання бізнес-правила",
+    "taskUser": "Завдання користувача",
+    "task": "Завдання",
+    "callActivity": "Викликати дію",
+    "subProcess": "Підпроцес",
+    "eventSubProcess": "Подієвий підпроцес",
+    "flow": "Потік операцій"
+  },
+  "presetFilters": {
+    "isManuallyStartable": "Запускається вручну",
+    "activeHasNoneStartEvent": "Активний без стартової події",
+    "active": "Активний"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "labels": {
+    "Sync with Reports": "Синхронизировать с отчётами"
+  },
+  "fields": {
+    "syncWithReports": "Отчёты",
+    "syncWithReportsEnabled": "Включено",
+    "syncWithReportsUnlink": "Убрать связь"
+  },
+  "links": {
+    "syncWithReports": "Синхронизировать с отчётами"
+  },
+  "tooltips": {
+    "syncWithReportsUnlink": "Записи, которых нет в результатах отчёта, будут удалены с целевого списка.",
+    "syncWithReports": "Целевой список будет синхронизирован с результатами выбранных отчётов"
+  }
+}
